@@ -1,0 +1,54 @@
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <title>SapplyValues - Sapply Political Compass Clone</title>
+    <link rel="icon" type="x-icon" href="icon.png">
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <meta charset="utf-8">
+    </head>
+    <body>
+    <h1>SapplyValues</h1>
+    <hr>
+    <img src="" id="banner"></canvas>
+    <button class="button" onclick="location.href='instructions.html';" style="font-size:36pt;">Click here to start!</button>
+    
+    <h2>What is SapplyValues?</h2>
+        <p>SapplyValues is a political compass test that combines the questions of the <a href="http://sapplypoliticalcompass.com/">Sapply test</a>* with the UI of <a href="https://9axes.github.io/">9Axes</a>, which is in turn based on <a href="https://8values.github.io/">8values</a>. You will be presented by a statement, and then you will answer with your opinion on the statement, from <b>Strongly Agree</b> to <b>Strongly Disagree</b>, with each answer slightly affecting your scores. At the end of the quiz, your answers will be displayed on a political compass.<br /><br />
+        * A few questions have been reworded as I feel some of them were poorly written.<br /><br />
+        There are <b><u><span id="numOfQuestions"></span></u></b> questions in the test.</p>
+    <h2>Why use this version?</h2>
+        <p>Both the original and the popular clone version have a number of issues and are very poorly cocded. For starters, many users run into NaN errors. This happens when using the keyboard to press enter to go to the next page instead of clicking it. This doesn't apply at all to this version.</p>
+        <p>Secondly, the original version does not properly generate an image. It puts an overlay on top of a CSS-defined background image, meaning that if you save the image, it just saves the overlay instead of the whole compass. This is fixed in this version.</p>
+        <p>Thirdly, this version supports URL parameters, meaning you can easily share the link to your results and if you lose the image, you can find the results page entry with parameters in your history so you don't have to retake the whole test.</p>
+        <p>Finally, the 8values / 9Axes UI is far better (in my opinion anyway). It looks nicer and takes less clicks to answer.</p>
+    <h2>Your questions / results suck!</h2>
+        <p>You will have to complain to the original Sapply creator. I did not make this test, I simply changed the UI.</p>
+    <h2>Legal notice</h2>
+    <p>The 8values and 9Axes project licenses grant the rights to "modify, merge, publish, distribute" the software as long as "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software." The included notice can be found <a href="LICENSE.txt">here</a>. This project is released under the same license.</p>
+    
+    <script type="application/javascript" src="questions.js"></script>
+    <script type="text/javascript">
+        var questionCount = 0;
+        for (var i = 0; i < questions.length; i++) {
+            for (var j = 0; j < questions[j].length; j++) {
+                questionCount = questionCount + questions[i][j].length;
+            }
+        }
+        document.getElementById("numOfQuestions").innerHTML = questionCount;
+        window.onload = function() {
+            var background = new Image();
+            background.onload = function() {
+                var c = document.createElement("canvas");
+                c.width = 1850;
+                c.height = 1300;
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = "#EEEEEE"
+                ctx.fillRect(0, 0, 1850, 1300);
+                ctx.drawImage(background, 0, 0);
+    
+                document.getElementById("banner").src = c.toDataURL();
+            }
+            background.src = "./compass.png";
+        }
+    </script>
+</body>
