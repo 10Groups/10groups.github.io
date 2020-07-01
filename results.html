@@ -13,20 +13,14 @@
     
     <h1>Results</h1>
    
-<!--Canvases-->
     <div class="canvascontainer">
         <div><canvas id="canvas" width="500" height="500" style="border:1px solid #d3d3d3;">1</div>
-        <div><canvas id="econ-canvas" width="500" height="500" style="border:1px solid #d3d3d3;">2</div>
     </div>
-	    
-<!--Compass Images-->
-    <img id="compass" src="compass/general-compass.png" style="display: none;" />
-    <img id="econ-compass" src="compass/econ-compass.png" style="display: none;" />
 	    
     <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
    
 	    
-<!--canvas1-->
+<!--canvas-->
     <script>
 	function getQueryVariable(variable)
    	 {
@@ -45,10 +39,6 @@
 	    
         window.onload = function() {
 		
-	var canvas = document.getElementById("canvas");
-	var ctx = canvas.getContext("2d");
-	ctx.fillStyle = "white";
-	ctx.fillRect(0, 0, canvas.width, canvas.height);
 		
 	var canvas = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
@@ -57,36 +47,6 @@
 
 		
         var canvas = document.getElementById("canvas");
-		var ctx = canvas.getContext("2d");
-	        ctx.beginPath();
-	        ctx.arc(100 + (500 * (x_axis+10)/20), 575 - (500 * (y_axis + 10)/20), 10, 0, 2 * Math.PI);
-	        ctx.fillStyle = "red"
-	        ctx.fill();
-	        ctx.stroke();
-        };
-    </script>
-
-	    
-<!--economic canvas-->
-    <script>
-	const urlParams = new URLSearchParams(window.location.search);
-        x_axis  = parseFloat(urlParams.get("x"))
-        y_axis   = parseFloat(urlParams.get("y"))
-	    
-        window.onload = function() {
-		
-	var canvas = document.getElementById("econ-canvas");
-	var ctx = canvas.getContext("2d");
-	ctx.fillStyle = "white";
-	ctx.fillRect(0, 0, canvas.width, canvas.height);
-		
-	var canvas = document.getElementById("econ-canvas");
-        var ctx = canvas.getContext("2d");
-        var img = document.getElementById("econ-compass");
-        ctx.drawImage(img, 0, 0);
-
-		
-        var canvas = document.getElementById("econ-canvas");
 		var ctx = canvas.getContext("2d");
 	        ctx.beginPath();
 	        ctx.arc(100 + (500 * (x_axis+10)/20), 575 - (500 * (y_axis + 10)/20), 10, 0, 2 * Math.PI);
