@@ -127,7 +127,7 @@ div.text-wrapper {
 span.weight-300 {
     font-weight: 300;
 }
-#banner, #banner2, #banner3, #banner4 {
+#canvas1, #canvas2, #canvas3, #canvas4 {
     border-color: #444444;
     border-style: solid;
     border-width: 2px;
@@ -139,16 +139,16 @@ span.weight-300 {
     max-width: 50%;
 	min-width: 500pt;
 }
-.bannercontainer {
+.canvascontainer {
   display: flex;
   flex-wrap: wrap;
 }
-.bannercontainer > div {
+.canvascontainer > div {
   width: 35vw;
   padding: 10px;
 }
 @media screen and (max-width: 800px) {
-  .bannercontainer > div {
+  .convascontainer > div {
      width: 100%;
      padding: 0;
   }
