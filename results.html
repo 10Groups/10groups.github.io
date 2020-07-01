@@ -13,7 +13,7 @@
     
     <h1>Results</h1>
     
-    <img src="" id="banner" width="200" height="200"></canvas>
+    <img src="" id="banner" width="500" height="500"></canvas>
     <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
     
     <script>
@@ -25,8 +25,8 @@
             var background = new Image();
             background.onload = function() {
                 var c = document.createElement("canvas");
-                c.width = 250;
-                c.height = 250;
+                c.width = 500;
+                c.height = 500;
                 var ctx = c.getContext("2d");
                 ctx.fillStyle = "#EEEEEE"
                 ctx.fillRect(0, 0, 0, 0);
