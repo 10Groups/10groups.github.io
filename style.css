@@ -144,7 +144,7 @@ span.weight-300 {
   flex-wrap: wrap;
 }
 .bannercontainer > div {
-  width: 10%;
+  width: 35vw;
   padding: 10px;
 }
 @media screen and (max-width: 800px) {
