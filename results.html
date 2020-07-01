@@ -20,17 +20,16 @@
         const urlParams = new URLSearchParams(window.location.search);
         x_axis  = parseFloat(urlParams.get("x"))
         y_axis   = parseFloat(urlParams.get("y"))
-        z_axis  = parseFloat(urlParams.get("z"))
     
         window.onload = function() {
             var background = new Image();
             background.onload = function() {
                 var c = document.createElement("canvas");
-                c.width = 1850;
-                c.height = 1600;
+                c.width = 500;
+                c.height = 500;
                 var ctx = c.getContext("2d");
                 ctx.fillStyle = "#EEEEEE"
-                ctx.fillRect(0, 0, 1850, 1600);
+                ctx.fillRect(0, 0, 500, 500);
                 ctx.drawImage(background, 0, 0);
     
                 var dot = c.getContext("2d");
