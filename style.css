@@ -141,6 +141,7 @@ span.weight-300 {
 }
 .bannercontainer {
   display: flex;
+  flex-wrap: wrap;
 }
 .bannercontainer > div {
   width: 50%;
