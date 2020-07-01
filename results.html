@@ -39,14 +39,14 @@
         window.onload = function() {
 		
 		
-	var canvas = document.getElementById("canvas");
+	var c = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
         var img = document.getElementById("compass");
         ctx.drawImage(img, 0, 0);
 		
 	//Circle 1		
-        var canvas = document.getElementById("canvas");
-		var ctx = canvas.getContext("2d");
+        var c = document.getElementById("canvas");
+		var ctx = c.getContext("2d");
 	        ctx.beginPath();
 	        ctx.arc(100 + (500 * (x_axis+10)/20), 575 - (500 * (y_axis + 10)/20), 10, 0, 2 * Math.PI);
 	        ctx.fillStyle = "red"
@@ -54,8 +54,8 @@
 	        ctx.stroke();
 		
 	//Circle 2		
-        var canvas = document.getElementById("canvas");
-		var ctx = canvas.getContext("2d");
+        var c = document.getElementById("canvas");
+		var ctx = c.getContext("2d");
 	        ctx.beginPath();
 	        ctx.arc(300 + (600 * (x_axis+10)/20), 575 - (600 * (y_axis + 10)/20), 10, 0, 2 * Math.PI);
 	        ctx.fillStyle = "red"
