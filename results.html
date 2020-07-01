@@ -1,51 +1,42 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
     <link href='style.css' rel='stylesheet' type='text/css'>
-    <title>10Compasses Results</title>
+    <title>10Compasses v0.1</title>
     <link rel="icon" type="x-icon" href="icon.png">
     <link rel="shortcut icon" type="x-icon" href="icon.png">
     <meta charset="utf-8">
     </head>
     
     <body>
-    <h1>SapplyValues</h1>
+    <h1>10Compasses</h1>
     <hr>
     
     <h1>Results</h1>
     
-    <img src="" id="banner"></canvas>
+    <div class="canvascontainer">
+        <div><canvas id="canvas1" width="240" height="297" style="border:1px solid #d3d3d3;">1</div>
+    </div>
+
+    <img id="compass" src="compass.png" style="display: none;" />
     <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
     
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         x_axis  = parseFloat(urlParams.get("x"))
         y_axis   = parseFloat(urlParams.get("y"))
-        z_axis   = parseFloat(urlParams.get("z"))
-
     
         window.onload = function() {
-            var background = new Image();
-            background.onload = function() {
-                var c = document.createElement("canvas");
-                c.width = 500;
-                c.height = 500;
-                var ctx = c.getContext("2d");
-                ctx.fillStyle = "#EEEEEE"
-                ctx.fillRect(0, 0, 500, 500);
-                ctx.drawImage(background, 0, 0);
-    
-                var dot = c.getContext("2d");
-                dot.beginPath();
-                dot.arc(100 + (500 * (x_axis+10)/20), 575 - (500 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
-                dot.fillStyle = 'red';
-                dot.fill();
-                dot.stroke();
-    
-                document.getElementById("banner").src = c.toDataURL();
-            }
-            background.src = "./compass.png";
-        }
-        </script>
-    </body>
-    
-    
+            var canvas = document.getElementById("canvas1");
+            var ctx = canvas.getContext("2d");
+            var img = document.getElementById("compass");
+        ctx.drawImage(img, 10, 10);
+   
+        var canvas = document.getElementById("canvas1");
+	        var ctx = canvas.getContext("2d");
+	        ctx.beginPath();
+	        ctx.arc(100 + (500 * (x_axis+10)/20), 575 - (500 * (y_axis + 10)/20), 10, 0, 2 * Math.PI);
+	        ctx.fillStyle = "black"
+	        ctx.fill();
+	        ctx.stroke();
+        };
+    </script>
