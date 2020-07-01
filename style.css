@@ -140,5 +140,15 @@ span.weight-300 {
 	min-width: 500pt;
 }
 .bannercontainer {
-  display: flex; /* or inline-flex */
+  display: flex;
+}
+.bannercontainer > div {
+  width: 50%;
+  padding: 10px;
+}
+@media screen and (max-width: 800px) {
+  .bannercontainer > div {
+     width: 100%;
+     padding: 0;
+  }
 }
