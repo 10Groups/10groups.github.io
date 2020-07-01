@@ -139,3 +139,6 @@ span.weight-300 {
     max-width: 50%;
 	min-width: 500pt;
 }
+.bannercontainer {
+  display: flex; /* or inline-flex */
+}
