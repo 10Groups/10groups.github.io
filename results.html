@@ -8,7 +8,7 @@
     </head>
     
     <body>
-    <h1>10Compasses/h1>
+    <h1>10Compasses</h1>
     <hr>
     
     <h1>Results</h1>
@@ -34,20 +34,13 @@
     
                 var dot = c.getContext("2d");
                 dot.beginPath();
-                dot.arc(200 + (1000 * (x_axis+10)/20), 1150 - (1000 * (y_axis + 10)/20), 25, 0, 2 * Math.PI);
+                dot.arc(1000 * (x_axis+10)/20), (1000 * (y_axis + 10)/20), 25, 0, 2 * Math.PI);
                 dot.fillStyle = 'red';
                 dot.fill();
                 dot.stroke();
     
     
-                ctx.font="50px Montserrat"
-                ctx.textAlign="center"
-                ctx.fillStyle="#222222"
-                ctx.fillText("Left / Right Axis (x): " + x_axis, 925, 1375)
-                ctx.fillText("Auth / Lib Axis (y): " + y_axis, 925, 1450)
-                ctx.textAlign="right"
-                ctx.font="30px Montserrat"
-                ctx.fillText("10compasses.github.io", 1840, 1580)
+              
     
                 document.getElementById("banner").src = c.toDataURL();
             }
