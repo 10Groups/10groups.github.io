@@ -13,11 +13,11 @@
     
     <h1>Results</h1>
     
-    <div class="bannercontainer">
-        <div><canvas id="Canvas1" width="240" height="297" style="border:1px solid #d3d3d3;">1</div>
+    <div class="canvascontainer">
+        <div><canvas id="canvas1" width="240" height="297" style="border:1px solid #d3d3d3;">1</div>
     </div>
 
-    <img id="econ-compass" src="compass.png" style="display: none;" />
+    <img id="compass" src="compass.png" style="display: none;" />
     <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
     
     <script>
@@ -26,12 +26,12 @@
         y_axis   = parseFloat(urlParams.get("y"))
     
         window.onload = function() {
-            var canvas = document.getElementById("Canvas1");
+            var canvas = document.getElementById("canvas1");
             var ctx = canvas.getContext("2d");
-            var img = document.getElementById("econ-compass");
+            var img = document.getElementById("compass");
         ctx.drawImage(img, 10, 10);
    
-        var canvas = document.getElementById("Canvas1");
+        var canvas = document.getElementById("canvas1");
 	        var ctx = canvas.getContext("2d");
 	        ctx.beginPath();
 	        ctx.arc(200 + (1000 * (x_axis+10)/20), 1150 - (1000 * (y_axis + 10)/20), 25, 0, 2 * Math.PI);
