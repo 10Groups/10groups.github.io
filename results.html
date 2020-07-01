@@ -25,8 +25,8 @@
             var background = new Image();
             background.onload = function() {
                 var c = document.createElement("canvas");
-                canvas.style.width = 500;
-                canvas.style.height = 500;
+                c.width = 500;
+                c.height = 500;
                 var ctx = c.getContext("2d");
                 ctx.fillStyle = "#EEEEEE"
                 ctx.fillRect(0, 0, 0, 0);
@@ -34,7 +34,7 @@
     
                 var dot = c.getContext("2d");
                 dot.beginPath();
-                dot.arc((1000 * (x_axis+10)/20), (1000 * (y_axis + 10)/20), 25, 0, 2 * Math.PI);
+                dot.arc(200 + (1000 * (x_axis+10)/20), 1150 - (1000 * (y_axis + 10)/20), 25, 0, 2 * Math.PI);
                 dot.fillStyle = 'red';
                 dot.fill();
                 dot.stroke();
