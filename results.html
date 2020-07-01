@@ -15,7 +15,7 @@
     
     <div class="bannercontainer">
         <div><img src="" id="banner">1</div>
-        <div><img src="" id="banner">2</div>
+        <div><img src="" id="banner2">2</div>
         <div><img src="" id="banner">3</div>
         <div><img src="" id="banner">4</div>
     </div>
@@ -46,6 +46,37 @@
     
     
                 document.getElementById("banner").src = c.toDataURL();
+            }
+            background.src = "./compass.png";
+        }
+        </script>
+        
+        
+        <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        x_axis  = parseFloat(urlParams.get("x"))
+        y_axis   = parseFloat(urlParams.get("y"))
+    
+        window.onload = function() {
+            var background = new Image();
+            background.onload = function() {
+                var c = document.createElement("canvas");
+                c.width = 500;
+                c.height = 500;
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = "#EEEEEE"
+                ctx.fillRect(0, 0, 0, 0);
+                ctx.drawImage(background, 0, 0);
+    
+                var dot = c.getContext("2d");
+                dot.beginPath();
+                dot.arc(200 + (1000 * (x_axis+10)/20), 1150 - (1000 * (y_axis + 10)/20), 25, 0, 2 * Math.PI);
+                dot.fillStyle = 'red';
+                dot.fill();
+                dot.stroke();
+    
+    
+                document.getElementById("banner2").src = c.toDataURL();
             }
             background.src = "./compass.png";
         }
