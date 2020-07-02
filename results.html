@@ -45,20 +45,20 @@
         var img = document.getElementById("compass");
         ctx.drawImage(img, 0, 0);
 		
-	//Circle 1		
+	//Circle (General)		
         var canvas = document.getElementById("canvas");
 		var ctx = canvas.getContext("2d");
 	        ctx.beginPath();
-	        ctx.arc(312 + (500 * (x_axis+10)/20), 249 - (500 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.arc(150 + (500 * (x_axis+10)/20), 120 - (500 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
 	        ctx.fillStyle = "red"
 	        ctx.fill();
 	        ctx.stroke();
 		
-	//Circle 2		
+	//Economic Circle	
         var canvas = document.getElementById("canvas");
 		var ctx = canvas.getContext("2d");
 	        ctx.beginPath();
-	        ctx.arc(300 + (600 * (x_axis+10)/20), 575 - (600 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.arc(450 + (600 * (x_axis+10)/20), 120 - (600 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
 	        ctx.fillStyle = "blue"
 	        ctx.fill();
 	        ctx.stroke();
