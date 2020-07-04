@@ -59,7 +59,7 @@
 		var ctx = canvas.getContext("2d");
 	        ctx.beginPath();
 	        ctx.arc(735 + (400 * (x_axis+10)/20), 450 - (400 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
-	        ctx.fillStyle = "teal"
+	        ctx.fillStyle = "red"
 	        ctx.fill();
 	        ctx.stroke();
 		
@@ -68,7 +68,7 @@
 		var ctx = canvas.getContext("2d");
 	        ctx.beginPath();
 	        ctx.arc(1360 + (400 * (x_axis+10)/20), 450 - (400 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
-	        ctx.fillStyle = "SkyBlue"
+	        ctx.fillStyle = "red"
 	        ctx.fill();
 	        ctx.stroke();
 		
@@ -77,7 +77,43 @@
 		var ctx = canvas.getContext("2d");
 	        ctx.beginPath();
 	        ctx.arc(1985 + (400 * (x_axis+10)/20), 450 - (400 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
-	        ctx.fillStyle = "Coral"
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+		
+	//Societal Circle		
+        var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+	        ctx.beginPath();
+	        ctx.arc(115 + (400 * (x_axis+10)/20), 1075 - (400 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+		
+	//Technological Circle	
+        var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+	        ctx.beginPath();
+	        ctx.arc(735 + (400 * (x_axis+10)/20), 1075 - (400 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+		
+	//Law Circle	
+	var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+	        ctx.beginPath();
+	        ctx.arc(1360 + (400 * (x_axis+10)/20), 1075 - (400 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+		
+	//Cultural Circle	
+	var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+	        ctx.beginPath();
+	        ctx.arc(1985 + (400 * (x_axis+10)/20), 1075 - (400 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
 	        ctx.fill();
 	        ctx.stroke();
         };
