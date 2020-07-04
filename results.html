@@ -62,5 +62,14 @@
 	        ctx.fillStyle = "blue"
 	        ctx.fill();
 	        ctx.stroke();
+		
+	//Government Circle	
+	var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+	        ctx.beginPath();
+	        ctx.arc(1355 + (400 * (x_axis+10)/20), 450 - (400 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "blue"
+	        ctx.fill();
+	        ctx.stroke();
         };
     </script>
