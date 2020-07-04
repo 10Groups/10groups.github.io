@@ -1,4 +1,3 @@
-  
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='style.css' rel='stylesheet' type='text/css'>
@@ -38,24 +37,17 @@
 
 
 
-    var max_x, max_y, max_2x, max_2y, max_3x, max_3y, max_4x, max_4y, max_5x, max_5y,; // Max possible scores
-    max_x = max_y = max_2x = max_2y = max_3x = max_3y = max_4x = max_4y = max_5x = max_5y = 0;
-    var x, y, 2x, 2y, 3x, 3y, 4x, 4y, 5x, 5y,; // User's scores
-    x = y = 2x = 2y = 3x = 3y = 4x = 4y = 5x = 5y = 0;
+    var max_econ, max_govt, max_scty; // Max possible scores
+    max_econ = max_govt = max_scty = 0;
+    var econ, govt, scty; // User's scores
+    econ = govt = scty = 0;
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
     for (var i = 0; i < questions.length; i++) {
-        max_x += Math.abs(questions[i].effect.x)
-        max_y += Math.abs(questions[i].effect.y)
-        max_2x += Math.abs(questions[i].effect.2x)
-        max_2y += Math.abs(questions[i].effect.2y)
-        max_3x += Math.abs(questions[i].effect.3x)
-        max_3y += Math.abs(questions[i].effect.3y)
-        max_4x += Math.abs(questions[i].effect.4x)
-        max_4y += Math.abs(questions[i].effect.4y)
-        max_5x += Math.abs(questions[i].effect.5x)
-        max_5y += Math.abs(questions[i].effect.5y)
+        max_econ += Math.abs(questions[i].effect.econ)
+        max_govt += Math.abs(questions[i].effect.govt)
+        max_scty += Math.abs(questions[i].effect.scty)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -71,16 +63,9 @@
     }
 
     function next_question(mult) {
-        x += mult*questions[qn].effect.x 
-        y += mult*questions[qn].effect.y 
-        2x += mult*questions[qn].effect.2x 
-        2y += mult*questions[qn].effect.2y 
-        3x += mult*questions[qn].effect.3x 
-        3y += mult*questions[qn].effect.3y 
-        4x += mult*questions[qn].effect.4x 
-        4y += mult*questions[qn].effect.4y 
-        5x += mult*questions[qn].effect.5x 
-        5y += mult*questions[qn].effect.5y
+        econ += mult*questions[qn].effect.econ
+        govt += mult*questions[qn].effect.govt
+        scty += mult*questions[qn].effect.scty
         qn++;
         prev_answer = mult;
         if (qn < questions.length) {
@@ -94,16 +79,9 @@
             return;
         }
         qn--;
-        x += mult*questions[qn].effect.x; 
-        y += mult*questions[qn].effect.y; 
-        2x += mult*questions[qn].effect.2x; 
-        2y += mult*questions[qn].effect.2y; 
-        3x += mult*questions[qn].effect.3x; 
-        3y += mult*questions[qn].effect.3y; 
-        4x += mult*questions[qn].effect.4x; 
-        4y += mult*questions[qn].effect.4y; 
-        5x += mult*questions[qn].effect.5x; 
-        5y += mult*questions[qn].effect.5y;
+        econ -= prev_answer * questions[qn].effect.econ;
+        govt -= prev_answer * questions[qn].effect.govt;
+        scty -= prev_answer * questions[qn].effect.scty;
         prev_answer = null;
         init_question();
 
@@ -113,16 +91,9 @@
     }
     function results() {
         location.href = `results.html`
-            + `?x=${(20*(calc_score(x,max_x)/100)-10).toFixed(1)}`
-            + `&y=${(20*(calc_score(y,max_y)/100)-10).toFixed(1)}`
-            + `?2x=${(20*(calc_score(2x,max_2x)/100)-10).toFixed(1)}`
-            + `&2y=${(20*(calc_score(2y,max_2y)/100)-10).toFixed(1)}`
-            + `?3x=${(20*(calc_score(3x,max_3x)/100)-10).toFixed(1)}`
-            + `&3y=${(20*(calc_score(3y,max_3y)/100)-10).toFixed(1)}`
-            + `?4x=${(20*(calc_score(4x,max_4x)/100)-10).toFixed(1)}`
-            + `&4y=${(20*(calc_score(4y,max_4y)/100)-10).toFixed(1)}`
-            + `?5x=${(20*(calc_score(5x,max_5x)/100)-10).toFixed(1)}`
-            + `&5y=${(20*(calc_score(5y,max_5y)/100)-10).toFixed(1)}`
+            + `?x=${(20*(calc_score(econ,max_econ)/100)-10).toFixed(1)}`
+            + `&y=${(20*(calc_score(govt,max_govt)/100)-10).toFixed(1)}`
+            + `&z=${(32*(calc_score(scty,max_scty)/100)-16).toFixed(1)}`
     }
 </script>
 </body>
