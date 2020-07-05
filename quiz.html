@@ -37,9 +37,9 @@
 
 
 
-    var max_econ, max_govt, max_econsys, max_econreg; // Max possible scores
-    max_econ = max_govt = max_econsys = max_econreg = 0;
-    var econ, govt, econsys, econreg; // User's scores
+    var max_econ, max_govt, max_econsys, max_econreg, max_govtsize, max_govttype; // Max possible scores
+    max_econ = max_govt = max_econsys = max_econreg = max_govtsize = max_govttype = 0;
+    var econ, govt, econsys, econreg, govtsize, govttype; // User's scores
     econ = govt = econsys = econreg = 0;
     var qn = 0; // Question number
     var prev_answer = null;
@@ -49,6 +49,8 @@
         max_govt += Math.abs(questions[i].effect.govt)
         max_econsys += Math.abs(questions[i].effect.econsys)
         max_econreg += Math.abs(questions[i].effect.econreg)
+        max_govtsize += Math.abs(questions[i].effect.govtsize)
+        max_govttype += Math.abs(questions[i].effect.govttype)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -68,6 +70,8 @@
         govt += mult*questions[qn].effect.govt
         econsys += mult*questions[qn].effect.econsys
         econreg += mult*questions[qn].effect.econreg
+        govtsize += mult*questions[qn].effect.govtsize
+        govttype += mult*questions[qn].effect.govttype
         qn++;
         prev_answer = mult;
         if (qn < questions.length) {
@@ -85,6 +89,8 @@
         govt -= prev_answer * questions[qn].effect.govt;
         econsys -= prev_answer * questions[qn].effect.econsys;
         econreg -= prev_answer * questions[qn].effect.econreg;
+        govtsize -= prev_answer * questions[qn].effect.govtsize;
+        govttype -= prev_answer * questions[qn].effect.govttype;
         prev_answer = null;
         init_question();
 
@@ -98,6 +104,8 @@
             + `&y=${(20*(calc_score(govt,max_govt)/100)-10).toFixed(1)}`
             + `&ax=${(32*(calc_score(econsys,max_econsys)/100)-16).toFixed(1)}`
             + `&ay=${(32*(calc_score(econreg,max_econreg)/100)-16).toFixed(1)}`
+            + `&bx=${(32*(calc_score(govtsize,max_govtsize)/100)-16).toFixed(1)}`
+            + `&by=${(32*(calc_score(govttype,max_govttype)/100)-16).toFixed(1)}`
     }
 </script>
 </body>
