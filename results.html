@@ -39,6 +39,8 @@
         ay_axis   = parseFloat(urlParams.get("ay"))
         bx_axis   = parseFloat(urlParams.get("bx"))
         by_axis   = parseFloat(urlParams.get("by"))
+	cx_axis   = parseFloat(urlParams.get("cx"))
+        cy_axis   = parseFloat(urlParams.get("cy"))
 	    
         window.onload = function() {
 		
@@ -79,7 +81,7 @@
 	var canvas = document.getElementById("canvas");
 		var ctx = canvas.getContext("2d");
 	        ctx.beginPath();
-	        ctx.arc(1985 + (400 * (x_axis+10)/20), 450 - (400 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.arc(1985 + (400 * (cx_axis+10)/20), 450 - (400 * (cy_axis + 10)/20), 15, 0, 2 * Math.PI);
 	        ctx.fillStyle = "red"
 	        ctx.fill();
 	        ctx.stroke();
