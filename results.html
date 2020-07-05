@@ -45,6 +45,8 @@
         dy_axis   = parseFloat(urlParams.get("dy"))
 	ex_axis   = parseFloat(urlParams.get("ex"))
         ey_axis   = parseFloat(urlParams.get("ey"))
+	fx_axis   = parseFloat(urlParams.get("fx"))
+        fy_axis   = parseFloat(urlParams.get("fy"))
 	    
         window.onload = function() {
 		
@@ -112,7 +114,7 @@
 	var canvas = document.getElementById("canvas");
 		var ctx = canvas.getContext("2d");
 	        ctx.beginPath();
-	        ctx.arc(1360 + (400 * (x_axis+10)/20), 945 - (400 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.arc(1360 + (400 * (fx_axis+10)/20), 945 - (400 * (fy_axis + 10)/20), 15, 0, 2 * Math.PI);
 	        ctx.fillStyle = "red"
 	        ctx.fill();
 	        ctx.stroke();
