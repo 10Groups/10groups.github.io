@@ -37,17 +37,18 @@
 
 
 
-    var max_econ, max_govt, max_scty; // Max possible scores
-    max_econ = max_govt = max_scty = 0;
-    var econ, govt, scty; // User's scores
-    econ = govt = scty = 0;
+    var max_econ, max_govt, max_econsys, max_econreg; // Max possible scores
+    max_econ = max_govt = max_econsys = max_econreg = 0;
+    var econ, govt, econsys, econreg; // User's scores
+    econ = govt = econsys = econreg = 0;
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
     for (var i = 0; i < questions.length; i++) {
         max_econ += Math.abs(questions[i].effect.econ)
         max_govt += Math.abs(questions[i].effect.govt)
-        max_scty += Math.abs(questions[i].effect.scty)
+        max_econsys += Math.abs(questions[i].effect.econsys)
+        max_econreg += Math.abs(questions[i].effect.econreg)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -65,7 +66,8 @@
     function next_question(mult) {
         econ += mult*questions[qn].effect.econ
         govt += mult*questions[qn].effect.govt
-        scty += mult*questions[qn].effect.scty
+        econsys += mult*questions[qn].effect.econsys
+        econreg += mult*questions[qn].effect.econreg
         qn++;
         prev_answer = mult;
         if (qn < questions.length) {
@@ -81,7 +83,8 @@
         qn--;
         econ -= prev_answer * questions[qn].effect.econ;
         govt -= prev_answer * questions[qn].effect.govt;
-        scty -= prev_answer * questions[qn].effect.scty;
+        econsys -= prev_answer * questions[qn].effect.econsys;
+        econreg -= prev_answer * questions[qn].effect.econreg;
         prev_answer = null;
         init_question();
 
@@ -93,7 +96,8 @@
         location.href = `results.html`
             + `?x=${(20*(calc_score(econ,max_econ)/100)-10).toFixed(1)}`
             + `&y=${(20*(calc_score(govt,max_govt)/100)-10).toFixed(1)}`
-            + `&z=${(32*(calc_score(scty,max_scty)/100)-16).toFixed(1)}`
+            + `&ax=${(32*(calc_score(econsys,max_econsys)/100)-16).toFixed(1)}`
+            + `&ay=${(32*(calc_score(econreg,max_econreg)/100)-16).toFixed(1)}`
     }
 </script>
 </body>
