@@ -37,10 +37,10 @@
 
 
 
-    var max_econ, max_govt, max_econsys, max_econreg, max_govtsize, max_govttype; // Max possible scores
-    max_econ = max_govt = max_econsys = max_econreg = max_govtsize = max_govttype = 0;
-    var econ, govt, econsys, econreg, govtsize, govttype; // User's scores
-    econ = govt = econsys = econreg = 0;
+    var max_econ, max_govt, max_econsys, max_econreg, max_govtsize, max_govttype, max_diplapp, max_diplrel; // Max possible scores
+    max_econ = max_govt = max_econsys = max_econreg = max_govtsize = max_govttype = max_diplapp = max_diplrel = 0;
+    var econ, govt, econsys, econreg, govtsize, govttype, diplapp, diplrel; // User's scores
+    econ = govt = econsys = econreg = govtsize = govttype = diplapp = diplrel = 0;
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
@@ -51,6 +51,8 @@
         max_econreg += Math.abs(questions[i].effect.econreg)
         max_govtsize += Math.abs(questions[i].effect.govtsize)
         max_govttype += Math.abs(questions[i].effect.govttype)
+        max_diplapp += Math.abs(questions[i].effect.diplapp)
+        max_diplrel += Math.abs(questions[i].effect.diplrel)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -72,6 +74,8 @@
         econreg += mult*questions[qn].effect.econreg
         govtsize += mult*questions[qn].effect.govtsize
         govttype += mult*questions[qn].effect.govttype
+        diplapp += mult*questions[qn].effect.diplapp
+        diplrel += mult*questions[qn].effect.diplrel
         qn++;
         prev_answer = mult;
         if (qn < questions.length) {
@@ -91,6 +95,8 @@
         econreg -= prev_answer * questions[qn].effect.econreg;
         govtsize -= prev_answer * questions[qn].effect.govtsize;
         govttype -= prev_answer * questions[qn].effect.govttype;
+        diplapp -= prev_answer * questions[qn].effect.diplapp;
+        diplrel -= prev_answer * questions[qn].effect.diplrel;
         prev_answer = null;
         init_question();
 
@@ -106,6 +112,8 @@
             + `&ay=${(32*(calc_score(econreg,max_econreg)/100)-16).toFixed(1)}`
             + `&bx=${(32*(calc_score(govtsize,max_govtsize)/100)-16).toFixed(1)}`
             + `&by=${(32*(calc_score(govttype,max_govttype)/100)-16).toFixed(1)}`
+            + `&cx=${(32*(calc_score(diplapp,max_diplapp)/100)-16).toFixed(1)}`
+            + `&cy=${(32*(calc_score(diplrel,max_diplrel)/100)-16).toFixed(1)}`
     }
 </script>
 </body>
