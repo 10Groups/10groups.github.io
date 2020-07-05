@@ -37,10 +37,10 @@
 
 
 
-    var max_econ, max_govt, max_econsys, max_econreg, max_govtsize, max_govttype, max_diplapp, max_diplrel, max_sctychg, max_sctytrad, max_techacc, max_techbio, max_lawtype, max_lawrehab; // Max possible scores
-    max_econ = max_govt = max_econsys = max_econreg = max_govtsize = max_govttype = max_diplapp = max_diplrel = max_sctychg = max_sctytrad = max_techacc = max_techbio = max_lawtype = max_lawrehab = 0;
-    var econ, govt, econsys, econreg, govtsize, govttype, diplapp, diplrel, sctychg, sctytrad, techacc, techbio, lawtype, lawrehab; // User's scores
-    econ = govt = econsys = econreg = govtsize = govttype = diplapp = diplrel = sctychg = sctytrad = techacc = techbio = lawtype = lawrehab = 0;
+    var max_econ, max_govt, max_econsys, max_econreg, max_govtsize, max_govttype, max_diplapp, max_diplrel, max_sctychg, max_sctytrad, max_techacc, max_techbio, max_lawtype, max_lawrehab, max_cltrhrchy, max_cltrassi; // Max possible scores
+    max_econ = max_govt = max_econsys = max_econreg = max_govtsize = max_govttype = max_diplapp = max_diplrel = max_sctychg = max_sctytrad = max_techacc = max_techbio = max_lawtype = max_lawrehab = max_cltrhrchy = max_cltrassi = 0;
+    var econ, govt, econsys, econreg, govtsize, govttype, diplapp, diplrel, sctychg, sctytrad, techacc, techbio, lawtype, lawrehab, cltrhrchy, cltrassi; // User's scores
+    econ = govt = econsys = econreg = govtsize = govttype = diplapp = diplrel = sctychg = sctytrad = techacc = techbio = lawtype = lawrehab = cltrhrchy = cltrassi = 0;
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
@@ -59,6 +59,8 @@
         max_techbio += Math.abs(questions[i].effect.techbio)
         max_lawtype += Math.abs(questions[i].effect.lawtype)
         max_lawrehab += Math.abs(questions[i].effect.lawrehab)
+        max_cltrhrchy += Math.abs(questions[i].effect.cltrhrchy)
+        max_cltrassi += Math.abs(questions[i].effect.cltrassi)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -88,6 +90,8 @@
         techbio += mult*questions[qn].effect.techbio
         lawtype += mult*questions[qn].effect.lawtype
         lawrehab += mult*questions[qn].effect.lawrehab
+        cltrhrchy += mult*questions[qn].effect.cltrhrchy
+        cltrassi += mult*questions[qn].effect.cltrassi
         qn++;
         prev_answer = mult;
         if (qn < questions.length) {
@@ -115,6 +119,8 @@
         techbio -= prev_answer * questions[qn].effect.techbio;
         lawtype -= prev_answer * questions[qn].effect.lawtype;
         lawrehab -= prev_answer * questions[qn].effect.lawrehab;
+        cltrhrchy -= prev_answer * questions[qn].effect.cltrhrchy;
+        cltrassi -= prev_answer * questions[qn].effect.cltrassi;
         prev_answer = null;
         init_question();
 
@@ -138,6 +144,8 @@
             + `&ey=${(32*(calc_score(techbio,max_techbio)/100)-16).toFixed(1)}`
             + `&fx=${(32*(calc_score(lawtype,max_lawtype)/100)-16).toFixed(1)}`
             + `&fy=${(32*(calc_score(lawrehab,max_lawrehab)/100)-16).toFixed(1)}`
+            + `&gx=${(32*(calc_score(cltrhrchy,max_cltrhrchy)/100)-16).toFixed(1)}`
+            + `&gy=${(32*(calc_score(cltrassi,max_cltrassi)/100)-16).toFixed(1)}`
     }
 </script>
 </body>
