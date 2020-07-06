@@ -49,6 +49,10 @@
         fy_axis   = parseFloat(urlParams.get("fy"))
 	gx_axis   = parseFloat(urlParams.get("gx"))
         gy_axis   = parseFloat(urlParams.get("gy"))
+	hx_axis   = parseFloat(urlParams.get("hx"))
+        hy_axis   = parseFloat(urlParams.get("hy"))
+	ix_axis   = parseFloat(urlParams.get("ix"))
+        iy_axis   = parseFloat(urlParams.get("iy"))
 	    
         window.onload = function() {
 		
@@ -134,7 +138,7 @@
         var canvas = document.getElementById("canvas");
 		var ctx = canvas.getContext("2d");
 	        ctx.beginPath();
-	        ctx.arc(115 + (400 * (x_axis+10)/20), 1450 - (400 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.arc(115 + (400 * (hx_axis+10)/20), 1450 - (400 * (hy_axis + 10)/20), 15, 0, 2 * Math.PI);
 	        ctx.fillStyle = "red"
 	        ctx.fill();
 	        ctx.stroke();
@@ -143,8 +147,9 @@
         var canvas = document.getElementById("canvas");
 		var ctx = canvas.getContext("2d");
 	        ctx.beginPath();
-	        ctx.arc(735 + (400 * (x_axis+10)/20), 1450 - (400 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.arc(735 + (400 * (ix_axis+10)/20), 1450 - (400 * (iy_axis + 10)/20), 15, 0, 2 * Math.PI);
 	        ctx.fillStyle = "red"
 	        ctx.fill();
+	        ctx.stroke();
         };
     </script>
