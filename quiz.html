@@ -37,10 +37,10 @@
 
 
 
-    var max_econ, max_govt, max_econsys, max_econreg, max_govtsize, max_govttype, max_diplapp, max_diplrel, max_sctychg, max_sctytrad, max_techacc, max_techbio, max_lawtype, max_lawrehab, max_cltrhrchy, max_cltrassi; // Max possible scores
-    max_econ = max_govt = max_econsys = max_econreg = max_govtsize = max_govttype = max_diplapp = max_diplrel = max_sctychg = max_sctytrad = max_techacc = max_techbio = max_lawtype = max_lawrehab = max_cltrhrchy = max_cltrassi = 0;
-    var econ, govt, econsys, econreg, govtsize, govttype, diplapp, diplrel, sctychg, sctytrad, techacc, techbio, lawtype, lawrehab, cltrhrchy, cltrassi; // User's scores
-    econ = govt = econsys = econreg = govtsize = govttype = diplapp = diplrel = sctychg = sctytrad = techacc = techbio = lawtype = lawrehab = cltrhrchy = cltrassi = 0;
+    var max_econ, max_govt, max_econsys, max_econreg, max_govtsize, max_govttype, max_diplapp, max_diplrel, max_sctychg, max_sctytrad, max_techacc, max_techbio, max_lawtype, max_lawrehab, max_cltrhrchy, max_cltrassi, max_proccomp, max_proctrans, max_polapol, max_polext; // Max possible scores
+    max_econ = max_govt = max_econsys = max_econreg = max_govtsize = max_govttype = max_diplapp = max_diplrel = max_sctychg = max_sctytrad = max_techacc = max_techbio = max_lawtype = max_lawrehab = max_cltrhrchy = max_cltrassi = max_proccomp = max_proctrans = max_polapol = max_polext = 0;
+    var econ, govt, econsys, econreg, govtsize, govttype, diplapp, diplrel, sctychg, sctytrad, techacc, techbio, lawtype, lawrehab, cltrhrchy, cltrassi, proccomp, proctrans, polapol, polext; // User's scores
+    econ = govt = econsys = econreg = govtsize = govttype = diplapp = diplrel = sctychg = sctytrad = techacc = techbio = lawtype = lawrehab = cltrhrchy = cltrassi = proccomp = proctrans = polapol = polext = 0;
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
@@ -61,6 +61,10 @@
         max_lawrehab += Math.abs(questions[i].effect.lawrehab)
         max_cltrhrchy += Math.abs(questions[i].effect.cltrhrchy)
         max_cltrassi += Math.abs(questions[i].effect.cltrassi)
+        max_proccomp += Math.abs(questions[i].effect.proccomp)
+        max_proctrans += Math.abs(questions[i].effect.proctrans)
+        max_polapol += Math.abs(questions[i].effect.polapol)
+        max_polext += Math.abs(questions[i].effect.polext)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -92,6 +96,10 @@
         lawrehab += mult*questions[qn].effect.lawrehab
         cltrhrchy += mult*questions[qn].effect.cltrhrchy
         cltrassi += mult*questions[qn].effect.cltrassi
+        proccomp += mult*questions[qn].effect.proccomp
+        proctrans += mult*questions[qn].effect.proctrans
+        polapol += mult*questions[qn].effect.polapol
+        polext += mult*questions[qn].effect.polext
         qn++;
         prev_answer = mult;
         if (qn < questions.length) {
@@ -121,6 +129,10 @@
         lawrehab -= prev_answer * questions[qn].effect.lawrehab;
         cltrhrchy -= prev_answer * questions[qn].effect.cltrhrchy;
         cltrassi -= prev_answer * questions[qn].effect.cltrassi;
+        proccomp -= prev_answer * questions[qn].effect.proccomp;
+        proctrans -= prev_answer * questions[qn].effect.proctrans;
+        polapol -= prev_answer * questions[qn].effect.polapol;
+        polext -= prev_answer * questions[qn].effect.polext;
         prev_answer = null;
         init_question();
 
@@ -146,6 +158,10 @@
             + `&fy=${(32*(calc_score(lawrehab,max_lawrehab)/100)-16).toFixed(1)}`
             + `&gx=${(32*(calc_score(cltrhrchy,max_cltrhrchy)/100)-16).toFixed(1)}`
             + `&gy=${(32*(calc_score(cltrassi,max_cltrassi)/100)-16).toFixed(1)}`
+            + `&hx=${(32*(calc_score(proccomp,max_proccomp)/100)-16).toFixed(1)}`
+            + `&hy=${(32*(calc_score(proctrans,max_proctrans)/100)-16).toFixed(1)}`
+            + `&ix=${(32*(calc_score(polapol,max_polapol)/100)-16).toFixed(1)}`
+            + `&iy=${(32*(calc_score(polext,max_polext)/100)-16).toFixed(1)}`
     }
 </script>
 </body>
