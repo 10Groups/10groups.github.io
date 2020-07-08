@@ -127,7 +127,7 @@ div.text-wrapper {
 span.weight-300 {
     font-weight: 300;
 }
-#canvas{
+#canvas, #canvas2 {
     border-color: #444444;
     border-style: solid;
     border-width: 2px;
