@@ -17,12 +17,19 @@
     <img id="compass" src="compassimage.png" style="display: none;" />
 	    
     <p style="text-align:center;">You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to us at eightvalues@gmail.com, or send us any comments, questions, or criticism. </p>    
+    
+	<label for="file">Downloading progress:</label>
+	<progress id="file" value="12" max="100"> </progress>
+	<label for="file">Downloading progress:</label>
+     
     <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
    
 	    
 <!--canvas-->
     <script>	    
-        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById("file").value = (40 + (0));
+	    
+	const urlParams = new URLSearchParams(window.location.search);
         x_axis  = parseFloat(urlParams.get("x"))
         y_axis   = parseFloat(urlParams.get("y"))
         ax_axis   = parseFloat(urlParams.get("ax"))
