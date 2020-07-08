@@ -4,34 +4,25 @@
     <title>10Compasses v0.2</title>
     <link rel="icon" type="x-icon" href="icon.png">
     <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <meta charset="utf-8">
-	
-    <style>
-	h1 {text-align: center;}
-	p {text-align: center;}
-	div {text-align: center;}
-    </style>
-	
-</head>
+    </head>
     
-<body>
+    <body>
     <h1>10Compasses</h1>
     <hr>
     
     <h1>Results</h1>
-	<canvas id="canvas" width="2500" height="1500" style="border:1px solid #d3d3d3;"></canvas>
-    	    
-        <p>You can send these results by copying and pasting the URL at the top of the page or using the image below.</p>
-	
-	<button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
-   	<img id="compass" src="compassimage.png" style="display: none;" />
+        <canvas id="canvas" width="2500" height="1500" style="border:1px solid #d3d3d3;"></canvas>
+    
+    <img id="compass" src="compassimage.png" style="display: none;" />
+	    
+    <p style="text-align:center;">You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to us at eightvalues@gmail.com, or send us any comments, questions, or criticism. </p>    
+    <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
    
 	    
 <!--canvas-->
-    <script>
-	    
-	document.getElementById("econ-a").value = (10) + (x_axis);
-	   
+    <script>	    
         const urlParams = new URLSearchParams(window.location.search);
         x_axis  = parseFloat(urlParams.get("x"))
         y_axis   = parseFloat(urlParams.get("y"))
@@ -153,4 +144,3 @@
 	        ctx.stroke();
         };
     </script>
-</body>
