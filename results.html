@@ -24,7 +24,7 @@
         <p>You can send these results by copying and pasting the URL at the top of the page or using the image below.</p>
 	
 		<label for="econ-a">Socialism</label>
-		<progress id="econ-a" value="0" max="100"> </progress>
+		<progress id="econ-a" value="0" max="20"> </progress>
 		<label for="econ-a">Capitalism</label>
 	
 	<button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
@@ -34,7 +34,7 @@
 <!--canvas-->
     <script>
 	    
-	document.getElementById("econ-a").value = (20) + (10);
+	document.getElementById("econ-a").value = (20) + (x_axis);
 	   
         const urlParams = new URLSearchParams(window.location.search);
         x_axis  = parseFloat(urlParams.get("x"))
