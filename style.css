@@ -148,9 +148,9 @@ span.weight-300 {
     color: blue;    
     border-radius:15px;
 }
-econ-a::-moz-progress-bar { 
+#econ-a::-moz-progress-bar { 
     background: red; 
 }
-econ-a::-webkit-progress-value { 
+#econ-a::-webkit-progress-value { 
     background: red; 
 }
