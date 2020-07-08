@@ -140,20 +140,20 @@ span.weight-300 {
     max-width: 80%;
 }
  #econ-progress {
+    -webkit-appearance:none;
     width: 1000px;
     height: 50px;
     border: 1px solid #000000;
     overflow: hidden;
-    color:#e0d867;
+    color: blue;    
     border-radius:15px;
+}
+econ-a::-moz-progress-bar { 
+    background: red; 
+}
+econ-a::-webkit-progress-value { 
+    background: red; 
+}
 
-    &::-webkit-progress-bar {
-        background:#e06767;
-    }
-    &::-webkit-progress-value {
-        background:#e0d867;
-    }
-    &::-moz-progress-bar {
-        background:#e0d867;
-    }
+
 }
