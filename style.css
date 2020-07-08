@@ -127,7 +127,7 @@ div.text-wrapper {
 span.weight-300 {
     font-weight: 300;
 }
-#canvas, #canvas2 {
+#canvas {
     border-color: #444444;
     border-style: solid;
     border-width: 2px;
@@ -138,4 +138,14 @@ span.weight-300 {
     margin-right: auto;
     min-width: 800px;
     max-width: 80%;
+}
+div.equality {
+    background-color: #f44336;
+    text-align: left;
+    border-right-style: solid;
+}
+div.wealth {
+    background-color: #00897b;
+    text-align: right;
+    border-left-style: solid;
 }
