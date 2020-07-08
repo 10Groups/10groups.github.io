@@ -141,8 +141,8 @@ span.weight-300 {
 }
  #econ-progress {
     -webkit-appearance:none;
-    width: 66%;
-    height: 20px;
+    width: 1000px;
+    height: 50px;
     border: 1px solid #000000;
     overflow: hidden;
     color:#e0d867;
