@@ -5,23 +5,37 @@
     <link rel="icon" type="x-icon" href="icon.png">
     <link rel="shortcut icon" type="x-icon" href="icon.png">
     <meta charset="utf-8">
-    </head>
+	
+    <style>
+	h1 {text-align: center;}
+	p {text-align: center;}
+	div {text-align: center;}
+    </style>
+	
+</head>
     
-    <body>
+<body>
     <h1>10Compasses</h1>
     <hr>
     
     <h1>Results</h1>
 	   <canvas id="canvas" width="2500" height="1500" style="border:1px solid #d3d3d3;"></canvas>
     	    
-    <p>You can send these results by copying and pasting the URL at the top of the page or using the image below.</p>    
-<button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
-	    
-    <img id="compass" src="compassimage.png" style="display: none;" />
+        <p>You can send these results by copying and pasting the URL at the top of the page or using the image below.</p>
+	
+		<label for="econ-a">Socialism</label>
+		<progress id="econ-a" value="0" max="100"> </progress>
+		<label for="econ-a">Capitalism</label>
+	
+	<button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
+   	<img id="compass" src="compassimage.png" style="display: none;" />
    
 	    
 <!--canvas-->
-    <script>	    
+    <script>
+	    
+	document.getElementById("econ-a").value = (20) + (10);
+	   
         const urlParams = new URLSearchParams(window.location.search);
         x_axis  = parseFloat(urlParams.get("x"))
         y_axis   = parseFloat(urlParams.get("y"))
@@ -143,4 +157,4 @@
 	        ctx.stroke();
         };
     </script>
-	    </body>
+</body>
