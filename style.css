@@ -146,16 +146,16 @@ span.weight-300 {
     height:20px;
     border:1px solid #ccc;
     overflow:hidden;
-    color: blue;
+    color: #000000;
     border-radius:15px;
 
     &::-webkit-progress-bar {
         background:#f1f1f1;
     }
     &::-webkit-progress-value {
-        background: blue;
+        background: #000000;
     }
     &::-moz-progress-bar {
-        background: blue;
+        background: #000000;
     }
 }
