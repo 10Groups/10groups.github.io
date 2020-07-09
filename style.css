@@ -87,7 +87,7 @@ img.center {
     min-width: 500pt;
 }
 .center {
-    margin: 1em auto;
+    margin: auto;
     width: 80%;
     min-width: 500pt;
     padding: 10px;
