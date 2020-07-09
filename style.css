@@ -139,7 +139,7 @@ span.weight-300 {
     min-width: 800px;
     max-width: 80%;
 }
-progress {
+#econ-a {
   border: 1px solid #ccc;
   width: 70%;
   height: 20px;
@@ -147,19 +147,19 @@ progress {
   background: crimson;
   color: lightblue;
     
-    progress::-webkit-progress-value {
+    &::-webkit-progress-value {
     background: lightblue;
     }
 
-    progress::-moz-progress-bar {
+    &::-moz-progress-bar {
     background: lightcolor;
     }
 
-    progress::-webkit-progress-value {
+    &::-webkit-progress-value {
     background: red;
     }
 
-    progress::-webkit-progress-bar {
+    &::-webkit-progress-bar {
     background: blue;
     }
     
