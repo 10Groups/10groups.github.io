@@ -85,6 +85,12 @@ img.center {
     width: 50%;
     min-width: 500pt;
 }
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
 .button {
     background-color: #2196f3;
     font-family: 'Montserrat', sans-serif;
