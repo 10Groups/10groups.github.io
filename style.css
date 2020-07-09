@@ -146,21 +146,18 @@ span.weight-300 {
   border-radius:15px;
   background: crimson;
   color: lightblue;
+}    
     
-    &::-webkit-progress-value {
+#econ-a::-webkit-progress-value {
     background: lightblue;
-    }
-
-    &::-moz-progress-bar {
-    background: lightcolor;
-    }
-
-    &::-webkit-progress-value {
-    background: red;
-    }
-
-    &::-webkit-progress-bar {
-    background: blue;
-    }
     
+}  
+#econ-a::-moz-progress-bar {
+    background: lightcolor;   
+}  
+#econ-a::-webkit-progress-value {
+    background: red;  
+}  
+#econ-a::-webkit-progress-bar {
+    background: blue;    
 }
