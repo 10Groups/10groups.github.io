@@ -139,13 +139,22 @@ span.weight-300 {
     min-width: 800px;
     max-width: 80%;
 }
-div.equality {
-    background-color: #f44336;
-    text-align: left;
-    border-right-style: solid;
-}
-div.wealth {
-    background-color: #00897b;
-    text-align: right;
-    border-left-style: solid;
+ progress {
+    -webkit-appearance:none;
+    width:66%;
+    height:20px;
+    border:1px solid #ccc;
+    overflow:hidden;
+    color:#aaa;
+    border-radius:15px;
+
+    &::-webkit-progress-bar {
+        background:#f1f1f1;
+    }
+    &::-webkit-progress-value {
+        background:#aaa;
+    }
+    &::-moz-progress-bar {
+        background:#aaa;
+    }
 }
