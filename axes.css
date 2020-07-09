@@ -4,17 +4,17 @@
   width: 70%;
   height: 20px;
   background: #FFFACD;
-  color: lightblue;
+  color: #CD5C5C;
 }      
 #econ-a::-webkit-progress-value {
     background: #FFFACD;   
 }  
 #econ-a::-moz-progress-bar {
-    background: lightcolor;   
+    background: #CD5C5C;   
 }  
 #econ-a::-webkit-progress-value {
     background: #FFFACD;  
 }  
 #econ-a::-webkit-progress-bar {
-    background: blue;    
+    background: #CD5C5C;    
 } 
