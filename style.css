@@ -139,23 +139,28 @@ span.weight-300 {
     min-width: 800px;
     max-width: 80%;
 }
- progress {
-    -webkit-appearance:none;
-    appearance:none;
-    width:66%;
-    height:20px;
-    border:1px solid #ccc;
-    overflow:hidden;
-    color: #000000;
-    border-radius:15px;
+progress {
+  border: 1px solid #ccc;
+  width: 70%;
+  height: 20px;
+  border-radius:15px;
+  background: crimson;
+  color: lightblue;
+    
+    progress::-webkit-progress-value {
+    background: lightblue;
+    }
 
-    &::-webkit-progress-bar {
-        background:#f1f1f1;
+    progress::-moz-progress-bar {
+    background: lightcolor;
     }
-    &::-webkit-progress-value {
-        background: #000000;
+
+    progress::-webkit-progress-value {
+    background: red;
     }
-    &::-moz-progress-bar {
-        background: #000000;
+
+    progress::-webkit-progress-bar {
+    background: blue;
     }
+    
 }
