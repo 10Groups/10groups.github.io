@@ -85,12 +85,12 @@ img.center {
     width: 50%;
     min-width: 500pt;
 }
-/* .center {
+.center {
   margin: auto;
   width: 60%;
   border: 3px solid #73AD21;
   padding: 10px;
-} */
+} 
 .button {
     background-color: #2196f3;
     font-family: 'Montserrat', sans-serif;
@@ -159,8 +159,6 @@ span.weight-300 {
   border-radius:15px;
   background: crimson;
   color: lightblue;
-  margin-left: auto;
-  margin-right: auto;
 }      
 #econ-a::-webkit-progress-value {
     background: lightblue;   
