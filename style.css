@@ -152,7 +152,7 @@ span.weight-300 {
     min-width: 800px;
     max-width: 80%;
 }
-/* #econ-a {
+ #econ-a {
   border: 1px solid #ccc;
   width: 70%;
   height: 20px;
@@ -171,4 +171,4 @@ span.weight-300 {
 }  
 #econ-a::-webkit-progress-bar {
     background: blue;    
-} */
+} 
