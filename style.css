@@ -25,6 +25,7 @@ label {
     font-family: 'Roboto', sans-serif;
     font-size: 16pt;
     line-height: 1;
+    font-weight: bold;
     margin: 4pt;
 }
 a{
@@ -87,8 +88,8 @@ img.center {
 }
 .center {
   margin: auto;
-  width: 40%;
-  border: 3px solid #73AD21;
+  width: 80%;
+  border: none;
   padding: 5px;
 } 
 .button {
