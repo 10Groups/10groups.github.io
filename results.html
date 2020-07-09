@@ -21,9 +21,14 @@
 <hr>
 	
 <h2 style="text-align:center;">Results - Compass</h2>
+	
 <div class="center"> <label for="econ-a">Capitalism</label>
 <progress id="econ-a" value="10" max="20"> </progress>
 <label for="econ-a">Socialism</label> </div> 
+	
+<div class="center"> <label for="econ-b">Planned</label>
+<progress id="econ-b" value="10" max="20"> </progress>
+<label for="econ-b">Free</label> </div> 
      
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br> 
    
@@ -152,7 +157,8 @@
 	        ctx.stroke();
         }
 	    
-	    
-	document.getElementById("econ-a").value = (10 + (x_axis));
+	//Axes - Code
+	document.getElementById("econ-a").value = (10 + (ax_axis));
+	document.getElementById("econ-b").value = (10 + (ay_axis));
 	
     </script>
