@@ -20,6 +20,13 @@ p {
     line-height: 1;
     margin: 4pt;
 }
+label {
+    color: #444444;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+    line-height: 1;
+    margin: 4pt;
+}
 a{
     color: #2222DD;
 }
@@ -146,11 +153,9 @@ span.weight-300 {
   border-radius:15px;
   background: crimson;
   color: lightblue;
-}    
-    
+}      
 #econ-a::-webkit-progress-value {
-    background: lightblue;
-    
+    background: lightblue;   
 }  
 #econ-a::-moz-progress-bar {
     background: lightcolor;   
