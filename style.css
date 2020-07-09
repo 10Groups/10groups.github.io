@@ -141,20 +141,21 @@ span.weight-300 {
 }
  progress {
     -webkit-appearance:none;
+    appearance:none;
     width:66%;
     height:20px;
     border:1px solid #ccc;
     overflow:hidden;
-    color:#aaa;
+    color: blue;
     border-radius:15px;
 
     &::-webkit-progress-bar {
         background:#f1f1f1;
     }
     &::-webkit-progress-value {
-        background:#aaa;
+        background: blue;
     }
     &::-moz-progress-bar {
-        background:#aaa;
+        background: blue;
     }
 }
