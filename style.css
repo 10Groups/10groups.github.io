@@ -154,23 +154,3 @@ span.weight-300 {
     min-width: 800px;
     max-width: 80%;
 }
- #econ-a {
-  border: 1px solid #ccc;
-  width: 70%;
-  height: 20px;
-  border-radius:15px;
-  background: crimson;
-  color: lightblue;
-}      
-#econ-a::-webkit-progress-value {
-    background: lightblue;   
-}  
-#econ-a::-moz-progress-bar {
-    background: lightcolor;   
-}  
-#econ-a::-webkit-progress-value {
-    background: red;  
-}  
-#econ-a::-webkit-progress-bar {
-    background: blue;    
-} 
