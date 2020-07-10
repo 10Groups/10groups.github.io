@@ -21,18 +21,27 @@
 <hr>
 	
 <h2 style="text-align:center;">Results - Compass</h2>
-	
-<div class="center"><div class="label-l"><label for="econ-a">Capitalism</label></div>
+
+<!-- Economy -->
+<div class="center"><div class="label-l"><label for="econ-a">Private</label></div>
 <progress id="econ-a" value="10" max="20"> </progress>
-<div class="label-r"><label for="econ-a">Socialism</label></div> </div>
+<div class="label-r"><label for="econ-a">Public</label></div> </div>
 	
 <div class="center"><div class="label-l"><label for="econ-b">Planned</label></div>
 <progress id="econ-b" value="10" max="20"> </progress>
 <div class="label-r"><label for="econ-b">Free</label></div> </div>
 	
-<div class="center"><div class="label-l"><label for="econ-c">Regulation</label></div>
+<div class="center"><div class="label-l"><label for="econ-c">Regulate</label></div>
 <progress id="econ-c" value="30" max="60"> </progress>
 <div class="label-r"><label for="econ-c" style="font-size:18px">Laissez Faire</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="econ-d">Taxation</label></div>
+<progress id="econ-d" value="30" max="60"> </progress>
+<div class="label-r"><label for="econ-d" style="font-size:18px">Freedom</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="econ-e">Union</label></div>
+<progress id="econ-e" value="30" max="60"> </progress>
+<div class="label-r"><label for="econ-e" style="font-size:18px">Anti-Union</label></div> </div>
      
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br> 
    
@@ -165,5 +174,7 @@
 	document.getElementById("econ-a").value = (10 + (ax_axis));
 	document.getElementById("econ-b").value = (10 + (ay_axis));
 	document.getElementById("econ-c").value = (30 + (ax_axis) + (ay_axis) + (by_axis));
+	document.getElementById("econ-d").value = (30 + (ax_axis) + (by_axis) + (y_axis));
+	document.getElementById("econ-e").value = (10 + (ax_axis) + (y_axis));
 	
     </script>
