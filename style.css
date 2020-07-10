@@ -95,13 +95,13 @@ img.center {
     text-align: center;
 } 
 .label-l {
-    width: 10%;
+    width: 12%;
     text-align: right;
     padding-right: 10px;
     display: inline-block;
 }
 .label-r {
-    width: 10%;
+    width: 12%;
     text-align: left;
     padding-left: 10px;
     display: inline-block;
