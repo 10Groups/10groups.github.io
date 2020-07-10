@@ -1,20 +1,20 @@
 /* Economic Axes */
-#econ-a, #econ-b , #econ-c{
+#econ-a, #econ-b , #econ-c, #econ-d, #econ-e {
   border: 3px solid #000000;
   width: 70%;
   height: 30px;
   background: #FFFACD;
   color: #CD5C5C;
 }      
-#econ-a::-webkit-progress-value, #econ-b::-webkit-progress-value, #econ-c::-webkit-progress-value {
+#econ-a::-webkit-progress-value, #econ-b::-webkit-progress-value, #econ-c::-webkit-progress-value, #econ-d::-webkit-progress-value, #econ-e::-webkit-progress-value {
     background: #FFFACD;   
 }  
-#econ-a::-moz-progress-bar, #econ-b::-moz-progress-bar, #econ-c::-moz-progress-bar {
+#econ-a::-moz-progress-bar, #econ-b::-moz-progress-bar, #econ-c::-moz-progress-bar, #econ-d::-moz-progress-bar, #econ-e::-moz-progress-bar {
     background: #CD5C5C;   
 }  
-#econ-a::-webkit-progress-value, #econ-b::-webkit-progress-value, #econ-c::-webkit-progress-value {
+#econ-a::-webkit-progress-value, #econ-b::-webkit-progress-value, #econ-c::-webkit-progress-value, #econ-d::-webkit-progress-value, #econ-e::-webkit-progress-value {
     background: #FFFACD;  
 }  
-#econ-a::-webkit-progress-bar, #econ-b::-webkit-progress-bar, #econ-c::-webkit-progress-bar {
+#econ-a::-webkit-progress-bar, #econ-b::-webkit-progress-bar, #econ-c::-webkit-progress-bar, #econ-d::-webkit-progress-bar, #econ-e::-webkit-progress-bar {
     background: #CD5C5C;    
 } 
