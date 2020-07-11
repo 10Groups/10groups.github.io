@@ -1,1 +1,2 @@
-SapplyValues is a clone of the Sapply political compass, made to use 8values' UI.
+10Groups is a political test that measures one's political beliefs on 10 Different Categories.
+
