@@ -18,3 +18,25 @@
 #econ-a::-webkit-progress-bar, #econ-b::-webkit-progress-bar, #econ-c::-webkit-progress-bar, #econ-d::-webkit-progress-bar, #econ-e::-webkit-progress-bar {
     background: #CD5C5C;    
 } 
+
+
+/* Governmental Axes */
+#govt-a, #govt-b , #govt-c, #govt-d, #govt-e {
+  border: 3px solid #000000;
+  width: 70%;
+  height: 30px;
+  background: #6ebbfa;
+  color: #dbc156;
+}      
+#govt-a::-webkit-progress-value, #govt-b::-webkit-progress-value, #govt-c::-webkit-progress-value, #govt-d::-webkit-progress-value, #govt-e::-webkit-progress-value {
+    background: #6ebbfa;   
+}  
+#govt-a::-moz-progress-bar, #govt-b::-moz-progress-bar, #govt-c::-moz-progress-bar, #govt-d::-moz-progress-bar, #govt-e::-moz-progress-bar {
+    background: #dbc156;   
+}  
+#govt-a::-webkit-progress-value, #govt-b::-webkit-progress-value, #govt-c::-webkit-progress-value, #govt-d::-webkit-progress-value, #govt-e::-webkit-progress-value {
+    background: #6ebbfa;  
+}  
+#govt-a::-webkit-progress-bar, #govt-b::-webkit-progress-bar, #govt-c::-webkit-progress-bar, #govt-d::-webkit-progress-bar, #govt-e::-webkit-progress-bar {
+    background: #dbc156;    
+} 
