@@ -27,26 +27,26 @@
 <progress id="econ-a" value="10" max="20"> </progress>
 <div class="label-r"><label for="econ-a">Public</label></div> </div>
 	
-<div class="center"><div class="label-l"><label for="econ-b">Planned</label></div>
+<div class="center"><div class="label-l"><label for="econ-b">Free</label></div>
 <progress id="econ-b" value="10" max="20"> </progress>
-<div class="label-r"><label for="econ-b">Free</label></div> </div>
+<div class="label-r"><label for="econ-b">Planned</label></div> </div>
 	
-<div class="center"><div class="label-l"><label for="econ-c">Regulate</label></div>
+<div class="center"><div class="label-l"><label for="econ-c" "font-size:18px">Laissez-Faire</label></div>
 <progress id="econ-c" value="30" max="60"> </progress>
-<div class="label-r"><label for="econ-c" style="font-size:18px">Laissez Faire</label></div> </div>
+<div class="label-r"><label for="econ-c" style=>Regulate</label></div> </div>
 	
 <div class="center"><div class="label-l"><label for="econ-d">Taxation</label></div>
 <progress id="econ-d" value="30" max="60"> </progress>
-<div class="label-r"><label for="econ-d" style="font-size:18px">Freedom</label></div> </div>
+<div class="label-r"><label for="econ-d">Freedom</label></div> </div>
 	
 <div class="center"><div class="label-l"><label for="econ-e">Union</label></div>
 <progress id="econ-e" value="20" max="40"> </progress>
 <div class="label-r"><label for="econ-e" style="font-size:18px">Anti-Union</label></div> </div>
 	
 <!-- Government -->
-<div class="center"><div class="label-l"><label for="govt-a">Test</label></div>
+<div class="center"><div class="label-l"><label for="govt-a">Small Govt.</label></div>
 <progress id="govt-a" value="20" max="40"> </progress>
-<div class="label-r"><label for="govt-a" style="font-size:18px">Test</label></div> </div>
+<div class="label-r"><label for="govt-a">Big Govt.</label></div> </div>
      
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br> 
    
@@ -181,6 +181,6 @@
 	document.getElementById("econ-c").value = (30 + (ax_axis) + (ay_axis) + (by_axis));
 	document.getElementById("econ-d").value = (30 + (ax_axis) + (by_axis) + (y_axis));
 	document.getElementById("econ-e").value = (20 + (ax_axis) + (gx_axis));
-	document.getElementById("govt-a").value = (20 + (ax_axis) + (gx_axis));
+	document.getElementById("govt-a").value = (20 + (y_axis) + (by_axis));
 	
     </script>
