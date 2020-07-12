@@ -48,6 +48,14 @@
 <progress id="govt-a" value="20" max="40"> </progress>
 <div class="label-r"><label for="govt-a">Big Govt.</label></div> </div>
      
+<div class="center"><div class="label-l"><label for="govt-b">Nonhereditary</label></div>
+<progress id="govt-b" value="20" max="40"> </progress>
+<div class="label-r"><label for="govt-b">Hereditary</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="govt-c">Populism</label></div>
+<progress id="govt-c" value="10" max="20"> </progress>
+<div class="label-r"><label for="govt-c">Elitism</label></div> </div>
+	
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br> 
    
 	    
@@ -181,6 +189,10 @@
 	document.getElementById("econ-c").value = (30 + (ax_axis) + (ay_axis) + (by_axis));
 	document.getElementById("econ-d").value = (30 + (ax_axis) + (by_axis) + (y_axis));
 	document.getElementById("econ-e").value = (20 + (ax_axis) + (gx_axis));
+	
 	document.getElementById("govt-a").value = (20 + (y_axis) + (by_axis));
+	document.getElementById("govt-b").value = (20 + (gy_axis) + (bx_axis));
+	document.getElementById("govt-c").value = (10 + (bx_axis));
+
 	
     </script>
