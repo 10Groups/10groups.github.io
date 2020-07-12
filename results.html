@@ -56,6 +56,14 @@
 <progress id="govt-c" value="10" max="20"> </progress>
 <div class="label-r"><label for="govt-c">Elitism</label></div> </div>
 	
+<div class="center"><div class="label-l"><label for="govt-d">Federal</label></div>
+<progress id="govt-d" value="20" max="40"> </progress>
+<div class="label-r"><label for="govt-d">Unitary</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="govt-e">Allowance</label></div>
+<progress id="govt-e" value="20" max="40"> </progress>
+<div class="label-r"><label for="govt-e">Censorship</label></div> </div>
+	
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br> 
    
 	    
@@ -193,6 +201,8 @@
 	document.getElementById("govt-a").value = (20 + (y_axis) + (by_axis));
 	document.getElementById("govt-b").value = (20 + (gy_axis) + (bx_axis));
 	document.getElementById("govt-c").value = (10 + (bx_axis));
+	document.getElementById("govt-d").value = (20 + (by_axis) - (gx_axis));
+	document.getElementById("govt-e").value = (20 + (by_axis) - (ex_axis));
 
 	
     </script>
