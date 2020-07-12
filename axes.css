@@ -46,18 +46,18 @@
   border: 3px solid #000000;
   width: 70%;
   height: 30px;
-  background: #20B2AA;
-  color: #CD5C5C;
+  background: #AFEEEE;
+  color: #B0C4DE;
 }      
 #dipl-a::-webkit-progress-value, #dipl-b::-webkit-progress-value, #dipl-c::-webkit-progress-value, #dipl-d::-webkit-progress-value, #dipl-e::-webkit-progress-value {
-    background: #20B2AA;   
+    background: #AFEEEE;   
 }  
 #dipl-a::-moz-progress-bar, #dipl-b::-moz-progress-bar, #dipl-c::-moz-progress-bar, #dipl-d::-moz-progress-bar, #dipl-e::-moz-progress-bar {
-    background: #CD5C5C;   
+    background: #B0C4DE;   
 }  
 #dipl-a::-webkit-progress-value, #dipl-b::-webkit-progress-value, #dipl-c::-webkit-progress-value, #dipl-d::-webkit-progress-value, #dipl-e::-webkit-progress-value {
-    background: #20B2AA;  
+    background: #AFEEEE;  
 }  
 #dipl-a::-webkit-progress-bar, #dipl-b::-webkit-progress-bar, #dipl-c::-webkit-progress-bar, #dipl-d::-webkit-progress-bar, #dipl-e::-webkit-progress-bar {
-    background: #CD5C5C;    
+    background: #B0C4DE;    
 }
