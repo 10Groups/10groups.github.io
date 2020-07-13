@@ -85,6 +85,11 @@
 <progress id="dipl-e" value="20" max="40"> </progress>
 <div class="label-r"><label for="dipl-e">Self Sustain</label></div> </div>
 	
+<!-- Society -->
+<div class="center"><div class="label-l"><label for="scty-a">Traditional</label></div>
+<progress id="scty-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="scty-a">Progressive</label></div> </div>
+	
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br> 
    
 	    
@@ -230,6 +235,8 @@
 	document.getElementById("dipl-c").value = (20 + (cx_axis) - (cy_axis));
 	document.getElementById("dipl-d").value = (20 + (cy_axis) - (by_axis));
 	document.getElementById("dipl-e").value = (20 + (ax_axis) - (cx_axis));
+	    
+	document.getElementById("scty-a").value = (10 + (dx_axis));
 
 	
     </script>
