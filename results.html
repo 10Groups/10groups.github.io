@@ -15,6 +15,7 @@
 <h2 style="text-align:center;">Results - Compass</h2>
 <canvas id="canvas" width="2500" height="1500" style="border:1px solid #d3d3d3;"></canvas>
 <img id="compass" src="compassimage.png" alt="Image" style="display: none;" />
+<img id="heatmap" src="e.png" alt="Heat Map" style="display: none;" />
 <br>
 <p style="text-align:center;">You can send the results of this compass by copying and pasting the URL, Screenshotting, or using the image above. Please zoom in if the canvas is too small.</p>    
     
@@ -170,7 +171,7 @@
 <div class="label-r"><label for="cltr-e">Classless</label></div> </div>
 	
 	
-<canvas id="heatmap" width="2500" height="1500" style="border:1px solid #d3d3d3;"></canvas>
+<canvas id="heatmap" width="1500" height="1500" style="border:1px solid #d3d3d3;"></canvas>
 
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br> 	    
 <!--canvas-->
@@ -299,8 +300,8 @@
 	 window.onload = function() {
  	  var canvas = document.getElementById("heatmap");
 	  var ctx = canvas.getContext("2d");
-	  var img = document.getElementById("compass");
-	  ctx.drawImage(img,10,10);
+	  var img = document.getElementById("heatmap");
+	  ctx.drawImage(img,0,0);
 	}
 	    
 	//Axes - Code
