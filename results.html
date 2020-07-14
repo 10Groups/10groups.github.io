@@ -170,6 +170,15 @@
 <progress id="cltr-e" value="20" max="40"> </progress>
 <div class="label-r"><label for="cltr-e">Classless</label></div> </div>
 	
+<!-- Procedure -->
+<div class="center"><div class="label-l"><label for="proc-a" style="font-size:16px">Persist</label></div>
+<progress id="proc-a" value="10" max="20"> </progress>
+<div class="proc-r"><label for="cltr-a" style="font-size:16px">Compromize</label></div> </div>	
+	
+<div class="center"><div class="label-l"><label for="proc-b" style="font-size:16px">Direct</label></div>
+<progress id="proc-b" value="10" max="20"> </progress>
+<div class="proc-r"><label for="cltr-b" style="font-size:16px">Transitional</label></div> </div>	
+	
 	
 <canvas id="heatmap" width="1500" height="1500" style="border:1px solid #d3d3d3;"></canvas> 
 
@@ -339,9 +348,12 @@
 	document.getElementById("law-e").value = (20 + (fy_axis) - (by_axis));
 
 	document.getElementById("cltr-a").value = (10 + (gx_axis));
-	document.getElementById("cltr-b").value = (10 + (gx_axis));
+	document.getElementById("cltr-b").value = (10 + (gy_axis));
 	document.getElementById("cltr-c").value = (20 + (gx_axis) + (ax_axis));
 	document.getElementById("cltr-d").value = (20 + (gy_axis) + (cy_axis));
 	document.getElementById("cltr-e").value = (20 + (gy_axis) + (ax_axis));
+	    
+	document.getElementById("cltr-a").value = (10 + (hx_axis));
+	document.getElementById("cltr-b").value = (10 + (hy_axis));
 	
     </script>
