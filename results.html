@@ -65,7 +65,7 @@
 <div class="label-r"><label for="govt-e">Censorship</label></div> </div>
 	
 <!-- Diplomacy -->
-<div class="center"><div class="label-l"><label for="dipl-a">Pacificism</label></div>
+<div class="center"><div class="label-l"><label for="dipl-a">Globalism</label></div>
 <progress id="dipl-a" value="10" max="20"> </progress>
 <div class="label-r"><label for="dipl-a">Nationalism</label></div> </div>
 	
@@ -73,7 +73,7 @@
 <progress id="dipl-b" value="10" max="20"> </progress>
 <div class="label-r"><label for="dipl-b">Universal</label></div> </div>
 	
-<div class="center"><div class="label-l"><label for="dipl-c">Globalism</label></div>
+<div class="center"><div class="label-l"><label for="dipl-c">Intervention</label></div>
 <progress id="dipl-c" value="20" max="40"> </progress>
 <div class="label-r"><label for="dipl-c">Isolationism</label></div> </div>
 	
@@ -123,10 +123,30 @@
 <progress id="tech-d" value="20" max="40"> </progress>
 <div class="label-r"><label for="tech-d">Industry</label></div> </div>
 	
-<div class="center"><div class="label-l"><label for="tech-e">Democracy</label></div>
+<div class="center"><div class="label-l"><label for="tech-e" style="font-size:16px">Democracy</label></div>
 <progress id="tech-e" value="20" max="40"> </progress>
-<div class="label-r"><label for="tech-e">Technocracy</label></div> </div>
+<div class="label-r"><label for="tech-e" style="font-size:16px">Technocracy</label></div> </div>
 	
+<!-- Law -->
+<div class="center"><div class="label-l"><label for="law-a">Civil Law</label></div>
+<progress id="law-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="law-a">Common Law</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="law-b" style="font-size:16px">Rehabilitive</label></div>
+<progress id="law-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="law-b" style="font-size:16px">Punitive</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="law-c" style="font-size:16px">Jury</label></div>
+<progress id="law-b" value="20" max="40"> </progress>
+<div class="label-r"><label for="law-c" style="font-size:16px">Authority</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="law-d" style="font-size:16px">Private Law</label></div>
+<progress id="law-d" value="20" max="40"> </progress>
+<div class="label-r"><label for="law-d" style="font-size:16px">Public Law</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="law-d" style="font-size:16px">N.A.P.</label></div>
+<progress id="law-d" value="20" max="40"> </progress>
+<div class="label-r"><label for="law-d" style="font-size:16px">Restriction</label></div> </div>
 	
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br> 
    
@@ -281,10 +301,16 @@
 	document.getElementById("scty-e").value = (30 + (dx_axis) + (gy_axis) + (x_axis));
 	    
 	document.getElementById("tech-a").value = (10 + (ex_axis));
-	document.getElementById("tech-b").value = (10 + (ey_axis));
+	document.getElementById("tech-b").value = (10 - (ey_axis));
 	document.getElementById("tech-c").value = (20 + (ex_axis) + (dx_axis));
 	document.getElementById("tech-d").value = (20 + (ex_axis) - (dx_axis));
 	document.getElementById("tech-e").value = (20 + (ex_axis) + (by_axis));
+	    
+	document.getElementById("tech-a").value = (10 + (fx_axis));
+	document.getElementById("tech-b").value = (10 + (fy_axis));
+	document.getElementById("tech-c").value = (20 + (fx_axis) + (by_axis));
+	document.getElementById("tech-d").value = (20 + (ax_axis) - (fx_axis));
+	document.getElementById("tech-e").value = (20 + (fy_axis) - (by_axis));
 
 	
     </script>
