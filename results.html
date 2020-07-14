@@ -185,11 +185,24 @@
 	
 <div class="center"><div class="label-l"><label for="proc-d">Idealism</label></div>
 <progress id="proc-d" value="20" max="40"> </progress>
-<div class="label-r"><label for="proc-d" style="font-size:16px">Realism</label></div> </div>
+<div class="label-r"><label for="proc-d" >Realism</label></div> </div>
 	
 <div class="center"><div class="label-l"><label for="proc-e">Revolution</label></div>
 <progress id="proc-e" value="20" max="40"> </progress>
-<div class="label-r"><label for="proc-e" style="font-size:16px">Reform</label></div> </div>
+<div class="label-r"><label for="proc-e" >Reform</label></div> </div>
+	
+<!-- Politics -->
+<div class="center"><div class="label-l"><label for="pol-a">Radical</label></div>
+<progress id="pol-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="pol-a">Moderate</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="pol-b">Apolitical</label></div>
+<progress id="pol-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="pol-b">Politicized</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="pol-c">Neutral News</label></div>
+<progress id="pol-c" value="20" max="40"> </progress>
+<div class="label-r"><label for="pol-c">Biased News</label></div> </div>
 	
 <canvas id="heatmap" width="1500" height="1500" style="border:1px solid #d3d3d3;"></canvas> 
 
@@ -370,5 +383,9 @@
 	document.getElementById("proc-c").value = (20 + (hx_axis) + (ix_axis));
 	document.getElementById("proc-d").value = (20 + (hx_axis) - (ax_axis));
 	document.getElementById("proc-e").value = (20 + (hx_axis) - (dx_axis));
+	    
+	document.getElementById("pol-a").value = (10 + (ix_axis));
+	document.getElementById("pol-b").value = (10 + (iy_axis));
+	document.getElementById("pol-c").value = (20 + (iy_axis) + (by_axis));
 	
     </script>
