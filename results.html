@@ -179,6 +179,10 @@
 <progress id="proc-b" value="10" max="20"> </progress>
 <div class="label-r"><label for="proc-b" style="font-size:16px">Transitional</label></div> </div>	
 	
+<div class="center"><div class="label-l"><label for="proc-c">Violent</label></div>
+<progress id="proc-c" value="20" max="40"> </progress>
+<div class="label-r"><label for="proc-c" style="font-size:16px">Pacificism</label></div> </div>
+	
 	
 <canvas id="heatmap" width="1500" height="1500" style="border:1px solid #d3d3d3;"></canvas> 
 
@@ -355,5 +359,6 @@
 	    
 	document.getElementById("cltr-a").value = (10 + (hx_axis));
 	document.getElementById("cltr-b").value = (10 + (hy_axis));
+	document.getElementById("cltr-b").value = (20 + (hx_axis) + (ix_axis));
 	
     </script>
