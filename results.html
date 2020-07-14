@@ -169,6 +169,9 @@
 <progress id="cltr-e" value="20" max="40"> </progress>
 <div class="label-r"><label for="cltr-e">Classless</label></div> </div>
 	
+	
+<canvas id="heatmap" width="2500" height="1500" style="border:1px solid #d3d3d3;"></canvas>
+
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br> 	    
 <!--canvas-->
     <script>	    
@@ -195,9 +198,7 @@
 	ix_axis   = parseFloat(urlParams.get("ix"))
         iy_axis   = parseFloat(urlParams.get("iy"))
 	    
-        window.onload = function() {
-		
-		
+        window.onload = function() {	
 	var canvas = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
         var img = document.getElementById("compass");
@@ -293,6 +294,12 @@
 	        ctx.fill();
 	        ctx.stroke();
         }
+	    
+	//Heat Map
+	window.onload = function() {	
+	var canvas = document.getElementById("heatmap");
+        var ctx = canvas.getContext("2d");
+        var img = document.getElementById("compass");
 	    
 	//Axes - Code
 	document.getElementById("econ-a").value = (10 + (ax_axis));
