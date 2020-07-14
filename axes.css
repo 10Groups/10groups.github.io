@@ -103,3 +103,24 @@
 #tech-a::-webkit-progress-bar, #tech-b::-webkit-progress-bar, #tech-c::-webkit-progress-bar, #tech-d::-webkit-progress-bar, #tech-e::-webkit-progress-bar {
     background: #ADD8E6;    
 }
+
+/* Cultural Axes */
+#cltr-a, #cltr-b , #cltr-c, #cltr-d, #cltr-e {
+  border: 3px solid #000000;
+  width: 70%;
+  height: 30px;
+  background: #5499C7;
+  color: #F5B7B1;
+}      
+#cltr-a::-webkit-progress-value, #cltr-b::-webkit-progress-value, #cltr-c::-webkit-progress-value, #cltr-d::-webkit-progress-value, #cltr-e::-webkit-progress-value {
+    background: #5499C7;   
+}  
+#cltr-a::-moz-progress-bar, #cltr-b::-moz-progress-bar, #cltr-c::-moz-progress-bar, #cltr-d::-moz-progress-bar, #cltr-e::-moz-progress-bar {
+    background: #F5B7B1;   
+}  
+#cltr-a::-webkit-progress-value, #cltr-b::-webkit-progress-value, #cltr-c::-webkit-progress-value, #cltr-d::-webkit-progress-value, #cltr-e::-webkit-progress-value {
+    background: #5499C7;  
+}  
+#cltr-a::-webkit-progress-bar, #cltr-b::-webkit-progress-bar, #cltr-c::-webkit-progress-bar, #cltr-d::-webkit-progress-bar, #cltr-e::-webkit-progress-bar {
+    background: #F5B7B1;    
+}
