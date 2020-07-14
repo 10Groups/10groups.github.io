@@ -104,6 +104,27 @@
     background: #ADD8E6;    
 }
 
+/* Law Axes */
+#law-a, #law-b , #law-c, #law-d, #law-e {
+  border: 3px solid #000000;
+  width: 70%;
+  height: 30px;
+  background: #A3E4D7;
+  color: #F5EEF8;
+}      
+#law-a::-webkit-progress-value, #law-b::-webkit-progress-value, #law-c::-webkit-progress-value, #law-d::-webkit-progress-value, #law-e::-webkit-progress-value {
+    background: #A3E4D7;   
+}  
+#law-a::-moz-progress-bar, #law-b::-moz-progress-bar, #law-c::-moz-progress-bar, #law-d::-moz-progress-bar, #law-e::-moz-progress-bar {
+    background: #F5EEF8;   
+}  
+#law-a::-webkit-progress-value, #law-b::-webkit-progress-value, #law-c::-webkit-progress-value, #law-d::-webkit-progress-value, #law-e::-webkit-progress-value {
+    background: #A3E4D7;  
+}  
+#law-a::-webkit-progress-bar, #law-b::-webkit-progress-bar, #law-c::-webkit-progress-bar, #law-d::-webkit-progress-bar, #law-e::-webkit-progress-bar {
+    background: #F5EEF8;    
+}
+
 /* Cultural Axes */
 #cltr-a, #cltr-b , #cltr-c, #cltr-d, #cltr-e {
   border: 3px solid #000000;
