@@ -20,7 +20,7 @@
     
 <hr>
 	
-<h2 style="text-align:center;">Results - Compass</h2>
+<h2 style="text-align:center;">Results - Axes</h2>
 
 <!-- Economy -->
 <div class="center"><div class="label-l"><label for="econ-a">Private</label></div>
@@ -116,7 +116,7 @@
 <div class="label-r"><label for="tech-b">Transhumanist</label></div> </div>
 	
 <div class="center"><div class="label-l"><label for="tech-c">Classical Art</label></div>
-<progress id="tech-c" value="10" max="20"> </progress>
+<progress id="tech-c" value="20" max="40"> </progress>
 <div class="label-r"><label for="tech-c">Futuristic Art</label></div> </div>
 	
 <div class="center"><div class="label-l"><label for="tech-d">Environment</label></div>
@@ -147,6 +147,27 @@
 <div class="center"><div class="label-l"><label for="law-d">N.A.P.</label></div>
 <progress id="law-d" value="20" max="40"> </progress>
 <div class="label-r"><label for="law-d">Restriction</label></div> </div>
+	
+<!-- Culture -->
+<div class="center"><div class="label-l"><label for="cltr-a" style="font-size:16px">Hierarchy</label></div>
+<progress id="cltr-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="cltr-a" style="font-size:16px">Egalitarian</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="cltr-b" style="font-size:16px">Multicultural</label></div>
+<progress id="cltr-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="cltr-b" style="font-size:16px">Monocultural</label></div> </div>
+
+<div class="center"><div class="label-l"><label for="cltr-c">Equality</label></div>
+<progress id="cltr-c" value="20" max="40"> </progress>
+<div class="label-r"><label for="cltr-c">Equity</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="cltr-d" style="font-size:14px">Ethnonationalism</label></div>
+<progress id="cltr-d" value="20" max="40"> </progress>
+<div class="label-r"><label for="cltr-d" style="font-size:14px">Racial Colorblind</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="cltr-e">Feudal</label></div>
+<progress id="cltr-e" value="20" max="40"> </progress>
+<div class="label-r"><label for="cltr-e">Classless</label></div> </div>
 	
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br> 
    
@@ -312,5 +333,10 @@
 	document.getElementById("law-d").value = (20 + (ax_axis) - (fx_axis));
 	document.getElementById("law-e").value = (20 + (fy_axis) - (by_axis));
 
+	document.getElementById("cltr-a").value = (10 + (gx_axis));
+	document.getElementById("cltr-b").value = (10 + (gx_axis));
+	document.getElementById("cltr-c").value = (20 + (gx_axis) + (ax_axis));
+	document.getElementById("cltr-d").value = (20 + (gy_axis) + (cy_axis));
+	document.getElementById("cltr-e").value = (20 + (gy_axis) + (ax_axis));
 	
     </script>
