@@ -296,10 +296,12 @@
         }
 	    
 	//Heat Map
-	window.onload = function() {	
-	var canvas = document.getElementById("heatmap");
-        var ctx = canvas.getContext("2d");
-        var img = document.getElementById("compass");
+	 window.onload = function() {
+ 	  var canvas = document.getElementById("heatmap");
+	  var ctx = canvas.getContext("2d");
+	  var img = document.getElementById("compass");
+	  ctx.drawImage(img,10,10);
+	}
 	    
 	//Axes - Code
 	document.getElementById("econ-a").value = (10 + (ax_axis));
