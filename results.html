@@ -169,10 +169,7 @@
 <progress id="cltr-e" value="20" max="40"> </progress>
 <div class="label-r"><label for="cltr-e">Classless</label></div> </div>
 	
-<button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br> 
-   
-    <div id="heatmapContainerWrapper">
-      <div id="heatmapContainer">	    
+<button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br> 	    
 <!--canvas-->
     <script>	    
 	    
@@ -339,14 +336,5 @@
 	document.getElementById("cltr-c").value = (20 + (gx_axis) + (ax_axis));
 	document.getElementById("cltr-d").value = (20 + (gy_axis) + (cy_axis));
 	document.getElementById("cltr-e").value = (20 + (gy_axis) + (ax_axis));
-	    
-var heatmap = h337.create({
-  container: domElement
-});
-
-heatmap.setData({
-  max: 5,
-  data: [{ x: 10, y: 15, value: 5}, ...]
-});
 	
     </script>
