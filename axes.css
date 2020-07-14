@@ -166,3 +166,24 @@
 #proc-a::-webkit-progress-bar, #proc-b::-webkit-progress-bar, #proc-c::-webkit-progress-bar, #proc-d::-webkit-progress-bar, #proc-e::-webkit-progress-bar {
     background: #DDA0DD;    
 }
+
+/* Political Axes */
+#pol-a, #pol-b , #pol-c, #pol-d, #pol-e {
+  border: 3px solid #000000;
+  width: 70%;
+  height: 30px;
+  background: #CD853F;
+  color: #A9A9A9;
+}      
+#pol-a::-webkit-progress-value, #pol-b::-webkit-progress-value, #pol-c::-webkit-progress-value, #pol-d::-webkit-progress-value, #pol-e::-webkit-progress-value {
+    background: #CD853F;   
+}  
+#pol-a::-moz-progress-bar, #pol-b::-moz-progress-bar, #pol-c::-moz-progress-bar, #pol-d::-moz-progress-bar, #pol-e::-moz-progress-bar {
+    background: #A9A9A9;   
+}  
+#pol-a::-webkit-progress-value, #pol-b::-webkit-progress-value, #pol-c::-webkit-progress-value, #pol-d::-webkit-progress-value, #pol-e::-webkit-progress-value {
+    background: #CD853F;  
+}  
+#pol-a::-webkit-progress-bar, #pol-b::-webkit-progress-bar, #pol-c::-webkit-progress-bar, #pol-d::-webkit-progress-bar, #pol-e::-webkit-progress-bar {
+    background: #A9A9A9;    
+}
