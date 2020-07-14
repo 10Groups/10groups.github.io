@@ -15,7 +15,7 @@
 <h2 style="text-align:center;">Results - Compass</h2>
 <canvas id="canvas" width="2500" height="1500" style="border:1px solid #d3d3d3;"></canvas>
 <img id="compass" src="compassimage.png" alt="Image" style="display: none;" />
-<img id="heatmap" src="e.png" alt="Image" style="display: none;" />
+<img id="chart" src="e.png" alt="Image" style="display: none;" />
 <br>
 <p style="text-align:center;">You can send the results of this compass by copying and pasting the URL, Screenshotting, or using the image above. Please zoom in if the canvas is too small.</p>    
     
@@ -297,7 +297,7 @@
 
  	  var c = document.getElementById("heatmap");
 	  var ctx = c.getContext("2d");
-	  var img = document.getElementById("heatmap");
+	  var img = document.getElementById("chart");
 	  ctx.drawImage(img,0,0);
 	}
 	    
