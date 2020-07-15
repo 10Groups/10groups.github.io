@@ -352,8 +352,6 @@
 	ctx.drawImage(img,0,0);
 	
 	//Heat Map - General
-	var c = document.getElementById("heatmap");
-	var ctx = c.getContext("2d");
 	ctx.beginPath();
 	ctx.arc(900 + (20 * (x_axis)) , 750 + (20 * (y_axis)) , 100 , 0, 2 * Math.PI);
 	ctx.fillStyle = "rgba(245, 215, 110, 0.3)"
