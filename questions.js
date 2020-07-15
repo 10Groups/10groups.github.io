@@ -7,7 +7,7 @@ questions = [
             "econ": -5,
             "govt": 0,
             "econsys": -5,
-            "econreg": -5
+            "econreg": 5
         }
     },
     {
@@ -16,7 +16,7 @@ questions = [
             "econ": -5,
             "govt": 0,
             "econsys": 0,
-            "econreg": -5
+            "econreg": 5
         }
     },
     {
@@ -25,7 +25,7 @@ questions = [
             "econ": 5,
             "govt": 0,
             "econsys": 0,
-            "econreg": 5
+            "econreg": -5
         }
     },
     {
@@ -34,7 +34,7 @@ questions = [
             "econ": 5,
             "govt": 0,
             "econsys": 0,
-            "econreg": 5
+            "econreg": -5
         }
     }
 ];
