@@ -101,6 +101,33 @@ questions = [
         }
     },
     {
+        "question": "A regulated market is unfair for corporations, and ultimately, the people.",
+        "effect": {
+            "econ": 5,
+            "govt": 0,
+            "econsys": 0,
+            "econreg": -5
+        }
+    },
+    {
+        "question": "The Justice System should be partially privatized, or even fully privatized.",
+        "effect": {
+            "econ": 5,
+            "govt": 0,
+            "econsys": 10,
+            "econreg": 0
+        }
+    },
+    {
+        "question": "Inheritance is a legitimate form of wealth.",
+        "effect": {
+            "econ": 5,
+            "govt": 0,
+            "econsys": 10,
+            "econreg": 0
+        }
+    },
+    {
         "question": "Marxism is too idealist, and is an ideology that would never work in practise.",
         "effect": {
             "econ": 5,
