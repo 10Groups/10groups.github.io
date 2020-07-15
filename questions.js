@@ -607,10 +607,10 @@ questions = [
 	    {
 	        "question": "Marxism is too idealist, and is an ideology that would never work in practise.",
 	        "effect": {
-	            "econ": 5,
-	            "govt": 0,
-	            "econsys": 0,
-	            "econreg": -5
+	        "econ": 5,
+	        "govt": 0,
+	        "econsys": 0,
+	        "econreg": -5,
                 "govtsize": 0,
                 "govttype": 0,
                 "diplapp": 0,
