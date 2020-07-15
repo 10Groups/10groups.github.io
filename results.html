@@ -204,6 +204,14 @@
 <progress id="pol-c" value="20" max="40"> </progress>
 <div class="label-r"><label for="pol-c">Biased News</label></div> </div>
 	
+<div class="center"><div class="label-l"><label for="pol-d style="font-size:16px">Easily Achievable</label></div>
+<progress id="pol-d" value="20" max="40"> </progress>
+<div class="label-r"><label for="pol-d" style="font-size:16px">More Unlikely</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="pol-e">Neutral</label></div>
+<progress id="pol-e" value="20" max="40"> </progress>
+<div class="label-r"><label for="pol-e">Inclined</label></div> </div>
+	
 <canvas id="heatmap" width="1500" height="1500" style="border:1px solid #d3d3d3;"></canvas> 
 
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br> 	    
@@ -387,5 +395,7 @@
 	document.getElementById("pol-a").value = (10 + (ix_axis));
 	document.getElementById("pol-b").value = (10 + (iy_axis));
 	document.getElementById("pol-c").value = (20 + (iy_axis) + (by_axis));
+	document.getElementById("pol-d").value = (20 + (ix_axis) - (hy_axis));
+	document.getElementById("pol-e").value = (20 + (iy_axis) - (ix_axis));
 	
     </script>
