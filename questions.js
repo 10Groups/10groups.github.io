@@ -29,6 +29,78 @@ questions = [
         }
     },
     {
+        "question": "Governmental social programs should be replaced with private charities and organizations.",
+        "effect": {
+            "econ": 5,
+            "govt": -5,
+            "econsys": 5,
+            "econreg": 0
+        }
+    },
+    {
+        "question": "From each according to his ability, to each according to his needs.",
+        "effect": {
+            "econ": -5,
+            "govt": 0,
+            "econsys": -5,
+            "econreg": 0
+        }
+    },
+    {
+        "question": "I support the abolition of a minimum wage.",
+        "effect": {
+            "econ": 5,
+            "govt": 0,
+            "econsys": 0,
+            "econreg": -10
+        }
+    },
+    {
+        "question": "The market should provide healthcare, instead of the government.",
+        "effect": {
+            "econ": 5,
+            "govt": 0,
+            "econsys": 5,
+            "econreg": -5
+        }
+    },
+    {
+        "question": "A government-controlled economy is generally better than that of an unregulated economy.",
+        "effect": {
+            "econ": -5,
+            "govt": 0,
+            "econsys": 0,
+            "econreg": 5
+        }
+    },
+    {
+        "question": "Taxing citizens using involuntary methods can be considered an act of Theft or Violence.",
+        "effect": {
+            "econ": 5,
+            "govt": 0,
+            "econsys": 5,
+            "econreg": -5
+        }
+    },
+    {
+        "question": "The means of production should belong to the workers.",
+        "effect": {
+            "econ": -5,
+            "govt": 0,
+            "econsys": -5,
+            "econreg": 0
+        }
+    },
+    {
+        "question": "Roads and Electricity should be publicly owned.",
+        "effect": {
+            "econ": -5,
+            "govt": 0,
+            "econsys": -5,
+            "econreg": 0
+        }
+    },
+    {
         "question": "Marxism is too idealist, and is an ideology that would never work in practise.",
         "effect": {
             "econ": 5,
