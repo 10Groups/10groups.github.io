@@ -502,8 +502,7 @@
 
             closestMatch = ideologyIndexAndDistance[0]
             document.getElementById('ideology-label').innerHTML = getIdeologyNameByIndex(closestMatch.name)
-            document.getElementById('ideodesc-label').innerHTML = getIdeologyDescriptionByIndex(closestMatch
-                .name)
+   
 
             const nextMatches = document.getElementById('next-matches')
             nextMatches.innerHTML = ideologyIndexAndDistance.slice(1).map(function (indexAndDistance) {
