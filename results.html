@@ -354,7 +354,7 @@
 	//Heat Map - General
 	ctx.beginPath();
 	ctx.arc(900 + (55 * (x_axis)) , 750 + (55 * (y_axis)) , 130 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.4)"
+	ctx.fillStyle = "rgba(240, 52, 52, 0.5)"
 	ctx.fill();
 	
 	//Heat Map - Economic
@@ -366,6 +366,24 @@
 	//Heat Map - Authoritarian and Technological
 	ctx.beginPath();
 	ctx.arc(900 + (27.5 * ((ey_axis) + (ex_axis))) , 750 + (27.5 * ((by_axis) + (bx_axis))) , 130 , 0, 2 * Math.PI);
+	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
+	ctx.fill();
+	
+	//Heat Map - Nationalist and Societal
+	ctx.beginPath();
+	ctx.arc(900 + (55 * (dx_axis)) , 750 + (27.5 * ((cy_axis) + (cx_axis))) , 130 , 0, 2 * Math.PI);
+	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
+	ctx.fill();
+	
+	//Heat Map - Law and Societal
+	ctx.beginPath();
+	ctx.arc(900 + (55 * (dy_axis)) , 750 + (27.5 * ((ey_axis) + (ex_axis))) , 130 , 0, 2 * Math.PI);
+	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
+	ctx.fill();
+	
+	//Heat Map - Cultural
+	ctx.beginPath();
+	ctx.arc(900 + (55 * (gx_axis)) , 750 + (55 * (gy_axis)) , 130 , 0, 2 * Math.PI);
 	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
 	ctx.fill();
 	
