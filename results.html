@@ -19,7 +19,7 @@
 <h2 style="text-align:center;">Results - Compass</h2>
 <canvas id="canvas" width="2500" height="1500" style="border:1px solid #d3d3d3;"></canvas>
 <img id="compass" src="compassimage.png" alt="Image" style="display: none;" />
-<img id="chart" src="e.png" alt="Image" style="display: none;" />
+<img id="chart" src="heatmap.png" alt="Image" style="display: none;" />
 <br>
 <p style="text-align:center;">You can send the results of this compass by copying and pasting the URL, Screenshotting, or using the image above. Please zoom in if the canvas is too small.</p>    
     
@@ -221,7 +221,7 @@
 
 <hr>
 	
-<canvas id="heatmap" width="1500" height="1500" style="border:1px solid #d3d3d3;"></canvas> 
+<canvas id="heatmap" width="1800" height="1500" style="border:1px solid #d3d3d3;"></canvas> 
 
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br> 	    
 <!--canvas-->
@@ -346,10 +346,20 @@
 	        ctx.stroke();
 
 	//Heat Map
- 	  var c = document.getElementById("heatmap");
-	  var ctx = c.getContext("2d");
-	  var img = document.getElementById("chart");
-	  ctx.drawImage(img,0,0);
+ 	var c = document.getElementById("heatmap");
+	var ctx = c.getContext("2d");
+  	var img = document.getElementById("chart");
+	ctx.drawImage(img,0,0);
+	
+	//Heat Map - General
+	var c = document.getElementById("heatmap");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.arc(900 + (20 * (x_axis)) , 750 + (20 * (y_axis)) , 100 , 0, 2 * Math.PI);
+	ctx.fillStyle = "rgba(245, 215, 110, 0.3)"
+	ctx.fill();
+	
+	
 	}
 	    
 	//Axes - Code
