@@ -608,7 +608,7 @@ questions = [
 	        "question": "I support Regional Unions, like the European Union.",
 	        "effect": {
 	        "econ": 0,
-	        "govt": 0,
+	        "govt": 5,
 	        "econsys": 0,
 	        "econreg": 0,
                 "govtsize": 0,
@@ -658,7 +658,7 @@ questions = [
 	        "question": "Countries with authoritarian governments should be denounced and invaded.",
 	        "effect": {
 	        "econ": 0,
-	        "govt": 0,
+	        "govt": 5,
 	        "econsys": 0,
 	        "econreg": 0,
                 "govtsize": 0,
@@ -708,7 +708,7 @@ questions = [
 	        "question": "The United Nations needs more power.",
 	        "effect": {
 	        "econ": 0,
-	        "govt": 0,
+	        "govt": 5,
 	        "econsys": 0,
 	        "econreg": 0,
                 "govtsize": 0,
@@ -769,6 +769,300 @@ questions = [
                 "sctytrad": 0,
                 "techacc": 0,
                 "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+	    //Societal
+		{
+	        "question": "It's important that we maintain our culture and tradition.",
+	        "effect": {
+	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+                "sctytrad": 5,
+                "sctychg": 0,
+                "techacc": 0,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Religion is mostly fictional.",
+	        "effect": {
+	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+                "sctytrad": -5,
+                "sctychg": 0,
+                "techacc": 0,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Tradition are of no value on their own.",
+	        "effect": {
+	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+                "sctytrad": -5,
+                "sctychg": 0,
+                "techacc": 0,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "I support the LGBT Community.",
+	        "effect": {
+	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+                "sctytrad": -5,
+                "sctychg": 0,
+                "techacc": 0,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "I support BLM.",
+	        "effect": {
+	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+                "sctytrad": -5,
+                "sctychg": 0,
+                "techacc": 0,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Churches should be taxed the same way other institutions are taxed.",
+	        "effect": {
+	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+                "sctytrad": 5,
+                "sctychg": 0,
+                "techacc": 0,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Thinking in the long term is more important than thinking in the short term.",
+	        "effect": {
+	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+                "sctytrad": -5,
+                "sctychg": 0,
+                "techacc": 0,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Reforms should happen gradually and slowly.",
+	        "effect": {
+	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+                "sctytrad": 5,
+                "sctychg": 0,
+                "techacc": 0,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "The current political system in my nation is flawed.",
+	        "effect": {
+	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+                "sctytrad": -5,
+                "sctychg": 0,
+                "techacc": 0,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Rapid change often leads to the worsening of people's lives.",
+	        "effect": {
+	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+                "sctytrad": 5,
+                "sctychg": 0,
+                "techacc": 0,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+	    //Technological
+		{
+	        "question": "Technology is negatively affecting modern society.",
+	        "effect": {
+	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
+                "techacc": 5,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "The Industrial Revolution and its consequences have been a disaster for the human race.",
+	        "effect": {
+	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
+                "techacc": 5,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Usage of genetic modification should be minimized.",
+	        "effect": {
+	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
+                "techacc": 5,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "The modern lifestyle has led to a decrease of happiness, and often lacks meaning.",
+	        "effect": {
+	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
+                "techacc": 5,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Getting pass physical limitations through technology would be beneficial to mankind.",
+	        "effect": {
+	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
+                "techacc": 0,
+                "techbio": 5,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Technology that improves mental and physical capabilities shouldn't be used.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
+                "techacc": 0,
+                "techbio": -5,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "The risks of transhumanism overweighs the benefits.",
+	        "effect": {
+	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
+                "techacc": 0,
+                "techbio": -5,
                 "lawtype": 0,
                 "lawrehab": 0,
                 "cltrhrchy": 0,
