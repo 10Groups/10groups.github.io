@@ -892,8 +892,8 @@ questions = [
 	        "question": "Thinking in the long term is more important than thinking in the short term.",
 	        "effect": {
 	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
-                "sctytrad": -5,
-                "sctychg": 0,
+                "sctytrad": 0,
+                "sctychg": -5,
                 "techacc": 0,
                 "techbio": 0,
                 "lawtype": 0,
@@ -910,8 +910,8 @@ questions = [
 	        "question": "Reforms should happen gradually and slowly.",
 	        "effect": {
 	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
-                "sctytrad": 5,
-                "sctychg": 0,
+                "sctytrad": 0,
+                "sctychg": 5,
                 "techacc": 0,
                 "techbio": 0,
                 "lawtype": 0,
@@ -928,8 +928,8 @@ questions = [
 	        "question": "The current political system in my nation is flawed.",
 	        "effect": {
 	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
-                "sctytrad": -5,
-                "sctychg": 0,
+                "sctytrad": 0,
+                "sctychg": -5,
                 "techacc": 0,
                 "techbio": 0,
                 "lawtype": 0,
@@ -946,8 +946,8 @@ questions = [
 	        "question": "Rapid change often leads to the worsening of people's lives.",
 	        "effect": {
 	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
-                "sctytrad": 5,
-                "sctychg": 0,
+                "sctytrad": 0,
+                "sctychg": 5,
                 "techacc": 0,
                 "techbio": 0,
                 "lawtype": 0,
