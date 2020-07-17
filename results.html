@@ -397,58 +397,58 @@
 	    
 	//Axes - Code
 	document.getElementById("econ-a").value = (10 + (ax_axis));
-	document.getElementById("econ-b").value = (10 - (ay_axis));
-	document.getElementById("econ-c").value = (30 + (ax_axis) + (ay_axis) + (by_axis));
-	document.getElementById("econ-d").value = (30 + (ax_axis) + (by_axis) + (y_axis));
+	document.getElementById("econ-b").value = (10 + (ay_axis));
+	document.getElementById("econ-c").value = (30 + (ax_axis) - (ay_axis) - (by_axis));
+	document.getElementById("econ-d").value = (30 + (ax_axis) - (by_axis) - (y_axis));
 	document.getElementById("econ-e").value = (20 + (ax_axis) + (gx_axis));
 	
-	document.getElementById("govt-a").value = (20 + (y_axis) + (by_axis));
-	document.getElementById("govt-b").value = (20 + (gy_axis) + (bx_axis));
+	document.getElementById("govt-a").value = (20 - (y_axis) + (by_axis));
+	document.getElementById("govt-b").value = (20 - (gy_axis) + (bx_axis));
 	document.getElementById("govt-c").value = (10 + (bx_axis));
-	document.getElementById("govt-d").value = (20 + (by_axis) - (gx_axis));
-	document.getElementById("govt-e").value = (20 + (by_axis) - (ex_axis));
+	document.getElementById("govt-d").value = (20 - (by_axis) - (gx_axis));
+	document.getElementById("govt-e").value = (20 - (by_axis) - (ex_axis));
 	    
-	document.getElementById("dipl-a").value = (10 + (cy_axis));
+	document.getElementById("dipl-a").value = (10 - (cy_axis));
 	document.getElementById("dipl-b").value = (10 + (cx_axis));
-	document.getElementById("dipl-c").value = (20 + (cx_axis) - (cy_axis));
-	document.getElementById("dipl-d").value = (20 + (cy_axis) - (by_axis));
+	document.getElementById("dipl-c").value = (20 + (cx_axis) + (cy_axis));
+	document.getElementById("dipl-d").value = (20 - (cy_axis) + (by_axis));
 	document.getElementById("dipl-e").value = (20 + (ax_axis) - (cx_axis));
 	    
 	document.getElementById("scty-a").value = (10 + (dx_axis));
-	document.getElementById("scty-b").value = (10 + (dy_axis));
-	document.getElementById("scty-c").value = (20 + (dx_axis) + (gy_axis));
+	document.getElementById("scty-b").value = (10 - (dy_axis));
+	document.getElementById("scty-c").value = (20 + (dx_axis) - (gy_axis));
 	document.getElementById("scty-d").value = (20 + (dx_axis) - (hx_axis));
-	document.getElementById("scty-e").value = (30 + (dx_axis) + (gy_axis) + (x_axis));
+	document.getElementById("scty-e").value = (30 + (dx_axis) - (gy_axis) + (x_axis));
 	    
 	document.getElementById("tech-a").value = (10 + (ex_axis));
-	document.getElementById("tech-b").value = (10 - (ey_axis));
+	document.getElementById("tech-b").value = (10 + (ey_axis));
 	document.getElementById("tech-c").value = (20 + (ex_axis) + (dx_axis));
 	document.getElementById("tech-d").value = (20 + (ex_axis) - (dx_axis));
-	document.getElementById("tech-e").value = (20 + (ex_axis) + (by_axis));
+	document.getElementById("tech-e").value = (20 + (ex_axis) - (by_axis));
 	    
 	document.getElementById("law-a").value = (10 + (fx_axis));
-	document.getElementById("law-b").value = (10 + (fy_axis));
+	document.getElementById("law-b").value = (10 - (fy_axis));
 	document.getElementById("law-c").value = (20 + (fx_axis) + (by_axis));
 	document.getElementById("law-d").value = (20 + (ax_axis) - (fx_axis));
-	document.getElementById("law-e").value = (20 + (fy_axis) - (by_axis));
+	document.getElementById("law-e").value = (20 - (fy_axis) - (by_axis));
 
 	document.getElementById("cltr-a").value = (10 + (gx_axis));
-	document.getElementById("cltr-b").value = (10 + (gy_axis));
+	document.getElementById("cltr-b").value = (10 - (gy_axis));
 	document.getElementById("cltr-c").value = (20 + (gx_axis) + (ax_axis));
-	document.getElementById("cltr-d").value = (20 + (gy_axis) + (cy_axis));
-	document.getElementById("cltr-e").value = (20 + (gy_axis) + (ax_axis));
+	document.getElementById("cltr-d").value = (20 - (gy_axis) + (cy_axis));
+	document.getElementById("cltr-e").value = (20 - (gy_axis) + (ax_axis));
 	    
 	document.getElementById("proc-a").value = (10 + (hx_axis));
-	document.getElementById("proc-b").value = (10 + (hy_axis));
+	document.getElementById("proc-b").value = (10 - (hy_axis));
 	document.getElementById("proc-c").value = (20 + (hx_axis) + (ix_axis));
 	document.getElementById("proc-d").value = (20 + (hx_axis) - (ax_axis));
 	document.getElementById("proc-e").value = (20 + (hx_axis) - (dx_axis));
 	    
 	document.getElementById("pol-a").value = (10 + (ix_axis));
-	document.getElementById("pol-b").value = (10 + (iy_axis));
-	document.getElementById("pol-c").value = (20 + (iy_axis) + (by_axis));
-	document.getElementById("pol-d").value = (20 + (ix_axis) - (hy_axis));
-	document.getElementById("pol-e").value = (20 + (iy_axis) + (ix_axis));
+	document.getElementById("pol-b").value = (10 - (iy_axis));
+	document.getElementById("pol-c").value = (20 - (iy_axis) + (by_axis));
+	document.getElementById("pol-d").value = (20 + (ix_axis) + (hy_axis));
+	document.getElementById("pol-e").value = (20 - (iy_axis) + (ix_axis));
 	
 	let ideology = ''
             const ideologyIndexAndDistance = []
