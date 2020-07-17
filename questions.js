@@ -1335,6 +1335,67 @@ questions = [
                 "polext": 0
 	        }
 	    },
+	    //Procedural
+		{
+	        "question": "Compromizes should be made in order to suit the needs of most people.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0,
+                "proccomp": -5,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Compromizing can avoid unnecessary conflict.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0,
+                "proccomp": -5,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Adopting radical ideas isn't possible unless compromizes are made.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0,
+                "proccomp": -5,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "My political ideals can be acheived within 5 years.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": -5,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "A transitional state should be made.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 5,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "My ideology should be established as quick as possible.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 5,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
 	    //Ending
 	    {
 	        "question": "Marxism is too idealist, and is an ideology that would never work in practise.",
