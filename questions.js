@@ -1073,6 +1073,147 @@ questions = [
                 "polext": 0
 	        }
 	    },
+	    //Law
+		{
+	        "question": "Law principles should be codified into a referable system.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
+                "lawtype": 5,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Courts should reference to other judicial decisions.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
+                "lawtype": -5,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Judges should hold more power in courts.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
+                "lawtype": -5,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Lawmakers and legal experts should hold more influence than judges.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
+                "lawtype": 5,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "If a decision cannot be made in courts, relevant cases in the past should be referenced.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
+                "lawtype": -5,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Punishment should be valued, more than that of rehabilitation.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 5,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Everybody deserves a second chance.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": -5,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "A rehabilitative system is unjust.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 5,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "It's a waste of time trying to rehabilitate some criminals.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 5,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "I support capital punishment.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 5,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
 	    //Ending
 	    {
 	        "question": "Marxism is too idealist, and is an ideology that would never work in practise.",
