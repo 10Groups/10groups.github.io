@@ -1396,6 +1396,71 @@ questions = [
                 "polext": 0
 	        }
 	    },
+	    //Political
+		{
+	        "question": "My ideology is sometimes considered 'extreme'.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0, "proccomp": 0, "proctrans": 0,
+                "polapol": 0,
+                "polext": 5
+	        }
+	    },
+		{
+	        "question": "Violence and Revolutions are required in order to establish my ideology.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0, "proccomp": 0, "proctrans": 0,
+                "polapol": 0,
+                "polext": 5
+	        }
+	    },
+		{
+	        "question": "The current mainstream societal attitudes are problematic.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0, "proccomp": 0, "proctrans": 0,
+                "polapol": 0,
+                "polext": 5
+	        }
+	    },
+		{
+	        "question": "Neoliberalism is very different from my political views.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0, "proccomp": 0, "proctrans": 0,
+                "polapol": 0,
+                "polext": 5
+	        }
+	    },
+		{
+	        "question": "Politics is boring to me.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0, "proccomp": 0, "proctrans": 0,
+                "polapol": -5,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Nearly all politicians are evil and problematic.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0, "proccomp": 0, "proctrans": 0,
+                "polapol": -5,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Politics should be avoided in daily life.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0, "proccomp": 0, "proctrans": 0,
+                "polapol": -5,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Politics is very important for society, and shouldn't be ignored.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0, "proccomp": 0, "proctrans": 0,
+                "polapol": 5,
+                "polext": 0
+	        }
+	    },
 	    //Ending
 	    {
 	        "question": "Marxism is too idealist, and is an ideology that would never work in practise.",
