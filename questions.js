@@ -1214,6 +1214,127 @@ questions = [
                 "polext": 0
 	        }
 	    },
+	    //Cultural
+		{
+	        "question": "A well-functioning society requries a hierarchy.",
+	        "effect": {
+	        "econ": 0, "govt": 5, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
+                "cltrhrchy": 5,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Hierarchies will inevitably be formed in every society.",
+	        "effect": {
+	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
+                "cltrhrchy": 5,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "A system of equal outcomes should be established.",
+	        "effect": {
+	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
+                "cltrhrchy": -5,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Equal opportunities should be advocated, and not equal outcomes.",
+	        "effect": {
+	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
+                "cltrhrchy": 5,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "People should be treated equally regardless of their groups and characteristics.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
+                "cltrhrchy": -5,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "My nation should be more diverse.",
+	        "effect": {
+	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": -5,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Monoculturalism is disastrous for society.",
+	        "effect": {
+	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": -5,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "If we accept migrants into our borders, the migrants should be expected to assimilate into our culture.",
+	        "effect": {
+	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 5,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Multiculturalism is unrealistic.",
+	        "effect": {
+	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 5,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "Some cultures are inherently suprerior to other cultures.",
+	        "effect": {
+	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 5,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
 	    //Ending
 	    {
 	        "question": "Marxism is too idealist, and is an ideology that would never work in practise.",
