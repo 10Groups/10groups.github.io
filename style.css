@@ -20,6 +20,10 @@ p {
     line-height: 1;
     margin: 4pt;
 }
+p.value-description {
+    text-indent: -16pt;
+    margin-left: 20pt;
+}
 label {
     color: #444444;
     font-family: 'Roboto', sans-serif;
