@@ -1,7 +1,6 @@
 ideologies = [
     {
-        "name": "Centrism",
-        "stats": {
+        "Centrism" : {
 	  "econ": 0,
 	  "govt": 0,
 	  "econsys": 0,
@@ -25,8 +24,7 @@ ideologies = [
         }
     },
     {
-        "name": "Anarcho-Capitalism",
-        "stats": {
+        "Anarcho-Capitalism" : {
 	  "econ": 9,
 	  "govt": -9,
 	  "econsys": 9,
