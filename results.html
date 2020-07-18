@@ -453,14 +453,14 @@
 	document.getElementById("pol-d").value = (20 + (ix_axis) + (hy_axis));
 	document.getElementById("pol-e").value = (20 - (iy_axis) + (ix_axis));
 	
-            let ideology = ''
-            let ideodesc = ''
-            const ideologyIndexAndDistance = []
-            var closestMatch = {}
-
-        let index = 0
-        for (const name of Object.keys(ideologies)) {
-        let dist = 0
+    ideology = ""
+    ideodesc = ""
+    ideodist = Infinity
+    ideologyToDistance = {};
+    sortedIdeologies = [];
+    ideologyIndexAndDistance = [];
+    for (var i = 0; i < ideologies.length; i++) {
+    dist = 0
 	
 	dist += Math.pow( Math.abs(ideologies[name].econ - x_axis), 2)
         dist += Math.pow( Math.abs(ideologies[name].govt - y_axis), 2)
@@ -484,42 +484,35 @@
         dist += Math.pow( Math.abs(ideologies[name].polext - iy_axis), 2)
 
 
-                // ideologyToDistance[name] = dist
-                ideologyIndexAndDistance.push({
-                distance: dist,
-                name,
-                index
-                })
-                index++
-            }
+        ideologyToDistance[ideologies[i].name] = dist;
+        ideologyIndexAndDistance.push({index: i, distance: dist});
+    }
+    
+    ideologyIndexAndDistance.sort(function(a, b) {
+        return a.distance - b.distance;
+    });
 
-            ideologyIndexAndDistance.sort(function (a, b) {
-                return a.distance - b.distance
-            })
+    distances = ideologyIndexAndDistance.map(function(indexAndDistance) {
+        return indexAndDistance.distance;
+    });
 
-            const distances = ideologyIndexAndDistance.map(function (indexAndDistance) {
-                return indexAndDistance.distance
-            })
+    closestDistance = distances[0];
+    farthestDistance = distances[distances.length - 1];
+    distanceSpan = farthestDistance - closestDistance;
 
-            const closestDistance = distances[0]
-            const farthestDistance = distances[distances.length - 1]
-            const distanceSpan = farthestDistance - closestDistance
+    closestMatch = ideologyIndexAndDistance[0];
+    document.getElementById("ideology-label").innerHTML = getIdeologyNameByIndex(closestMatch.index);
+	document.getElementById("ideodesc-label").innerHTML = getIdeologyDescriptionByIndex(closestMatch.index);
 
-            closestMatch = ideologyIndexAndDistance[0]
-            document.getElementById('ideology-label').innerHTML = getIdeologyNameByIndex(closestMatch.name)
-            document.getElementById('ideodesc-label').innerHTML = getIdeologyDescriptionByIndex(closestMatch
-                .name)
-
-            const nextMatches = document.getElementById('next-matches')
-            nextMatches.innerHTML = ideologyIndexAndDistance.slice(1).map(function (indexAndDistance) {
-                const name = indexAndDistance.name
-                ideology = getIdeologyNameByIndex(name)
-                ideodesc = getIdeologyDescriptionByIndex(name)
-                const relativeDistance = 1 - (indexAndDistance.distance - closestDistance) /
-                                distanceSpan
-                const relativeDistancePercent = Math.round(relativeDistance * 1000) / 10
-                return '<dt>' + ideology + ': ' + relativeDistancePercent + '%</dt>' +
-                                '<dd>' + ideodesc + '</dd>'
-            }).join('\n')
+    nextMatches = document.getElementById('next-matches');
+    nextMatches.innerHTML = ideologyIndexAndDistance.slice(1).map(function(indexAndDistance) {
+        i = indexAndDistance.index;
+        ideology = getIdeologyNameByIndex(i);
+        ideodesc = getIdeologyDescriptionByIndex(i);
+        relativeDistance = 1 - (indexAndDistance.distance - closestDistance)/distanceSpan;
+        relativeDistancePercent = Math.round(relativeDistance * 1000)/10;
+        return "<dt>" + ideology + ": " + relativeDistancePercent + "%</dt>" +
+            "<dd>" + ideodesc + "</dd>";
+    }).join("\n");
 	
     </script>
