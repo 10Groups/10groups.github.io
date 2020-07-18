@@ -2,10 +2,10 @@ ideologies = [
     {
         "name": "Centrism",
         "stats": {
-	        "econ": 0,
-	        "govt": 0,
-	        "econsys": 0,
-	        "econreg": 0,
+	  "econ": 0,
+	  "govt": 0,
+	  "econsys": 0,
+	  "econreg": 0,
           "govtsize": 0,
           "govttype": 0,
           "diplapp": 0,
@@ -27,10 +27,10 @@ ideologies = [
     {
         "name": "Anarcho-Capitalism",
         "stats": {
-	        "econ": 9,
-	        "govt": -9,
-	        "econsys": 9,
-	        "econreg": -9,
+	  "econ": 9,
+	  "govt": -9,
+	  "econsys": 9,
+	  "econreg": -9,
           "govtsize": -9,
           "govttype": 0,
           "diplapp": 0,
