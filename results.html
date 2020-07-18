@@ -454,7 +454,6 @@
 	document.getElementById("pol-e").value = (20 - (iy_axis) + (ix_axis));
 	
     ideology = ""
-    ideodesc = ""
     ideodist = Infinity
     ideologyToDistance = {};
     sortedIdeologies = [];
@@ -484,8 +483,8 @@
         dist += Math.pow( Math.abs(ideologies[name].polext - iy_axis), 2)
 
 
-        ideologyToDistance[ideologies[i].name] = dist;
-        ideologyIndexAndDistance.push({index: i, distance: dist});
+   ideologyToDistance[ideologies[i].name] = dist;
+   ideologyIndexAndDistance.push({index: i, distance: dist});
     }
     
     ideologyIndexAndDistance.sort(function(a, b) {
@@ -508,11 +507,10 @@
     nextMatches.innerHTML = ideologyIndexAndDistance.slice(1).map(function(indexAndDistance) {
         i = indexAndDistance.index;
         ideology = getIdeologyNameByIndex(i);
-        ideodesc = getIdeologyDescriptionByIndex(i);
         relativeDistance = 1 - (indexAndDistance.distance - closestDistance)/distanceSpan;
         relativeDistancePercent = Math.round(relativeDistance * 1000)/10;
-        return "<dt>" + ideology + ": " + relativeDistancePercent + "%</dt>" +
-            "<dd>" + ideodesc + "</dd>";
+        return "<dt>" + ideology + ": " + relativeDistancePercent + "%</dt>";
+	
     }).join("\n");
 	
     </script>
