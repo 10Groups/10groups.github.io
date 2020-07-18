@@ -511,7 +511,6 @@
             nextMatches.innerHTML = ideologyIndexAndDistance.slice(1).map(function (indexAndDistance) {
                 const name = indexAndDistance.name
                 ideology = getIdeologyNameByIndex(name)
-                ideodesc = getIdeologyDescriptionByIndex(name)
                 const relativeDistance = 1 - (indexAndDistance.distance - closestDistance) /
                                 distanceSpan
                 const relativeDistancePercent = Math.round(relativeDistance * 1000) / 10
