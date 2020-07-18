@@ -453,7 +453,7 @@
 	document.getElementById("pol-d").value = (20 + (ix_axis) + (hy_axis));
 	document.getElementById("pol-e").value = (20 - (iy_axis) + (ix_axis));
 	
-	let ideology = ''
+	let ideology = ""
             const ideologyIndexAndDistance = []
             var closestMatch = {}
 
@@ -504,10 +504,10 @@
             const distanceSpan = farthestDistance - closestDistance
 
             closestMatch = ideologyIndexAndDistance[0]
-            document.getElementById('ideology-label').innerHTML = getIdeologyNameByIndex(closestMatch.name)
+            document.getElementById("ideology-label").innerHTML = getIdeologyNameByIndex(closestMatch.name)
    
 
-            const nextMatches = document.getElementById('next-matches')
+            const nextMatches = document.getElementById("next-matches")
             nextMatches.innerHTML = ideologyIndexAndDistance.slice(1).map(function (indexAndDistance) {
                 const name = indexAndDistance.name
                 ideology = getIdeologyNameByIndex(name)
