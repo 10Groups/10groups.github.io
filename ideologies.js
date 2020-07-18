@@ -1,5 +1,5 @@
-ideologies = [
-    {
+const ideologies = {
+	
         "Centrism" : {
 	  "econ": 0,
 	  "govt": 0,
