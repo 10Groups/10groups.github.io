@@ -1,6 +1,6 @@
 const ideologies = {
 	
-        "Centrism" : {
+        'Centrism' : {
 	  econ: 0,
 	  govt: 0,
 	  econsys: 0,
@@ -23,7 +23,7 @@ const ideologies = {
           polext: 0
     },
     {
-        "Anarcho-Capitalism" : {
+        'Anarcho-Capitalism' : {
 	  econ: 9,
 	  govt: -9,
 	  econsys: 9,
