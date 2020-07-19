@@ -91,6 +91,12 @@ img.center {
     width: 50%;
     min-width: 500pt;
 }
+img {
+    display: block;
+    margin: 1em auto;
+    width: 50%;
+    min-width: 500pt;
+}
 .center {
     margin: auto;
     width: 80%;
