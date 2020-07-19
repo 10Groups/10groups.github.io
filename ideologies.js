@@ -1,6 +1,7 @@
 ideologies = [
     {
         "name": "Centrism",
+	"desc": "__",
         "stats": {
 	  "econ": 0,
 	  "govt": 0,
