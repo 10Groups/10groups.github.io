@@ -458,40 +458,30 @@
 	
 	
 //Ideology Matching
-	    function getIdeologyNameByIndex(i) {
-        	return (userLang in ideologies[i].i18n) ? ideologies[i].i18n[userLang].name : ideologies[i].name;
-    		}
-
-    		function getIdeologyDescriptionByIndex(i) {
-      		 return (userLang in ideologies[i].i18n) ? ideologies[i].i18n[userLang].desc : ideologies[i].desc;
-   		 }
 			
-       const xvalue = getQueryVariable("econ")
-       const yvalue = getQueryVariable("govt")
-       const axvalue = getQueryVariable("econsys")
-       const ayvalue = getQueryVariable("econreg")
-       const bxvalue = getQueryVariable("govtsize")
-       const byvalue = getQueryVariable("govttype")
-       const cxvalue = getQueryVariable("diplapp")
-       const cyvalue = getQueryVariable("diplrel")
-       const dxvalue = getQueryVariable("sctychg")
-       const dyvalue = getQueryVariable("sctytrad")
-       const exvalue = getQueryVariable("techacc")
-       const eyvalue = getQueryVariable("techbio")
-       const fxvalue = getQueryVariable("lawtype")
-       const fyvalue = getQueryVariable("lawrehab")
-       const gxvalue = getQueryVariable("cltrhrchy")
-       const gyvalue = getQueryVariable("cltrassi")
-       const hxvalue = getQueryVariable("proccomp")
-       const hyvalue = getQueryVariable("proctrans")
-       const ixvalue = getQueryVariable("polapol")
-       const iyvalue = getQueryVariable("polext")
+	xvalue = getQueryVariable("econ")
+        yvalue = getQueryVariable("govt")
+        axvalue = getQueryVariable("econsys")
+        ayvalue = getQueryVariable("econreg")
+        bxvalue = getQueryVariable("govtsize")
+        byvalue = getQueryVariable("govttype")
+        cxvalue = getQueryVariable("diplapp")
+        cyvalue = getQueryVariable("diplrel")
+        dxvalue = getQueryVariable("sctychg")
+        dyvalue = getQueryVariable("sctytrad")
+        exvalue = getQueryVariable("techacc")
+        eyvalue = getQueryVariable("techbio")
+        fxvalue = getQueryVariable("lawtype")
+        fyvalue = getQueryVariable("lawrehab")
+        gxvalue = getQueryVariable("cltrhrchy")
+        gyvalue = getQueryVariable("cltrassi")
+        hxvalue = getQueryVariable("proccomp")
+        hyvalue = getQueryVariable("proctrans")
+        ixvalue = getQueryVariable("polapol")
+        iyvalue = getQueryVariable("polext")
 	
     ideology = ""
     ideodist = Infinity
-    ideologyToDistance = {};
-    sortedIdeologies = [];
-    ideologyIndexAndDistance = [];
     for (var i = 0; i < ideologies.length; i++) {
     dist = 0
 	
@@ -515,36 +505,14 @@
         dist += Math.pow( Math.abs(ideologies[i].proctrans - hyvalue), 2)
         dist += Math.pow( Math.abs(ideologies[i].polapol - ixvalue), 2)
         dist += Math.pow( Math.abs(ideologies[i].polext - iyvalue), 2)
-
-        ideologyToDistance[ideologies[i].name] = dist;
-        ideologyIndexAndDistance.push({index: i, distance: dist});
+	
+        if (dist < ideodist) {
+            ideology = ideologies[i].name
+            ideodist = dist
+        }
     }
-    
-    ideologyIndexAndDistance.sort(function(a, b) {
-        return a.distance - b.distance;
-    });
+    document.getElementById("ideology-label").innerHTML = ideology
+	
 
-    distances = ideologyIndexAndDistance.map(function(indexAndDistance) {
-        return indexAndDistance.distance;
-    });
-
-    closestDistance = distances[0];
-    farthestDistance = distances[distances.length - 1];
-    distanceSpan = farthestDistance - closestDistance;
-
-    closestMatch = ideologyIndexAndDistance[0];
-    document.getElementById("ideology-label").innerHTML = getIdeologyNameByIndex(closestMatch.index);
-	document.getElementById("ideodesc-label").innerHTML = getIdeologyDescriptionByIndex(closestMatch.index);
-
-    nextMatches = document.getElementById('next-matches');
-    nextMatches.innerHTML = ideologyIndexAndDistance.slice(1).map(function(indexAndDistance) {
-        i = indexAndDistance.index;
-        ideology = getIdeologyNameByIndex(i);
-        ideodesc = getIdeologyDescriptionByIndex(i);
-        relativeDistance = 1 - (indexAndDistance.distance - closestDistance)/distanceSpan;
-        relativeDistancePercent = Math.round(relativeDistance * 1000)/10;
-        return "<dt>" + ideology + ": " + relativeDistancePercent + "%</dt>" +
-            "<dd>" + ideodesc + "</dd>";
-    }).join("\n");
 	
     </script>
