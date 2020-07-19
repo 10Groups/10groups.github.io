@@ -79,6 +79,22 @@
         max_polapol += Math.abs(questions[i].effect.polapol)
         max_polext += Math.abs(questions[i].effect.polext)
     }
+    
+    //Shuffle
+    var questionsOrder = Object.keys(questionsObject); //Array of shuffled question IDs
+
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("shuffle") == "true") {
+        shuffleArray(questionsOrder);
+    }
+
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+    
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
         document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (questions.length);
