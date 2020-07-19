@@ -503,9 +503,8 @@
         dist += Math.pow( Math.abs(ideologies[i].polapol - ix_axis), 2)
         dist += Math.pow( Math.abs(ideologies[i].polext - iy_axis), 2)
 
-
-   ideologyToDistance[ideologies[i].name] = dist;
-   ideologyIndexAndDistance.push({index: i, distance: dist});
+        ideologyToDistance[ideologies[i].name] = dist;
+        ideologyIndexAndDistance.push({index: i, distance: dist});
     }
     
     ideologyIndexAndDistance.sort(function(a, b) {
@@ -528,10 +527,11 @@
     nextMatches.innerHTML = ideologyIndexAndDistance.slice(1).map(function(indexAndDistance) {
         i = indexAndDistance.index;
         ideology = getIdeologyNameByIndex(i);
+        ideodesc = getIdeologyDescriptionByIndex(i);
         relativeDistance = 1 - (indexAndDistance.distance - closestDistance)/distanceSpan;
         relativeDistancePercent = Math.round(relativeDistance * 1000)/10;
-        return "<dt>" + ideology + ": " + relativeDistancePercent + "%</dt>";
-	
+        return "<dt>" + ideology + ": " + relativeDistancePercent + "%</dt>" +
+            "<dd>" + ideodesc + "</dd>";
     }).join("\n");
 	
     </script>
