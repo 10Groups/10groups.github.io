@@ -876,7 +876,7 @@ questions = [
 	        }
 	    },
 		{
-	        "question": "I support BLM.",
+	        "question": "I support Black Lives Matter.",
 	        "effect": {
 	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
                 "sctytrad": -5,
