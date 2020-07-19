@@ -51,7 +51,7 @@ questions = [
 	        }
 	    },
 	    {
-	        "question": "It is necessary for the government to intervene in the economy to protect consumers.",
+	        "question": "In this existing system, it is necessary for the government to intervene in the economy to protect consumers.",
 	        "effect": {
 	            "econ": -5,
 	            "govt": 0,
