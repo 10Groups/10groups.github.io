@@ -1,8 +1,31 @@
 questions = [
-	
-
 	//Economic
 	    {
+	        "question": "Marxism is too idealist, and is an ideology that would never work in practise.",
+	        "effect": {
+	        "econ": 5,
+	        "govt": 0,
+	        "econsys": 0,
+	        "econreg": -5,
+                "govtsize": 0,
+                "govttype": 0,
+                "diplapp": 0,
+                "diplrel": 0,
+                "sctychg": 0,
+                "sctytrad": 0,
+                "techacc": 0,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
 	        "question": "Oppression by corporations is more of a concern than oppression by governments.",
 	        "effect": {
 	            "econ": -5,
@@ -1026,7 +1049,7 @@ questions = [
 	        }
 	    },
 		{
-	        "question": "Getting pass physical limitations through technology would be beneficial to mankind.",
+	        "question": "Getting past physical limitations through technology would be beneficial to mankind.",
 	        "effect": {
 	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
                 "techacc": 0,
@@ -1458,32 +1481,6 @@ questions = [
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0, "proccomp": 0, "proctrans": 0,
                 "polapol": 5,
-                "polext": 0
-	        }
-	    },
-	    //Ending
-	    {
-	        "question": "Marxism is too idealist, and is an ideology that would never work in practise.",
-	        "effect": {
-	        "econ": 5,
-	        "govt": 0,
-	        "econsys": 0,
-	        "econreg": -5,
-                "govtsize": 0,
-                "govttype": 0,
-                "diplapp": 0,
-                "diplrel": 0,
-                "sctychg": 0,
-                "sctytrad": 0,
-                "techacc": 0,
-                "techbio": 0,
-                "lawtype": 0,
-                "lawrehab": 0,
-                "cltrhrchy": 0,
-                "cltrassi": 0,
-                "proccomp": 0,
-                "proctrans": 0,
-                "polapol": 0,
                 "polext": 0
 	        }
 	    }
