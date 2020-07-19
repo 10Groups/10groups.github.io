@@ -458,7 +458,14 @@
 	
 	
 //Ideology Matching
-	
+	    function getIdeologyNameByIndex(i) {
+        	return (userLang in ideologies[i].i18n) ? ideologies[i].i18n[userLang].name : ideologies[i].name;
+    		}
+
+    		function getIdeologyDescriptionByIndex(i) {
+      		 return (userLang in ideologies[i].i18n) ? ideologies[i].i18n[userLang].desc : ideologies[i].desc;
+   		 }
+			
        const xvalue = getQueryVariable("econ")
        const yvalue = getQueryVariable("govt")
        const axvalue = getQueryVariable("econsys")
