@@ -75,6 +75,56 @@ questions = [
                 "polext": 0
 	        }
 	    },
+	{
+	        "question": "Most corporations should be state-owned.",
+	        "effect": {
+	            "econ": -10,
+	            "govt": 0,
+	            "econsys": 0,
+	            "econreg": 10,
+                "govtsize": 0,
+                "govttype": 0,
+                "diplapp": 0,
+                "diplrel": 0,
+                "sctychg": 0,
+                "sctytrad": 0,
+                "techacc": 0,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+	{
+	        "question": "Corporations should be required to provide information to the state.",
+	        "effect": {
+	            "econ": -10,
+	            "govt": 0,
+	            "econsys": 0,
+	            "econreg": 10,
+                "govtsize": 0,
+                "govttype": 0,
+                "diplapp": 0,
+                "diplrel": 0,
+                "sctychg": 0,
+                "sctytrad": 0,
+                "techacc": 0,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
 	    {
 	        "question": "The market regulates itself, since unjust monopolies are punished by bankrupcy.",
 	        "effect": {
