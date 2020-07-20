@@ -376,7 +376,7 @@ questions = [
 	        }
 	    },
   {
-	        "question": "A regulated market is unfair for corporations, and ultimately, the people.",
+	        "question": "A regulated economy is more unfair for the people, when compared to a laissez-faire econnmy.",
 	        "effect": {
 	            "econ": 10,
 	            "govt": 0,
@@ -452,7 +452,7 @@ questions = [
 	    },
 	    //Governmental
 	    {
-	        "question": "A strong and good leadership is more beneficial than a democratic system.",
+	        "question": "A strong and good leadership is more beneficial than any democratic system.",
 	        "effect": {
 	            "econ": 0,
 	            "govt": 10,
@@ -477,7 +477,7 @@ questions = [
 	        }
 	    },
 	    {
-	        "question": "Democracy is the least worst system for leadership.",
+	        "question": "Liberal democracy is the least worst system for leadership.",
 	        "effect": {
 	            "econ": 0,
 	            "govt": 10,
@@ -627,7 +627,7 @@ questions = [
 	        }
 	    },
 	    {
-	        "question": "People should be willing to sacrifice their liberty for Security and Prosperity.",
+	        "question": "When a threat arrives, some liberties should be sacrificed in order to maintain stability and prosperity.",
 	        "effect": {
 	            "econ": 0,
 	            "govt": 10,
@@ -727,6 +727,31 @@ questions = [
                 "polext": 0
 	        }
 	    },
+	{
+	        "question": "I will only support international organizations that align with my political beliefs.",
+	        "effect": {
+	        "econ": 0,
+	        "govt": 0,
+	        "econsys": 0,
+	        "econreg": 0,
+                "govtsize": 0,
+                "govttype": 0,
+                "diplapp": 0,
+                "diplrel": 10,
+                "sctychg": 0,
+                "sctytrad": 0,
+                "techacc": 0,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
 		{
 	        "question": "My religious and political values should be spread as much as possible.",
 	        "effect": {
@@ -803,7 +828,7 @@ questions = [
 	        }
 	    },
 		{
-	        "question": "The United Nations needs more power.",
+	        "question": "A global organization that is generally beneficial should hold a substantial amount of power.",
 	        "effect": {
 	        "econ": 0,
 	        "govt": 2,
@@ -1108,7 +1133,7 @@ questions = [
 	        }
 	    },
 		{
-	        "question": "The modern lifestyle has led to a decrease of happiness, and often lacks meaning.",
+	        "question": "Modernity and social progress has led to a decrease of happiness, and often lacks meaning.",
 	        "effect": {
 	        "econ": 2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
                 "techacc": 10,
@@ -1140,7 +1165,7 @@ questions = [
 	        }
 	    },
 		{
-	        "question": "Technology that improves mental and physical capabilities shouldn't be used.",
+	        "question": "Technology that improves mental and physical capabilities shouldn't be used, in any political system.",
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
                 "techacc": 0,
@@ -1314,7 +1339,7 @@ questions = [
 	    },
 	    //Cultural
 		{
-	        "question": "A well-functioning society requries a hierarchy.",
+	        "question": "Any well-functioning society requries a hierarchy.",
 	        "effect": {
 	        "econ": 0, "govt": 2, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
                 "cltrhrchy": 10,
@@ -1326,7 +1351,7 @@ questions = [
 	        }
 	    },
 		{
-	        "question": "Hierarchies will inevitably be formed in every society.",
+	        "question": "Hierarchies will inevitably be formed in every society, at any time.",
 	        "effect": {
 	        "econ": 2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
                 "cltrhrchy": 10,
@@ -1350,7 +1375,7 @@ questions = [
 	        }
 	    },
 		{
-	        "question": "Equal opportunities should be advocated, and not equal outcomes.",
+	        "question": "Even though even opportunities can lead to equal outcomes, society should still focus on equal opportunities, and not equal outcomes.",
 	        "effect": {
 	        "econ": 2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
                 "cltrhrchy": 10,
@@ -1536,7 +1561,7 @@ questions = [
 	        }
 	    },
 		{
-	        "question": "Nearly all politicians are evil and problematic.",
+	        "question": "Nearly all politicians are evil and problematic, no matter what their political ideals are.",
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0, "proccomp": 0, "proctrans": 0,
                 "polapol": -10,
