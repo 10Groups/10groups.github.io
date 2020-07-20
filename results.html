@@ -133,7 +133,7 @@
 <progress id="tech-a" value="10" max="20"> </progress>
 <div class="label-r"><label for="tech-a">Accelerate</label></div> </div>
 	
-<div class="center"><div class="label-l"><label for="tech-b">Natural</label></div>
+<div class="center"><div class="label-l"><label for="tech-b">Primitivism</label></div>
 <progress id="tech-b" value="10" max="20"> </progress>
 <div class="label-r"><label for="tech-b">Transhumanist</label></div> </div>
 	
@@ -221,9 +221,9 @@
 <progress id="pol-b" value="10" max="20"> </progress>
 <div class="label-r"><label for="pol-b">Politicized</label></div> </div>
 	
-<div class="center"><div class="label-l"><label for="pol-c" style="font-size:16px>Apolitical Education</label></div>
+<!-- <div class="center"><div class="label-l"><label for="pol-c" style="font-size:16px>Apolitical Education</label></div>
 <progress id="pol-c" value="20" max="40"> </progress>
-<div class="label-r"><label for="pol-c" style="font-size:16px>Political Education</label></div> </div> 
+<div class="label-r"><label for="pol-c" style="font-size:16px>Political Education</label></div> </div> -->
 	
 <div class="center"><div class="label-l"><label for="pol-d" style="font-size:16px">Easily Achievable</label></div>
 <progress id="pol-d" value="20" max="40"> </progress>
@@ -234,7 +234,7 @@
 <div class="label-r"><label for="pol-e">Inclined</label></div> </div>
 	
 <br>
-<p>The above are 45 different spectrums which bases its score on the Compass Results above. These axes are only a rough estimation, and are not as accurate as the Compasses above.</p>    
+<p>The above are 44 different spectrums which bases its score on the Compass Results above. These axes are only a rough estimation, and are not as accurate as the Compasses above.</p>    
 
 <br>
 	
@@ -442,7 +442,7 @@
 	document.getElementById("scty-e").value = (30 + (dx_axis) - (gy_axis) + (x_axis));
 	    
 	document.getElementById("tech-a").value = (10 + (ex_axis));
-	document.getElementById("tech-b").value = (10 + (ey_axis));
+	document.getElementById("tech-b").value = (10 - (ey_axis));
 	document.getElementById("tech-c").value = (20 + (ex_axis) + (dx_axis));
 	document.getElementById("tech-d").value = (20 + (ex_axis) - (dx_axis));
 	document.getElementById("tech-e").value = (20 + (ex_axis) - (by_axis));
