@@ -177,7 +177,9 @@
 	var ctx = c.getContext("2d");
   	var img = document.getElementById("heatmap1");
 	ctx.drawImage(img,0,0);
-	    
+	 
+	function heatmap_circle() {
+		
 	//Heat Map - General
 	ctx.beginPath();
 	ctx.arc(900 + (55 * (x_axis)) , 750 - (55 * (y_axis)) , 150 , 0, 2 * Math.PI);
@@ -227,13 +229,11 @@
 	ctx.fill();
 	}
 	    
-	/* Heatmap Images
+	//Heatmap Images
 	function heatmap_1() {
   		var canvas = document.getElementById("heatmap");
 		var ctx = c.getContext("2d");
-		
-		context.clearRect(0, 0, canvas.width, canvas.height);
-  		var img = document.getElementById("heatmap1");
+		var img = document.getElementById("heatmap1");
 		ctx.drawImage(img,0,0);
 		
 		heatmap_circle();
@@ -242,8 +242,6 @@
 	 function heatmap_2() {
   		var canvas = document.getElementById("heatmap");
 		var ctx = c.getContext("2d");
-		 
-		context.clearRect(0, 0, canvas.width, canvas.height);
   		var img = document.getElementById("heatmap2");
 		ctx.drawImage(img,0,0);
 		 
@@ -253,13 +251,11 @@
 	 function heatmap_3() {
   		var canvas = document.getElementById("heatmap");
 		var ctx = c.getContext("2d");
-		 
-		context.clearRect(0, 0, canvas.width, canvas.height);
   		var img = document.getElementById("heatmap3");
 		ctx.drawImage(img,0,0);
 		 
 		heatmap_circle();
-		} */
+		} 
 	
 	
 //Ideology Matching
