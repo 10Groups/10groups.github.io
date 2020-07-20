@@ -1303,7 +1303,7 @@ questions = [
 	        "question": "Equal opportunities should be advocated, and not equal outcomes.",
 	        "effect": {
 	        "econ": 2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
-                "cltrhrchy": 10
+                "cltrhrchy": 10,
                 "cltrassi": 0,
                 "proccomp": 0,
                 "proctrans": 0,
