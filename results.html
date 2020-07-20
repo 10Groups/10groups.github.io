@@ -26,7 +26,7 @@
 <h1>10Groups</h1>
 <hr>
 	
-<p style="text-align:center;">In this page, you will find 3 Different types of results: Compasses, Heat Map, and Axes. If you have any suggestions, please fill in <a href="https://forms.gle/gZgaSJ93rrMNa3k4A">this form</a>.</p>    
+<p style="text-align:center;">In this page, you will find 3 Different types of results: Compasses, Heat Map, and Axes. If you have any suggestions, please fill in <a href="https://forms.gle/gZgaSJ93rrMNa3k4A">this form</a>. Note that the placement of the axes do not necessarily correspond to the normal compass.</p>    
 
 <hr>
 	
@@ -227,7 +227,7 @@
 <progress id="pol-c" value="20" max="40"> </progress>
 <div class="label-r"><label for="pol-c" style="font-size:16px>Political News</label></div> </div>
 	
-<div class="center"><div class="label-l"><label for="pol-d style="font-size:16px">Easily Achievable</label></div>
+<div class="center"><div class="label-l"><label for="pol-d" style="font-size:16px">Easily Achievable</label></div>
 <progress id="pol-d" value="20" max="40"> </progress>
 <div class="label-r"><label for="pol-d" style="font-size:16px">More Unlikely</label></div> </div>
 	
@@ -373,6 +373,12 @@
 	ctx.arc(900 + (55 * (x_axis)) , 750 - (55 * (y_axis)) , 150 , 0, 2 * Math.PI);
 	ctx.fillStyle = "rgba(240, 52, 52, 0.5)"
 	ctx.fill();
+		
+	//Heat Map - Economic and Governmental
+	ctx.beginPath();
+	ctx.arc(900 + (55 * (ax_axis)) , 750 - (55 * (by_axis)) , 150 , 0, 2 * Math.PI);
+	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
+	ctx.fill();
 	
 	//Heat Map - Economic
 	ctx.beginPath();
@@ -386,22 +392,28 @@
 	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
 	ctx.fill();
 	
+	//Heat Map - Nationalist and State
+	ctx.beginPath();
+	ctx.arc(900 + (55 * (dx_axis)) , 750 - (55 * (cy_axis)) , 150 , 0, 2 * Math.PI);
+	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
+	ctx.fill();
+		
 	//Heat Map - Nationalist and Societal
 	ctx.beginPath();
-	ctx.arc(900 + (55 * (dx_axis)) , 750 - (20 * ((cy_axis) + (cx_axis))) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
+	ctx.arc(900 + (20 * ((cy_axis) + (cx_axis))) , 750 - (55 * (cx_axis)) , 150 , 0, 2 * Math.PI);
+	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
 	ctx.fill();
 	
 	//Heat Map - Law and Societal
 	ctx.beginPath();
 	ctx.arc(900 + (55 * (dy_axis)) , 750 - (27.5 * ((ey_axis) + (ex_axis))) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
+	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
 	ctx.fill();
 	
 	//Heat Map - Cultural
 	ctx.beginPath();
 	ctx.arc(900 + (55 * (gx_axis)) , 750 - (55 * (gy_axis)) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
+	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
 	ctx.fill();
 	
 	}
