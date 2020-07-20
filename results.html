@@ -186,52 +186,52 @@
 	//Heat Map - General
 	ctx.beginPath();
 	ctx.arc(900 + (55 * (x_axis)) , 750 - (55 * (y_axis)) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.5)"
+	ctx.fillStyle = "rgba(240, 52, 52, 0.5)" ;
 	ctx.fill();
 		
 	//Heat Map - Economic and Governmental
 	ctx.beginPath();
 	ctx.arc(900 + (55 * (ax_axis)) , 750 - (55 * (by_axis)) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
+	ctx.fillStyle = "rgba(240, 52, 52, 0.3)" ;
 	ctx.fill();
 	
 	//Heat Map - Economic
 	ctx.beginPath();
 	ctx.arc(900 + (55 * (ax_axis)) , 750 - (55 * (ay_axis)) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
+	ctx.fillStyle = "rgba(240, 52, 52, 0.3)" ;
 	ctx.fill();
 	
 	//Heat Map - Authoritarian and Technological
 	ctx.beginPath();
 	ctx.arc(900 + (27.5 * ((ey_axis) + (ex_axis))) , 750 - (27.5 * ((by_axis) + (bx_axis))) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
+	ctx.fillStyle = "rgba(240, 52, 52, 0.3)" ;
 	ctx.fill();
 	
 	//Heat Map - Nationalist and State
 	ctx.beginPath();
 	ctx.arc(900 + (55 * (dx_axis)) , 750 - (55 * (cy_axis)) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
+	ctx.fillStyle = "rgba(240, 52, 52, 0.2)" ;
 	ctx.fill();
 		
 	//Heat Map - Nationalist and Societal
 	ctx.beginPath();
 	ctx.arc(900 + (20 * ((cy_axis) + (cx_axis))) , 750 - (55 * (cx_axis)) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
+	ctx.fillStyle = "rgba(240, 52, 52, 0.2)" ;
 	ctx.fill();
 	
 	//Heat Map - Law and Societal
 	ctx.beginPath();
 	ctx.arc(900 + (55 * (dy_axis)) , 750 - (27.5 * ((ey_axis) + (ex_axis))) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
+	ctx.fillStyle = "rgba(240, 52, 52, 0.2)" ;
 	ctx.fill();
 	
 	//Heat Map - Cultural
 	ctx.beginPath();
 	ctx.arc(900 + (55 * (gx_axis)) , 750 - (55 * (gy_axis)) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
+	ctx.fillStyle = "rgba(240, 52, 52, 0.2)" ;
 	ctx.fill();
 	
-	};
+	}
 	    
 	//Heatmap Images
 	function heatmap_1() {
@@ -243,7 +243,7 @@
 		ctx.drawImage(img,0,0);
 		
 		heatmap_circle();
-		};
+		}
 	    
 	 function heatmap_2() {
   		var canvas = document.getElementById("heatmap");
@@ -254,7 +254,7 @@
 		ctx.drawImage(img,0,0);
 		 
 		heatmap_circle();
-		};
+		}
 	    
 	 function heatmap_3() {
   		var canvas = document.getElementById("heatmap");
