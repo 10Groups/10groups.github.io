@@ -325,6 +325,7 @@ questions = [
                 "polext": 0
 	        }
 	    },
+  {
 	        "question": "A regulated market is unfair for corporations, and ultimately, the people.",
 	        "effect": {
 	            "econ": 10,
@@ -1509,4 +1510,3 @@ questions = [
 	        }
 	    }
 	];
-
