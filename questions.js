@@ -1,12 +1,12 @@
 questions = [
 	//Economic
 	    {
-	        "question": "Marxism is too idealist, and is an ideology that would never work in practise.",
+	        "question": "Marxism is too idealist, and is an ideology that would never work in practice.",
 	        "effect": {
-	        "econ": 5,
+	        "econ": 10,
 	        "govt": 0,
 	        "econsys": 0,
-	        "econreg": -5,
+	        "econreg": -10,
                 "govtsize": 0,
                 "govttype": 0,
                 "diplapp": 0,
@@ -28,10 +28,10 @@ questions = [
 		{
 	        "question": "Oppression by corporations is more of a concern than oppression by governments.",
 	        "effect": {
-	            "econ": -5,
-	            "govt": 0,
-	            "econsys": -5,
-	            "econreg": 5,
+	        "econ": -10,
+	        "govt": 0,
+	        "econsys": -10,
+	        "econreg": 10,
                 "govtsize": 0,
                 "govttype": 0,
                 "diplapp": 0,
@@ -53,10 +53,10 @@ questions = [
 	    {
 	        "question": "In this existing system, it is necessary for the government to intervene in the economy to protect consumers.",
 	        "effect": {
-	            "econ": -5,
+	            "econ": -10,
 	            "govt": 0,
 	            "econsys": 0,
-	            "econreg": 5,
+	            "econreg": 10,
                 "govtsize": 0,
                 "govttype": 0,
                 "diplapp": 0,
@@ -78,10 +78,10 @@ questions = [
 	    {
 	        "question": "The market regulates itself, since unjust monopolies are punished by bankrupcy.",
 	        "effect": {
-	            "econ": 5,
+	            "econ": 10,
 	            "govt": 0,
 	            "econsys": 0,
-	            "econreg": -5,
+	            "econreg": -10,
                 "govtsize": 0,
                 "govttype": 0,
                 "diplapp": 0,
@@ -103,9 +103,9 @@ questions = [
 	    {
 	        "question": "Governmental social programs should be replaced with private charities and organizations.",
 	        "effect": {
-	            "econ": 5,
-	            "govt": -5,
-	            "econsys": 5,
+	            "econ": 10,
+	            "govt": -10,
+	            "econsys": 10,
 	            "econreg": 0,
                 "govtsize": 0,
                 "govttype": 0,
@@ -128,9 +128,9 @@ questions = [
 	    {
 	        "question": "From each according to his ability, to each according to his needs.",
 	        "effect": {
-	            "econ": -5,
+	            "econ": -10,
 	            "govt": 0,
-	            "econsys": -5,
+	            "econsys": -10,
 	            "econreg": 0,
                 "govtsize": 0,
                 "govttype": 0,
@@ -153,7 +153,7 @@ questions = [
 	    {
 	        "question": "I support the abolition of a minimum wage.",
 	        "effect": {
-	            "econ": 5,
+	            "econ": 10,
 	            "govt": 0,
 	            "econsys": 0,
 	            "econreg": -10,
@@ -178,10 +178,10 @@ questions = [
 	    {
 	        "question": "The market should provide healthcare, instead of the government.",
 	        "effect": {
-	            "econ": 5,
+	            "econ": 10,
 	            "govt": 0,
-	            "econsys": 5,
-	            "econreg": -5,
+	            "econsys": 10,
+	            "econreg": -10,
                 "govtsize": 0,
                 "govttype": 0,
                 "diplapp": 0,
@@ -203,10 +203,10 @@ questions = [
 	    {
 	        "question": "A government-controlled economy is generally better than that of an unregulated economy.",
 	        "effect": {
-	            "econ": -5,
+	            "econ": -10,
 	            "govt": 0,
 	            "econsys": 0,
-	            "econreg": 5,
+	            "econreg": 10,
                 "govtsize": 0,
                 "govttype": 0,
                 "diplapp": 0,
@@ -228,10 +228,10 @@ questions = [
 	    {
 	        "question": "Taxing citizens using involuntary methods can be considered an act of Theft or Violence.",
 	        "effect": {
-	            "econ": 5,
+	            "econ": 10,
 	            "govt": 0,
-	            "econsys": 5,
-	            "econreg": -5,
+	            "econsys": 10,
+	            "econreg": -10,
                 "govtsize": 0,
                 "govttype": 0,
                 "diplapp": 0,
@@ -253,9 +253,9 @@ questions = [
 	    {
 	        "question": "The means of production should belong to the workers.",
 	        "effect": {
-	            "econ": -5,
+	            "econ": -10,
 	            "govt": 0,
-	            "econsys": -5,
+	            "econsys": -10,
 	            "econreg": 0,
                 "govtsize": 0,
                 "govttype": 0,
@@ -278,9 +278,9 @@ questions = [
 	    {
 	        "question": "Roads and Electricity should be publicly owned.",
 	        "effect": {
-	            "econ": -5,
+	            "econ": -10,
 	            "govt": 0,
-	            "econsys": -5,
+	            "econsys": -10,
 	            "econreg": 0,
                 "govtsize": 0,
                 "govttype": 0,
@@ -303,10 +303,10 @@ questions = [
 	    {
 	        "question": "A regulated market is unfair for corporations, and ultimately, the people.",
 	        "effect": {
-	            "econ": 5,
+	            "econ": 10,
 	            "govt": 0,
 	            "econsys": 0,
-	            "econreg": -5,
+	            "econreg": -10,
                 "govtsize": 0,
                 "govttype": 0,
                 "diplapp": 0,
@@ -328,7 +328,7 @@ questions = [
 	    {
 	        "question": "The Justice System should be partially privatized, or even fully privatized.",
 	        "effect": {
-	            "econ": 5,
+	            "econ": 10,
 	            "govt": 0,
 	            "econsys": 10,
 	            "econreg": 0,
@@ -353,7 +353,7 @@ questions = [
 	    {
 	        "question": "Inheritance is a legitimate form of wealth.",
 	        "effect": {
-	            "econ": 5,
+	            "econ": 10,
 	            "govt": 0,
 	            "econsys": 10,
 	            "econreg": 0,
@@ -380,8 +380,8 @@ questions = [
 	        "question": "A strong and good leadership is more beneficial than a democratic system.",
 	        "effect": {
 	            "econ": 0,
-	            "govt": 5,
-	            "govttype": -5,
+	            "govt": 10,
+	            "govttype": -10,
 	            "govtsize": 0,
                 "econsys": 0,
                 "econreg": 0,
@@ -405,8 +405,8 @@ questions = [
 	        "question": "Democracy is the least worst system for leadership.",
 	        "effect": {
 	            "econ": 0,
-	            "govt": 5,
-	            "govttype": 5,
+	            "govt": 10,
+	            "govttype": 10,
 	            "govtsize": 0,
                 "econsys": 0,
                 "econreg": 0,
@@ -430,8 +430,8 @@ questions = [
 	        "question": "A beneficial democracy requires high levels of education.",
 	        "effect": {
 	            "econ": 0,
-	            "govt": 5,
-	            "govttype": -5,
+	            "govt": 10,
+	            "govttype": -10,
 	            "govtsize": 0,
                 "econsys": 0,
                 "econreg": 0,
@@ -455,9 +455,9 @@ questions = [
 	        "question": "The government is required for a well-functioning society to exist.",
 	        "effect": {
 	            "econ": 0,
-	            "govt": 5,
+	            "govt": 10,
 	            "govttype": 0,
-	            "govtsize": 5,
+	            "govtsize": 10,
                 "econsys": 0,
                 "econreg": 0,
                 "diplapp": 0,
@@ -480,9 +480,9 @@ questions = [
 	        "question": "Violence is not acceptable when protesting a government.",
 	        "effect": {
 	            "econ": 0,
-	            "govt": 5,
+	            "govt": 10,
 	            "govttype": 0,
-	            "govtsize": 5,
+	            "govtsize": 10,
                 "econsys": 0,
                 "econreg": 0,
                 "diplapp": 0,
@@ -505,9 +505,9 @@ questions = [
 	        "question": "The sacrifice of some civil liberties is necessary to protect us from acts of terrorism.",
 	        "effect": {
 	            "econ": 0,
-	            "govt": 5,
+	            "govt": 10,
 	            "govttype": 0,
-	            "govtsize": 5,
+	            "govtsize": 10,
                 "econsys": 0,
                 "econreg": 0,
                 "diplapp": 0,
@@ -530,9 +530,9 @@ questions = [
 	        "question": "Any action that does not impose agression on any person should not be considered a criminal offence.",
 	        "effect": {
 	            "econ": 0,
-	            "govt": -5,
+	            "govt": -10,
 	            "govttype": 0,
-	            "govtsize": -5,
+	            "govtsize": -10,
                 "econsys": 0,
                 "econreg": 0,
                 "diplapp": 0,
@@ -555,9 +555,9 @@ questions = [
 	        "question": "People should be willing to sacrifice their liberty for Security and Prosperity.",
 	        "effect": {
 	            "econ": 0,
-	            "govt": 5,
+	            "govt": 10,
 	            "govttype": 0,
-	            "govtsize": 5,
+	            "govtsize": 10,
                 "econsys": 0,
                 "econreg": 0,
                 "diplapp": 0,
@@ -580,9 +580,9 @@ questions = [
 	        "question": "All authority should be questioned.",
 	        "effect": {
 	            "econ": 0,
-	            "govt": -5,
+	            "govt": -10,
 	            "govttype": 0,
-	            "govtsize": -5,
+	            "govtsize": -10,
                 "econsys": 0,
                 "econreg": 0,
                 "diplapp": 0,
@@ -605,9 +605,9 @@ questions = [
 	        "question": "The existence of the state is a violation of our liberty and rights.",
 	        "effect": {
 	            "econ": 0,
-	            "govt": -5,
+	            "govt": -10,
 	            "govttype": 0,
-	            "govtsize": -5,
+	            "govtsize": -10,
                 "econsys": 0,
                 "econreg": 0,
                 "diplapp": 0,
@@ -631,13 +631,13 @@ questions = [
 	        "question": "I support Regional Unions, like the European Union.",
 	        "effect": {
 	        "econ": 0,
-	        "govt": 5,
+	        "govt": 2,
 	        "econsys": 0,
 	        "econreg": 0,
                 "govtsize": 0,
                 "govttype": 0,
                 "diplapp": 0,
-                "diplrel": -5,
+                "diplrel": -10,
                 "sctychg": 0,
                 "sctytrad": 0,
                 "techacc": 0,
@@ -661,7 +661,7 @@ questions = [
 	        "econreg": 0,
                 "govtsize": 0,
                 "govttype": 0,
-                "diplapp": -5,
+                "diplapp": -10,
                 "diplrel": 0,
                 "sctychg": 0,
                 "sctytrad": 0,
@@ -681,12 +681,12 @@ questions = [
 	        "question": "Countries with authoritarian governments should be denounced and invaded.",
 	        "effect": {
 	        "econ": 0,
-	        "govt": 5,
+	        "govt": 2,
 	        "econsys": 0,
 	        "econreg": 0,
                 "govtsize": 0,
                 "govttype": 0,
-                "diplapp": -5,
+                "diplapp": -10,
                 "diplrel": 0,
                 "sctychg": 0,
                 "sctytrad": 0,
@@ -711,7 +711,7 @@ questions = [
 	        "econreg": 0,
                 "govtsize": 0,
                 "govttype": 0,
-                "diplapp": 5,
+                "diplapp": 10,
                 "diplrel": 0,
                 "sctychg": 0,
                 "sctytrad": 0,
@@ -731,11 +731,11 @@ questions = [
 	        "question": "The United Nations needs more power.",
 	        "effect": {
 	        "econ": 0,
-	        "govt": 5,
+	        "govt": 2,
 	        "econsys": 0,
 	        "econreg": 0,
                 "govtsize": 0,
-                "govttype": -5,
+                "govttype": -10,
                 "diplapp": 0,
                 "diplrel": 0,
                 "sctychg": 0,
@@ -760,7 +760,7 @@ questions = [
 	        "econsys": 0,
 	        "econreg": 0,
                 "govtsize": 0,
-                "govttype": -5,
+                "govttype": -10,
                 "diplapp": 0,
                 "diplrel": 0,
                 "sctychg": 0,
@@ -785,7 +785,7 @@ questions = [
 	        "econsys": 0,
 	        "econreg": 0,
                 "govtsize": 0,
-                "govttype": 5,
+                "govttype": 10,
                 "diplapp": 0,
                 "diplrel": 0,
                 "sctychg": 0,
@@ -806,8 +806,8 @@ questions = [
 		{
 	        "question": "It's important that we maintain our culture and tradition.",
 	        "effect": {
-	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
-                "sctytrad": 5,
+	        "econ": -2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+                "sctytrad": 10,
                 "sctychg": 0,
                 "techacc": 0,
                 "techbio": 0,
@@ -824,8 +824,8 @@ questions = [
 		{
 	        "question": "Religion is mostly fictional.",
 	        "effect": {
-	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
-                "sctytrad": -5,
+	        "econ": -2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+                "sctytrad": -10,
                 "sctychg": 0,
                 "techacc": 0,
                 "techbio": 0,
@@ -842,8 +842,8 @@ questions = [
 		{
 	        "question": "Tradition are of no value on their own.",
 	        "effect": {
-	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
-                "sctytrad": -5,
+	        "econ": -2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+                "sctytrad": -10,
                 "sctychg": 0,
                 "techacc": 0,
                 "techbio": 0,
@@ -860,8 +860,8 @@ questions = [
 		{
 	        "question": "I support the LGBT Community.",
 	        "effect": {
-	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
-                "sctytrad": -5,
+	        "econ": -2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+                "sctytrad": -10,
                 "sctychg": 0,
                 "techacc": 0,
                 "techbio": 0,
@@ -878,8 +878,8 @@ questions = [
 		{
 	        "question": "I support Black Lives Matter.",
 	        "effect": {
-	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
-                "sctytrad": -5,
+	        "econ": -2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+                "sctytrad": -10,
                 "sctychg": 0,
                 "techacc": 0,
                 "techbio": 0,
@@ -896,8 +896,8 @@ questions = [
 		{
 	        "question": "Churches should be taxed the same way other institutions are taxed.",
 	        "effect": {
-	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
-                "sctytrad": 5,
+	        "econ": -2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+                "sctytrad": 10,
                 "sctychg": 0,
                 "techacc": 0,
                 "techbio": 0,
@@ -914,9 +914,9 @@ questions = [
 		{
 	        "question": "Thinking in the long term is more important than thinking in the short term.",
 	        "effect": {
-	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+	        "econ": -2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
                 "sctytrad": 0,
-                "sctychg": -5,
+                "sctychg": -10,
                 "techacc": 0,
                 "techbio": 0,
                 "lawtype": 0,
@@ -932,9 +932,9 @@ questions = [
 		{
 	        "question": "Reforms should happen gradually and slowly.",
 	        "effect": {
-	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+	        "econ": 2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
                 "sctytrad": 0,
-                "sctychg": 5,
+                "sctychg": 10,
                 "techacc": 0,
                 "techbio": 0,
                 "lawtype": 0,
@@ -950,9 +950,9 @@ questions = [
 		{
 	        "question": "The current political system in my nation is flawed.",
 	        "effect": {
-	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+	        "econ": -2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
                 "sctytrad": 0,
-                "sctychg": -5,
+                "sctychg": -10,
                 "techacc": 0,
                 "techbio": 0,
                 "lawtype": 0,
@@ -968,9 +968,9 @@ questions = [
 		{
 	        "question": "Rapid change often leads to the worsening of people's lives.",
 	        "effect": {
-	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
+	        "econ": 2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0,
                 "sctytrad": 0,
-                "sctychg": 5,
+                "sctychg": 10,
                 "techacc": 0,
                 "techbio": 0,
                 "lawtype": 0,
@@ -987,8 +987,8 @@ questions = [
 		{
 	        "question": "Technology is negatively affecting modern society.",
 	        "effect": {
-	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
-                "techacc": 5,
+	        "econ": 2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
+                "techacc": 10,
                 "techbio": 0,
                 "lawtype": 0,
                 "lawrehab": 0,
@@ -1003,8 +1003,8 @@ questions = [
 		{
 	        "question": "The Industrial Revolution and its consequences have been a disaster for the human race.",
 	        "effect": {
-	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
-                "techacc": 5,
+	        "econ": 2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
+                "techacc": 10,
                 "techbio": 0,
                 "lawtype": 0,
                 "lawrehab": 0,
@@ -1019,8 +1019,8 @@ questions = [
 		{
 	        "question": "Usage of genetic modification should be minimized.",
 	        "effect": {
-	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
-                "techacc": 5,
+	        "econ": 2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
+                "techacc": 10,
                 "techbio": 0,
                 "lawtype": 0,
                 "lawrehab": 0,
@@ -1035,8 +1035,8 @@ questions = [
 		{
 	        "question": "The modern lifestyle has led to a decrease of happiness, and often lacks meaning.",
 	        "effect": {
-	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
-                "techacc": 5,
+	        "econ": 2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
+                "techacc": 10,
                 "techbio": 0,
                 "lawtype": 0,
                 "lawrehab": 0,
@@ -1051,9 +1051,9 @@ questions = [
 		{
 	        "question": "Getting past physical limitations through technology would be beneficial to mankind.",
 	        "effect": {
-	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
+	        "econ": 2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
                 "techacc": 0,
-                "techbio": 5,
+                "techbio": 10,
                 "lawtype": 0,
                 "lawrehab": 0,
                 "cltrhrchy": 0,
@@ -1069,7 +1069,7 @@ questions = [
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
                 "techacc": 0,
-                "techbio": -5,
+                "techbio": -10,
                 "lawtype": 0,
                 "lawrehab": 0,
                 "cltrhrchy": 0,
@@ -1083,9 +1083,9 @@ questions = [
 		{
 	        "question": "The risks of transhumanism overweighs the benefits.",
 	        "effect": {
-	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
+	        "econ": 2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0,
                 "techacc": 0,
-                "techbio": -5,
+                "techbio": -10,
                 "lawtype": 0,
                 "lawrehab": 0,
                 "cltrhrchy": 0,
@@ -1101,7 +1101,7 @@ questions = [
 	        "question": "Law principles should be codified into a referable system.",
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
-                "lawtype": 5,
+                "lawtype": 10,
                 "lawrehab": 0,
                 "cltrhrchy": 0,
                 "cltrassi": 0,
@@ -1115,7 +1115,7 @@ questions = [
 	        "question": "Courts should reference to other judicial decisions.",
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
-                "lawtype": -5,
+                "lawtype": -10,
                 "lawrehab": 0,
                 "cltrhrchy": 0,
                 "cltrassi": 0,
@@ -1129,7 +1129,7 @@ questions = [
 	        "question": "Judges should hold more power in courts.",
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
-                "lawtype": -5,
+                "lawtype": -10,
                 "lawrehab": 0,
                 "cltrhrchy": 0,
                 "cltrassi": 0,
@@ -1143,7 +1143,7 @@ questions = [
 	        "question": "Lawmakers and legal experts should hold more influence than judges.",
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
-                "lawtype": 5,
+                "lawtype": 10,
                 "lawrehab": 0,
                 "cltrhrchy": 0,
                 "cltrassi": 0,
@@ -1157,7 +1157,7 @@ questions = [
 	        "question": "If a decision cannot be made in courts, relevant cases in the past should be referenced.",
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
-                "lawtype": -5,
+                "lawtype": -10,
                 "lawrehab": 0,
                 "cltrhrchy": 0,
                 "cltrassi": 0,
@@ -1172,7 +1172,7 @@ questions = [
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
                 "lawtype": 0,
-                "lawrehab": 5,
+                "lawrehab": 10,
                 "cltrhrchy": 0,
                 "cltrassi": 0,
                 "proccomp": 0,
@@ -1186,7 +1186,7 @@ questions = [
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
                 "lawtype": 0,
-                "lawrehab": -5,
+                "lawrehab": -10,
                 "cltrhrchy": 0,
                 "cltrassi": 0,
                 "proccomp": 0,
@@ -1200,7 +1200,7 @@ questions = [
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
                 "lawtype": 0,
-                "lawrehab": 5,
+                "lawrehab": 10,
                 "cltrhrchy": 0,
                 "cltrassi": 0,
                 "proccomp": 0,
@@ -1214,7 +1214,7 @@ questions = [
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
                 "lawtype": 0,
-                "lawrehab": 5,
+                "lawrehab": 10,
                 "cltrhrchy": 0,
                 "cltrassi": 0,
                 "proccomp": 0,
@@ -1228,7 +1228,7 @@ questions = [
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
                 "lawtype": 0,
-                "lawrehab": 5,
+                "lawrehab": 10,
                 "cltrhrchy": 0,
                 "cltrassi": 0,
                 "proccomp": 0,
@@ -1241,8 +1241,8 @@ questions = [
 		{
 	        "question": "A well-functioning society requries a hierarchy.",
 	        "effect": {
-	        "econ": 0, "govt": 5, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
-                "cltrhrchy": 5,
+	        "econ": 0, "govt": 2, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
+                "cltrhrchy": 10,
                 "cltrassi": 0,
                 "proccomp": 0,
                 "proctrans": 0,
@@ -1253,8 +1253,8 @@ questions = [
 		{
 	        "question": "Hierarchies will inevitably be formed in every society.",
 	        "effect": {
-	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
-                "cltrhrchy": 5,
+	        "econ": 2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
+                "cltrhrchy": 10,
                 "cltrassi": 0,
                 "proccomp": 0,
                 "proctrans": 0,
@@ -1265,8 +1265,8 @@ questions = [
 		{
 	        "question": "A system of equal outcomes should be established.",
 	        "effect": {
-	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
-                "cltrhrchy": -5,
+	        "econ": -2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
+                "cltrhrchy": -10,
                 "cltrassi": 0,
                 "proccomp": 0,
                 "proctrans": 0,
@@ -1277,8 +1277,8 @@ questions = [
 		{
 	        "question": "Equal opportunities should be advocated, and not equal outcomes.",
 	        "effect": {
-	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
-                "cltrhrchy": 5,
+	        "econ": 2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
+                "cltrhrchy": 10
                 "cltrassi": 0,
                 "proccomp": 0,
                 "proctrans": 0,
@@ -1290,7 +1290,7 @@ questions = [
 	        "question": "People should be treated equally regardless of their groups and characteristics.",
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
-                "cltrhrchy": -5,
+                "cltrhrchy": -10,
                 "cltrassi": 0,
                 "proccomp": 0,
                 "proctrans": 0,
@@ -1301,9 +1301,9 @@ questions = [
 		{
 	        "question": "My nation should be more diverse.",
 	        "effect": {
-	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
+	        "econ": -2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
                 "cltrhrchy": 0,
-                "cltrassi": -5,
+                "cltrassi": -10,
                 "proccomp": 0,
                 "proctrans": 0,
                 "polapol": 0,
@@ -1313,9 +1313,9 @@ questions = [
 		{
 	        "question": "Monoculturalism is disastrous for society.",
 	        "effect": {
-	        "econ": -5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
+	        "econ": -2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
                 "cltrhrchy": 0,
-                "cltrassi": -5,
+                "cltrassi": -10,
                 "proccomp": 0,
                 "proctrans": 0,
                 "polapol": 0,
@@ -1325,9 +1325,9 @@ questions = [
 		{
 	        "question": "If we accept migrants into our borders, the migrants should be expected to assimilate into our culture.",
 	        "effect": {
-	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
+	        "econ": 2, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
                 "cltrhrchy": 0,
-                "cltrassi": 5,
+                "cltrassi": 10,
                 "proccomp": 0,
                 "proctrans": 0,
                 "polapol": 0,
@@ -1337,9 +1337,9 @@ questions = [
 		{
 	        "question": "Multiculturalism is unrealistic.",
 	        "effect": {
-	        "econ": 5, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
+	        "econ": 10, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
                 "cltrhrchy": 0,
-                "cltrassi": 5,
+                "cltrassi": 10,
                 "proccomp": 0,
                 "proctrans": 0,
                 "polapol": 0,
@@ -1351,7 +1351,7 @@ questions = [
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0,
                 "cltrhrchy": 0,
-                "cltrassi": 5,
+                "cltrassi": 10,
                 "proccomp": 0,
                 "proctrans": 0,
                 "polapol": 0,
@@ -1363,7 +1363,7 @@ questions = [
 	        "question": "Compromizes should be made in order to suit the needs of most people.",
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0,
-                "proccomp": -5,
+                "proccomp": -10,
                 "proctrans": 0,
                 "polapol": 0,
                 "polext": 0
@@ -1373,7 +1373,7 @@ questions = [
 	        "question": "Compromizing can avoid unnecessary conflict.",
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0,
-                "proccomp": -5,
+                "proccomp": -10,
                 "proctrans": 0,
                 "polapol": 0,
                 "polext": 0
@@ -1383,18 +1383,18 @@ questions = [
 	        "question": "Adopting radical ideas isn't possible unless compromizes are made.",
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0,
-                "proccomp": -5,
+                "proccomp": -10,
                 "proctrans": 0,
                 "polapol": 0,
                 "polext": 0
 	        }
 	    },
 		{
-	        "question": "My political ideals can be acheived within 5 years.",
+	        "question": "My political ideals can be acheived within 10 years.",
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0,
                 "proccomp": 0,
-                "proctrans": -5,
+                "proctrans": -10,
                 "polapol": 0,
                 "polext": 0
 	        }
@@ -1404,7 +1404,7 @@ questions = [
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0,
                 "proccomp": 0,
-                "proctrans": 5,
+                "proctrans": 10,
                 "polapol": 0,
                 "polext": 0
 	        }
@@ -1414,7 +1414,7 @@ questions = [
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0,
                 "proccomp": 0,
-                "proctrans": 5,
+                "proctrans": 10,
                 "polapol": 0,
                 "polext": 0
 	        }
@@ -1425,7 +1425,7 @@ questions = [
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0, "proccomp": 0, "proctrans": 0,
                 "polapol": 0,
-                "polext": 5
+                "polext": 10
 	        }
 	    },
 		{
@@ -1433,7 +1433,7 @@ questions = [
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0, "proccomp": 0, "proctrans": 0,
                 "polapol": 0,
-                "polext": 5
+                "polext": 10
 	        }
 	    },
 		{
@@ -1441,7 +1441,7 @@ questions = [
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0, "proccomp": 0, "proctrans": 0,
                 "polapol": 0,
-                "polext": 5
+                "polext": 10
 	        }
 	    },
 		{
@@ -1449,14 +1449,14 @@ questions = [
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0, "proccomp": 0, "proctrans": 0,
                 "polapol": 0,
-                "polext": 5
+                "polext": 10
 	        }
 	    },
 		{
 	        "question": "Politics is boring to me.",
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0, "proccomp": 0, "proctrans": 0,
-                "polapol": -5,
+                "polapol": -10,
                 "polext": 0
 	        }
 	    },
@@ -1464,7 +1464,7 @@ questions = [
 	        "question": "Nearly all politicians are evil and problematic.",
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0, "proccomp": 0, "proctrans": 0,
-                "polapol": -5,
+                "polapol": -10,
                 "polext": 0
 	        }
 	    },
@@ -1472,7 +1472,7 @@ questions = [
 	        "question": "Politics should be avoided in daily life.",
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0, "proccomp": 0, "proctrans": 0,
-                "polapol": -5,
+                "polapol": -10,
                 "polext": 0
 	        }
 	    },
@@ -1480,7 +1480,7 @@ questions = [
 	        "question": "Politics is very important for society, and shouldn't be ignored.",
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0, "lawtype": 0, "lawrehab": 0, "cltrhrchy": 0, "cltrassi": 0, "proccomp": 0, "proctrans": 0,
-                "polapol": 5,
+                "polapol": 10,
                 "polext": 0
 	        }
 	    }
