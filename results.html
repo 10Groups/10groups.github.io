@@ -235,7 +235,7 @@
 	    
 	//Heatmap Images
 	function heatmap_1() {
-  		var c = document.getElementById("heatmap");
+  		var canvas = document.getElementById("heatmap");
 		var ctx = c.getContext("2d");
 		
 		context.clearRect(0, 0, canvas.width, canvas.height);
@@ -246,7 +246,7 @@
 		};
 	    
 	 function heatmap_2() {
-  		var c = document.getElementById("heatmap");
+  		var canvas = document.getElementById("heatmap");
 		var ctx = c.getContext("2d");
 		 
 		context.clearRect(0, 0, canvas.width, canvas.height);
@@ -257,7 +257,7 @@
 		};
 	    
 	 function heatmap_3() {
-  		var c = document.getElementById("heatmap");
+  		var canvas = document.getElementById("heatmap");
 		var ctx = c.getContext("2d");
 		 
 		context.clearRect(0, 0, canvas.width, canvas.height);
@@ -265,7 +265,7 @@
 		ctx.drawImage(img,0,0);
 		 
 		heatmap_circle();
-		};
+		}
 	
 	    
 	//Axes - Code
