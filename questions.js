@@ -276,7 +276,7 @@ questions = [
 	        }
 	    },
 	    {
-	        "question": "Roads and Electricity should be publicly owned.",
+	        "question": "Roads and transportation should be publicly owned.",
 	        "effect": {
 	            "econ": -10,
 	            "govt": 0,
@@ -300,7 +300,31 @@ questions = [
                 "polext": 0
 	        }
 	    },
-	    {
+		{
+	        "question": "Electricity should be publicly owned.",
+	        "effect": {
+	            "econ": -10,
+	            "govt": 0,
+	            "econsys": -10,
+	            "econreg": 0,
+                "govtsize": 0,
+                "govttype": 0,
+                "diplapp": 0,
+                "diplrel": 0,
+                "sctychg": 0,
+                "sctytrad": 0,
+                "techacc": 0,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
 	        "question": "A regulated market is unfair for corporations, and ultimately, the people.",
 	        "effect": {
 	            "econ": 10,
