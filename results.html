@@ -31,13 +31,21 @@
 <h2 style="text-align:center;">Results - Compass</h2>
 <canvas id="canvas" width="2500" height="1500" style="border:1px solid #d3d3d3;"></canvas>
 <img id="compass" src="compassimage.png" alt="Image" style="display: none;" />
-<img id="chart" src="heatmap.png" alt="Image" style="display: none;" />
+<img id="heatmap1" src="/heatmap/heatmap1.png" alt="Image" style="display: none;" />
+<img id="heatmap2" src="/heatmap/heatmap2.png" alt="Image" style="display: none;" />
+<img id="heatmap3" src="/heatmap/heatmap3.png" alt="Image" style="display: none;" />
 <br>
 <p style="text-align:center;">You can send the results of this compass by copying and pasting the URL, Screenshotting, or using the image above. Please zoom in if the canvas is too small or blurry.</p>    
     
 <hr>
 <h2 style="text-align:center;">Results - Heat Map</h2>	
 <canvas id="heatmap" width="1800" height="1500" style="border:1px solid #d3d3d3;"></canvas> 
+	
+<div><button class="small_button" onclick="heatmap_1()" id="back_button">None</button>
+<button class="small_button" onclick="heatmap_2()" id="back_button">Icons</button>
+<button class="small_button" onclick="heatmap_3()" id="back_button">Icons + Labels</button></div>
+	
+	
 <br>
 <p style="text-align:center;">You can send the results of this compass by copying and pasting the URL, Screenshotting, or using the image above. The Heat Map is determined by the overlapping between different axes.</p>    
 
@@ -366,7 +374,7 @@
 	//Heat Map
  	var c = document.getElementById("heatmap");
 	var ctx = c.getContext("2d");
-  	var img = document.getElementById("chart");
+  	var img = document.getElementById("heatmap1");
 	ctx.drawImage(img,0,0);
 	
 	//Heat Map - General
@@ -419,8 +427,31 @@
 	
 	}
 	    
+	//Heatmap Images
+	function heatmap_1() {
+  		var c = document.getElementById("heatmap");
+		var ctx = c.getContext("2d");
+  		var img = document.getElementById("heatmap1");
+		ctx.drawImage(img,0,0);
+		}
+	    
+	 function heatmap_2() {
+  		var c = document.getElementById("heatmap");
+		var ctx = c.getContext("2d");
+  		var img = document.getElementById("heatmap2");
+		ctx.drawImage(img,0,0);
+		}
+	    
+	 function heatmap_3() {
+  		var c = document.getElementById("heatmap");
+		var ctx = c.getContext("2d");
+  		var img = document.getElementById("heatmap3");
+		ctx.drawImage(img,0,0);
+		}
+	
+	    
 	//Axes - Code
-	document.getElementById("econ-a").value = (10 + (ax_axis));
+	/* document.getElementById("econ-a").value = (10 + (ax_axis));
 	document.getElementById("econ-b").value = (10 - (ay_axis));
 	document.getElementById("econ-c").value = (30 + (ax_axis) - (ay_axis) - (by_axis));
 	document.getElementById("econ-d").value = (30 + (ax_axis) - (by_axis) - (y_axis));
@@ -472,7 +503,7 @@
 	document.getElementById("pol-b").value = (10 - (iy_axis));
 	document.getElementById("pol-c").value = (20 - (iy_axis) + (by_axis));
 	document.getElementById("pol-d").value = (20 + (ix_axis) + (hy_axis));
-	document.getElementById("pol-e").value = (20 - (iy_axis) + (ix_axis));
+	document.getElementById("pol-e").value = (20 - (iy_axis) + (ix_axis)); */
 	
 	
 //Ideology Matching
