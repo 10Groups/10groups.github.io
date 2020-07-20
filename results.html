@@ -31,21 +31,13 @@
 <h2 style="text-align:center;">Results - Compass</h2>
 <canvas id="canvas" width="2500" height="1500" style="border:1px solid #d3d3d3;"></canvas>
 <img id="compass" src="compassimage.png" alt="Image" style="display: none;" />
-<img id="heatmap1" src="/heatmap/heatmap1.png" alt="Image" style="display: none;" />
-<img id="heatmap2" src="/heatmap/heatmap2.png" alt="Image" style="display: none;" />
-<img id="heatmap3" src="/heatmap/heatmap3.png" alt="Image" style="display: none;" />
+<img id="chart" src="/heatmap/heatmap1.png" alt="Image" style="display: none;" />
 <br>
 <p style="text-align:center;">You can send the results of this compass by copying and pasting the URL, Screenshotting, or using the image above. Please zoom in if the canvas is too small or blurry.</p>    
     
 <hr>
 <h2 style="text-align:center;">Results - Heat Map</h2>	
 <canvas id="heatmap" width="1800" height="1500" style="border:1px solid #d3d3d3;"></canvas> 
-	
-<div><button class="small_button" onclick="heatmap_1()" id="back_button">None</button>
-<button class="small_button" onclick="heatmap_2()" id="back_button">Icons</button>
-<button class="small_button" onclick="heatmap_3()" id="back_button">Icons + Labels</button></div>
-	
-	
 <br>
 <p style="text-align:center;">You can send the results of this compass by copying and pasting the URL, Screenshotting, or using the image above. The Heat Map is determined by the overlapping between different axes.</p>    
 
@@ -175,87 +167,59 @@
 	//Heat Map
  	var c = document.getElementById("heatmap");
 	var ctx = c.getContext("2d");
-  	var img = document.getElementById("heatmap1");
+  	var img = document.getElementById("chart");
 	ctx.drawImage(img,0,0);
-	 
-	function heatmap_circle() {
-		
+	
 	//Heat Map - General
 	ctx.beginPath();
 	ctx.arc(900 + (55 * (x_axis)) , 750 - (55 * (y_axis)) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.5)" ;
+	ctx.fillStyle = "rgba(240, 52, 52, 0.5)"
 	ctx.fill();
 		
 	//Heat Map - Economic and Governmental
 	ctx.beginPath();
 	ctx.arc(900 + (55 * (ax_axis)) , 750 - (55 * (by_axis)) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.3)" ;
+	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
 	ctx.fill();
 	
 	//Heat Map - Economic
 	ctx.beginPath();
 	ctx.arc(900 + (55 * (ax_axis)) , 750 - (55 * (ay_axis)) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.3)" ;
+	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
 	ctx.fill();
 	
 	//Heat Map - Authoritarian and Technological
 	ctx.beginPath();
 	ctx.arc(900 + (27.5 * ((ey_axis) + (ex_axis))) , 750 - (27.5 * ((by_axis) + (bx_axis))) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.3)" ;
+	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
 	ctx.fill();
 	
 	//Heat Map - Nationalist and State
 	ctx.beginPath();
 	ctx.arc(900 + (55 * (dx_axis)) , 750 - (55 * (cy_axis)) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.2)" ;
+	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
 	ctx.fill();
 		
 	//Heat Map - Nationalist and Societal
 	ctx.beginPath();
 	ctx.arc(900 + (20 * ((cy_axis) + (cx_axis))) , 750 - (55 * (cx_axis)) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.2)" ;
+	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
 	ctx.fill();
 	
 	//Heat Map - Law and Societal
 	ctx.beginPath();
 	ctx.arc(900 + (55 * (dy_axis)) , 750 - (27.5 * ((ey_axis) + (ex_axis))) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.2)" ;
+	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
 	ctx.fill();
 	
 	//Heat Map - Cultural
 	ctx.beginPath();
 	ctx.arc(900 + (55 * (gx_axis)) , 750 - (55 * (gy_axis)) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.2)" ;
+	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
 	ctx.fill();
+	
 	}
 	    
-	//Heatmap Images
-	function heatmap_1() {
-  		var canvas = document.getElementById("heatmap");
-		var ctx = c.getContext("2d");
-		var img = document.getElementById("heatmap1");
-		ctx.drawImage(img,0,0);
-		
-		heatmap_circle();
-		}
-	    
-	 function heatmap_2() {
-  		var canvas = document.getElementById("heatmap");
-		var ctx = c.getContext("2d");
-  		var img = document.getElementById("heatmap2");
-		ctx.drawImage(img,0,0);
-		 
-		heatmap_circle();
-		}
-	    
-	 function heatmap_3() {
-  		var canvas = document.getElementById("heatmap");
-		var ctx = c.getContext("2d");
-  		var img = document.getElementById("heatmap3");
-		ctx.drawImage(img,0,0);
-		 
-		heatmap_circle();
-		} 
 	
 	
 //Ideology Matching
