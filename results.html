@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='style.css' rel='stylesheet' type='text/css'>
@@ -15,12 +16,9 @@
          gtag('js', new Date());
 
          gtag('config', 'UA-173028192-1');
-</script>	
-</head>
-
-<script type="application/javascript"
-        src="ideologies.js">
 </script>
+<script type="application/javascript" src="ideologies.js"></script>
+</head>
 
 <body>
 <h1>10Groups</h1>
@@ -225,7 +223,7 @@
 	
 <div class="center"><div class="label-l"><label for="pol-c" style="font-size:16px>Apolitical Education</label></div>
 <progress id="pol-c" value="20" max="40"> </progress>
-<div class="label-r"><label for="pol-c" style="font-size:16px>Political News</label></div> </div>
+<div class="label-r"><label for="pol-c" style="font-size:16px>Political Education</label></div> </div>
 	
 <div class="center"><div class="label-l"><label for="pol-d" style="font-size:16px">Easily Achievable</label></div>
 <progress id="pol-d" value="20" max="40"> </progress>
@@ -420,7 +418,7 @@
 	    
 	//Axes - Code
 	document.getElementById("econ-a").value = (10 + (ax_axis));
-	document.getElementById("econ-b").value = (10 + (ay_axis));
+	document.getElementById("econ-b").value = (10 - (ay_axis));
 	document.getElementById("econ-c").value = (30 + (ax_axis) - (ay_axis) - (by_axis));
 	document.getElementById("econ-d").value = (30 + (ax_axis) - (by_axis) - (y_axis));
 	document.getElementById("econ-e").value = (20 + (ax_axis) + (gx_axis));
