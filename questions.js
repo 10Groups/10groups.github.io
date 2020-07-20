@@ -1126,7 +1126,7 @@ questions = [
 	        }
 	    },
 		{
-	        "question": "Judges should hold more power in courts.",
+	        "question": "Judges should hold more power than legislators.",
 	        "effect": {
 	        "econ": 0, "govt": 0, "econsys": 0, "econreg": 0, "govtsize": 0, "govttype": 0, "diplapp": 0, "diplrel": 0, "sctytrad": 0, "sctychg": 0, "techacc": 0, "techbio": 0,
                 "lawtype": -10,
