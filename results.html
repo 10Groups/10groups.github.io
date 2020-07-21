@@ -41,7 +41,94 @@
 <br>
 <p style="text-align:center;">You can send the results of this compass by copying and pasting the URL, Screenshotting, or using the image above. The Heat Map is determined by the overlapping between different axes.</p>    
 
+<hr>	
+<h2 style="text-align:center;">Results - Axes</h2>
+
+<!-- Economy -->
+<div class="center"><div class="label-l"><label for="econ-a" style="font-size:16px">Capitalism</label></div>
+<progress id="econ-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="econ-a">Socialism</label></div> </div>
 	
+<div class="center"><div class="label-l"><label for="econ-b" style="font-size:16px">Free</label></div>
+<progress id="econ-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="econ-b">Planned</label></div> </div>
+	
+<!-- Government -->
+<div class="center"><div class="label-l"><label for="govt-a">Libertarian</label></div>
+<progress id="govt-a" value="20" max="40"> </progress>
+<div class="label-r"><label for="govt-a">Authoritarian</label></div> </div>
+     
+<div class="center"><div class="label-l"><label for="govt-b" style="font-size:16px">Autocracy</label></div>
+<progress id="govt-b" value="20" max="40"> </progress>
+<div class="label-r"><label for="govt-b" style="font-size:16px">Democracy</label></div> </div>
+	
+<!-- Diplomacy -->
+<div class="center"><div class="label-l"><label for="dipl-a">Globalism</label></div>
+<progress id="dipl-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="dipl-a">Nationalism</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="dipl-b">Particular</label></div>
+<progress id="dipl-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="dipl-b">Universal</label></div> </div>
+	
+<!-- Society -->
+<div class="center"><div class="label-l"><label for="scty-a">Tradition</label></div>
+<progress id="scty-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="scty-a">Progress</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="scty-b">Conserve</label></div>
+<progress id="scty-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="scty-b">Reform</label></div> </div>
+	
+<!-- Technology -->
+<div class="center"><div class="label-l"><label for="tech-a">Decelerate</label></div>
+<progress id="tech-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="tech-a">Accelerate</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="tech-b">Primitivism</label></div>
+<progress id="tech-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="tech-b">Transhumanism</label></div> </div>
+	
+<!-- Law -->
+<div class="center"><div class="label-l"><label for="law-a">Civil Law</label></div>
+<progress id="law-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="law-a">Common Law</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="law-b" style="font-size:16px">Rehabilitive</label></div>
+<progress id="law-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="law-b" style="font-size:16px">Punitive</label></div> </div>
+	
+<!-- Culture -->
+<div class="center"><div class="label-l"><label for="cltr-a" style="font-size:16px">Hierarchy</label></div>
+<progress id="cltr-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="cltr-a" style="font-size:16px">Equality</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="cltr-b" style="font-size:14px">Multicultural</label></div>
+<progress id="cltr-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="cltr-b" style="font-size:16px">Monocultural</label></div> </div>
+	
+<!-- Procedure -->
+<div class="center"><div class="label-l"><label for="proc-a">Persist</label></div>
+<progress id="proc-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="proc-a" style="font-size:16px">Compromize</label></div> </div>	
+	
+<div class="center"><div class="label-l"><label for="proc-b">Direct</label></div>
+<progress id="proc-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="proc-b" style="font-size:16px">Transitional</label></div> </div>	
+	
+<!-- Politics -->
+<div class="center"><div class="label-l"><label for="pol-a">Radical</label></div>
+<progress id="pol-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="pol-a">Moderate</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="pol-b">Apolitical</label></div>
+<progress id="pol-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="pol-b">Politicized</label></div> </div>
+
+<br>
+<p style="text-align:center;">The above are the compass results generated and displayed as different spectrums.</p>    
+<br>
+
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br> 	    
 <!--canvas-->
     <script>	    
@@ -220,7 +307,25 @@
 	
 	}
 	    
-	
+//Spectrum View
+	document.getElementById("econ-a").value = (10 + (ax_axis));
+	document.getElementById("econ-b").value = (10 - (ay_axis));
+	document.getElementById("govt-a").value = (10 + (bx_axis));
+	document.getElementById("govt-b").value = (10 + (by_axis));
+	document.getElementById("dipl-a").value = (10 - (cy_axis));
+	document.getElementById("dipl-b").value = (10 + (cx_axis));
+	document.getElementById("scty-a").value = (10 + (dx_axis));
+	document.getElementById("scty-b").value = (10 - (dy_axis));
+	document.getElementById("tech-a").value = (10 + (ex_axis));
+	document.getElementById("tech-b").value = (10 - (ey_axis));
+	document.getElementById("law-a").value = (10 + (fx_axis));
+	document.getElementById("law-b").value = (10 - (fy_axis));
+	document.getElementById("cltr-a").value = (10 + (gx_axis));
+	document.getElementById("cltr-b").value = (10 - (gy_axis));
+	document.getElementById("proc-a").value = (10 + (hx_axis));
+	document.getElementById("proc-b").value = (10 - (hy_axis));
+	document.getElementById("pol-a").value = (10 + (ix_axis));
+	document.getElementById("pol-b").value = (10 - (iy_axis));
 	
 //Ideology Matching
 	
