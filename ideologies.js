@@ -1,7 +1,8 @@
 ideologies = [
     {
-        "name": "Centrism",
-        "desc": "Centrism is an ideology.",
+        "name": "WIP",
+		"desc": "Work In Progress",
+		"next": "WIP, WIP, WIP, WIP, WIP",
         "stats": {
 	  "econ": 0,
 	  "govt": 0,
@@ -26,8 +27,9 @@ ideologies = [
         }
     },
     {
-        "name": "Anarcho-Capitalism",
-        "desc": "Ancap do be an ideology tho",
+        "name": "Anarcho-WIP",
+		"desc": "Anarcho Work In Progress",
+		"next": "WIP, WIP, WIP, WIP, WIP",
         "stats": {
 	  "econ": 9,
 	  "govt": 9,
