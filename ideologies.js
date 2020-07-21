@@ -1,6 +1,7 @@
 ideologies = [
     {
         "name": "Centrism",
+        "desc": "Centrism is an ideology.",
         "stats": {
 	  "econ": 0,
 	  "govt": 0,
@@ -26,6 +27,7 @@ ideologies = [
     },
     {
         "name": "Anarcho-Capitalism",
+        "desc": "Ancap do be an ideology tho",
         "stats": {
 	  "econ": 9,
 	  "govt": 9,
