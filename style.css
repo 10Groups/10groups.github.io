@@ -40,11 +40,15 @@ label {
     margin: 4pt;
     width: 15%;
 }
-a{
+a {
     color: #2222DD;
 }
 a:hover{
     color: #22DDDD;
+}
+.ideology-link {
+    color: #2222DD;
+    font-weight: 300;
 }
 p.value-description {
     text-indent: -16pt;
