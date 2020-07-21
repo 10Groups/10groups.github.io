@@ -1,7 +1,8 @@
 ideologies = [
     {
-        "name": "WIP",
-		"desc": "Work In Progress",
+        "name": "Centrism",
+	    	"link": "https://en.wikipedia.org/wiki/Centrism",
+		"desc": "Centrism is a political position that supports a balance between left-leaning and right-leaning policies. It opposes a significant shift in society.",
 		"next": "WIP, WIP, WIP, WIP, WIP",
         "stats": {
 	  "econ": 0,
