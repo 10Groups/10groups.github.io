@@ -753,7 +753,32 @@ questions = [
 	        }
 	    },
 		{
-	        "question": "My religious and political values should be spread as much as possible.",
+	        "question": "My religious values should be spread as much as possible.",
+	        "effect": {
+	        "econ": 0,
+	        "govt": 0,
+	        "econsys": 0,
+	        "econreg": 0,
+                "govtsize": 0,
+                "govttype": 0,
+                "diplapp": -10,
+                "diplrel": 0,
+                "sctychg": 0,
+                "sctytrad": 0,
+                "techacc": 0,
+                "techbio": 0,
+                "lawtype": 0,
+                "lawrehab": 0,
+                "cltrhrchy": 0,
+                "cltrassi": 0,
+                "proccomp": 0,
+                "proctrans": 0,
+                "polapol": 0,
+                "polext": 0
+	        }
+	    },
+		{
+	        "question": "My political values should be spread as much as possible.",
 	        "effect": {
 	        "econ": 0,
 	        "govt": 0,
@@ -778,7 +803,7 @@ questions = [
 	        }
 	    },
 	{
-	        "question": "Countries with authoritarian governments should be denounced and invaded.",
+	        "question": "Countries with authoritarian governments should be denounced.",
 	        "effect": {
 	        "econ": 0,
 	        "govt": 2,
