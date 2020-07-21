@@ -331,7 +331,8 @@
 	
 //Ideology Matching
 	
-    function getQueryVariable(variable) {
+    function getQueryVariable(variable)
+    {
            var query = window.location.search.substring(1)
            var vars = query.split("&")
            for (var i=0;i<vars.length;i++) {
@@ -365,8 +366,7 @@
     ideology = ""
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
-    dist = 0
-	
+    	dist = 0
 	dist += Math.pow( Math.abs(ideologies[i].stats.econ - xvalue), 2)
         dist += Math.pow( Math.abs(ideologies[i].stats.govt - yvalue), 2)
         dist += Math.pow( Math.abs(ideologies[i].stats.econsys - axvalue), 2)
