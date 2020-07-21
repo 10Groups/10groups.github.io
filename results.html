@@ -130,12 +130,10 @@
 <p style="text-align:center;">The above are the compass results generated and displayed as different spectrums. You can send the results of this compass by copying and pasting the URL or screenshotting this page.</p>    
 <hr>
 	
-<h2>Closest Match (WIP): <span class="weight-300" id="ideology-label"></span></h2>
-<h3><span class="weight-300" id="ideodesc-label"></span></h3>
-	
-<h2>Next Matches (WIP):</h2>
-<p>With your closest match as 100% and farthest as 0%, here is how closely you matched the other ideologies.</p>
-<dl id="next-matches"></dl>
+    <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
+    <h3>Description: <span class="weight-300" id="ideodesc-label"></span></h3>
+    <h3>Next Matcges: <span class="weight-300" id="nextmatch-label"></span></h3>
+
 
 <br>
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br> 	    
@@ -372,10 +370,9 @@
 	    
     ideology = ""
     ideodesc = ""
+    nextmatch = ""
     ideodist = Infinity
-    ideologyToDistance = {};
-    sortedIdeologies = [];
-    ideologyIndexAndDistance = [];
+	    
     for (var i = 0; i < ideologies.length; i++) {
     	dist = 0
 	dist += Math.pow( Math.abs(ideologies[i].stats.econ - xvalue), 2)
@@ -398,37 +395,17 @@
         dist += Math.pow( Math.abs(ideologies[i].stats.proctrans - hyvalue), 2)
         dist += Math.pow( Math.abs(ideologies[i].stats.polapol - ixvalue), 2)
         dist += Math.pow( Math.abs(ideologies[i].stats.polext - iyvalue), 2)
-
-        ideologyToDistance[ideologies[i].name] = dist;
-        ideologyIndexAndDistance.push({index: i, distance: dist});
+	    
+        if (dist < ideodist) {
+            ideology = ideologies[i].name
+            ideodesc = ideologies[i].desc
+            nextmatch = ideologies[i].next
+            ideodist = dist
+        }
     }
-    
-    ideologyIndexAndDistance.sort(function(a, b) {
-        return a.distance - b.distance;
-    });
-
-    distances = ideologyIndexAndDistance.map(function(indexAndDistance) {
-        return indexAndDistance.distance;
-    });
-
-    closestDistance = distances[0];
-    farthestDistance = distances[distances.length - 1];
-    distanceSpan = farthestDistance - closestDistance;
-
-    closestMatch = ideologyIndexAndDistance[0];
-    document.getElementById("ideology-label").innerHTML = getIdeologyNameByIndex(closestMatch.index);
-	document.getElementById("ideodesc-label").innerHTML = getIdeologyDescriptionByIndex(closestMatch.index);
-
-    nextMatches = document.getElementById('next-matches');
-    nextMatches.innerHTML = ideologyIndexAndDistance.slice(1).map(function(indexAndDistance) {
-        i = indexAndDistance.index;
-        ideology = getIdeologyNameByIndex(i);
-        ideodesc = getIdeologyDescriptionByIndex(i);
-        relativeDistance = 1 - (indexAndDistance.distance - closestDistance)/distanceSpan;
-        relativeDistancePercent = Math.round(relativeDistance * 1000)/10;
-        return "<dt>" + ideology + ": " + relativeDistancePercent + "%</dt>" +
-            "<dd>" + ideodesc + "</dd>";
-    }).join("\n");	
+    document.getElementById("ideology-label").innerHTML = ideology
+    document.getElementById("ideodesc-label").innerHTML = ideodesc
+    document.getElementById("nextmatch-label").innerHTML = nextmatch	
 
 	
     </script>
