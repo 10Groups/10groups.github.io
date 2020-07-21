@@ -362,9 +362,13 @@
         hyvalue = getQueryVariable("hy")
         ixvalue = getQueryVariable("ix")
         iyvalue = getQueryVariable("iy")
-	
+	    
     ideology = ""
+    ideodesc = ""
     ideodist = Infinity
+    ideologyToDistance = {};
+    sortedIdeologies = [];
+    ideologyIndexAndDistance = [];
     for (var i = 0; i < ideologies.length; i++) {
     	dist = 0
 	dist += Math.pow( Math.abs(ideologies[i].stats.econ - xvalue), 2)
@@ -387,14 +391,37 @@
         dist += Math.pow( Math.abs(ideologies[i].stats.proctrans - hyvalue), 2)
         dist += Math.pow( Math.abs(ideologies[i].stats.polapol - ixvalue), 2)
         dist += Math.pow( Math.abs(ideologies[i].stats.polext - iyvalue), 2)
-	
-        if (dist < ideodist) {
-            ideology = ideologies[i].name
-            ideodist = dist
-        }
+
+        ideologyToDistance[ideologies[i].name] = dist;
+        ideologyIndexAndDistance.push({index: i, distance: dist});
     }
-    document.getElementById("ideology-label").innerHTML = ideology
-	
+    
+    ideologyIndexAndDistance.sort(function(a, b) {
+        return a.distance - b.distance;
+    });
+
+    distances = ideologyIndexAndDistance.map(function(indexAndDistance) {
+        return indexAndDistance.distance;
+    });
+
+    closestDistance = distances[0];
+    farthestDistance = distances[distances.length - 1];
+    distanceSpan = farthestDistance - closestDistance;
+
+    closestMatch = ideologyIndexAndDistance[0];
+    document.getElementById("ideology-label").innerHTML = getIdeologyNameByIndex(closestMatch.index);
+	document.getElementById("ideodesc-label").innerHTML = getIdeologyDescriptionByIndex(closestMatch.index);
+
+    nextMatches = document.getElementById('next-matches');
+    nextMatches.innerHTML = ideologyIndexAndDistance.slice(1).map(function(indexAndDistance) {
+        i = indexAndDistance.index;
+        ideology = getIdeologyNameByIndex(i);
+        ideodesc = getIdeologyDescriptionByIndex(i);
+        relativeDistance = 1 - (indexAndDistance.distance - closestDistance)/distanceSpan;
+        relativeDistancePercent = Math.round(relativeDistance * 1000)/10;
+        return "<dt>" + ideology + ": " + relativeDistancePercent + "%</dt>" +
+            "<dd>" + ideodesc + "</dd>";
+    }).join("\n");	
 
 	
     </script>
