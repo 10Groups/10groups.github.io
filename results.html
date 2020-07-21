@@ -28,8 +28,8 @@
 
 <hr>
 	
-    <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
-    <h3><span class="weight-300" id="ideodesc-label"></span></h3><br>
+    <h2>Closest Match: <span class="weight-300" id="ideology-label" onclick="myFunction()"></span></h2>
+    <h3><span class="ideology-link" id="ideodesc-label"></span></h3><br>
     <h3>Next Matches: <span class="weight-300" id="nextmatch-label"></span></h3>
 	
 <hr>
@@ -368,6 +368,7 @@
         iyvalue = getQueryVariable("iy")
 	    
     ideology = ""
+    ideolink = ""
     ideodesc = ""
     nextmatch = ""
     ideodist = Infinity
@@ -397,14 +398,20 @@
 	    
         if (dist < ideodist) {
             ideology = ideologies[i].name
+            ideolink = ideologies[i].link
             ideodesc = ideologies[i].desc
             nextmatch = ideologies[i].next
             ideodist = dist
         }
     }
     document.getElementById("ideology-label").innerHTML = ideology
+    document.getElementById("ideolink-label").innerHTML = ideolink
     document.getElementById("ideodesc-label").innerHTML = ideodesc
     document.getElementById("nextmatch-label").innerHTML = nextmatch	
+	    
+    function ideologyLink() {
+  	window.open(ideolink);
+	}
 
 	
     </script>
