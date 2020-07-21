@@ -49,6 +49,7 @@ a:hover{
 .ideology-link {
     color: #2222DD;
     font-weight: 300;
+    text-decoration: underline;
 }
 p.value-description {
     text-indent: -16pt;
