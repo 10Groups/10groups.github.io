@@ -29,6 +29,7 @@ ideologies = [
     },
     {
         "name": "Anarcho-Capitalism",
+	    	"link": "https://en.wikipedia.org/wiki/Anarcho-capitalism",
 		"desc": "Anarcho-capitalism is a political ideology that advocates the elimination of the states in favor of private property and free markets. They believe any action should be legal as long as no individual is a victim of agression.",
 		"next": "Hoppeanism, Pink Capitalism, Minarchism",
         "stats": {
