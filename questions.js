@@ -139,4 +139,5 @@ questions =  [
 {"id": 86, "question": "Politics should be avoided in daily life.", "effects": {"iy": -1}},
 //Political Engagement - Political
 {"id": 87, "question": "Politics is very important for society, and shouldn't be ignored.", "effects": {"iy": 1}}
+  
 ];
