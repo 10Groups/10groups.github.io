@@ -15,10 +15,12 @@
 
          gtag('config', 'UA-173028192-1');
     </script>
-    
+   
+<script type="application/javascript" src="questionslong.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
-<script type="application/javascript" src="questionslong.js"></script>
 <h1>10Groups</h1>
 <hr>
 <h2 style="text-align:center;" id="question-number">Loading...</h2>
@@ -32,153 +34,170 @@
 <button class="button" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Strongly Disagree</button> <br>
 <button class="small_button" onclick="prev_question()" id="back_button">Back</button>
 <button class="small_button_off" id="back_button_off">Back</button><br>
-
+    
 <hr>
 <br>
 <button class="button" onclick=" window.open('https://forms.gle/kAU5qgFvLfXDP4NF6', '_blank'); return false;" style="background-color: #6495ED;">Other Stances</button> <br>
 
+
 <!-- JavaScript for the test itself -->
 <script>
 
-    function popUpInfo(text) {
-        alert(text);
+    // variables
+    var answers = new Object();     // Store user's answers
+    var qn = 0; // Current question order
+
+
+    // Populate questionsObject
+
+    var questionsObject = new Object();     // Question objects with ID keys
+    questions.forEach(populateQO);
+
+    function populateQO(value) {
+      questionsObject[value['id']] = value
     }
 
-    document.addEventListener('click', function(e) {
-        if(e.target && e.target.tagName == "SUP") {
-            alert(e.target.title)
-        }
-    });
 
+    // Populate & shuffle questionsOrder
 
+    var questionsOrder = Object.keys(questionsObject); //Array of shuffled question IDs
 
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("shuffle") == "true") {
+        shuffleArray(questionsOrder);
+    }
 
-    var max_econ, max_govt, max_econsys, max_econreg, max_govtsize, max_govttype, max_diplapp, max_diplrel, max_sctychg, max_sctytrad, max_techacc, max_techbio, max_lawtype, max_lawrehab, max_cltrhrchy, max_cltrassi, max_proccomp, max_proctrans, max_polapol, max_polext; // Max possible scores
-    max_econ = max_govt = max_econsys = max_econreg = max_govtsize = max_govttype = max_diplapp = max_diplrel = max_sctychg = max_sctytrad = max_techacc = max_techbio = max_lawtype = max_lawrehab = max_cltrhrchy = max_cltrassi = max_proccomp = max_proctrans = max_polapol = max_polext = 0;
-    var econ, govt, econsys, econreg, govtsize, govttype, diplapp, diplrel, sctychg, sctytrad, techacc, techbio, lawtype, lawrehab, cltrhrchy, cltrassi, proccomp, proctrans, polapol, polext; // User's scores
-    econ = govt = econsys = econreg = govtsize = govttype = diplapp = diplrel = sctychg = sctytrad = techacc = techbio = lawtype = lawrehab = cltrhrchy = cltrassi = proccomp = proctrans = polapol = polext = 0;
-    var qn = 0; // Question number
-    var prev_answer = null;
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    // Question initialization
+
     init_question();
-    for (var i = 0; i < questions.length; i++) {
-        max_econ += Math.abs(questions[i].effect.econ)
-        max_govt += Math.abs(questions[i].effect.govt)
-        max_econsys += Math.abs(questions[i].effect.econsys)
-        max_econreg += Math.abs(questions[i].effect.econreg)
-        max_govtsize += Math.abs(questions[i].effect.govtsize)
-        max_govttype += Math.abs(questions[i].effect.govttype)
-        max_diplapp += Math.abs(questions[i].effect.diplapp)
-        max_diplrel += Math.abs(questions[i].effect.diplrel)
-        max_sctychg += Math.abs(questions[i].effect.sctychg)
-        max_sctytrad += Math.abs(questions[i].effect.sctytrad)
-        max_techacc += Math.abs(questions[i].effect.techacc)
-        max_techbio += Math.abs(questions[i].effect.techbio)
-        max_lawtype += Math.abs(questions[i].effect.lawtype)
-        max_lawrehab += Math.abs(questions[i].effect.lawrehab)
-        max_cltrhrchy += Math.abs(questions[i].effect.cltrhrchy)
-        max_cltrassi += Math.abs(questions[i].effect.cltrassi)
-        max_proccomp += Math.abs(questions[i].effect.proccomp)
-        max_proctrans += Math.abs(questions[i].effect.proctrans)
-        max_polapol += Math.abs(questions[i].effect.polapol)
-        max_polext += Math.abs(questions[i].effect.polext)
-    }
-    
+
     function init_question() {
-        document.getElementById("question-text").innerHTML = questions[qn].question;
-        document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (questions.length);
-        if (prev_answer == null) {
-            document.getElementById("back_button").style.display = 'none';
-            document.getElementById("back_button_off").style.display = 'block';
+        $("#question-text").html(questionsObject[questionsOrder[qn]].question);
+        $("#question-number").html("Question "+(qn + 1)+" of "+(questionsOrder.length));
+
+
+
+        if (jQuery.isEmptyObject(answers)) {
+            $('#back_button').hide()
+            $('#back_button_off').show()
         } else {
-            document.getElementById("back_button").style.display = 'block';
-            document.getElementById("back_button_off").style.display = 'none';
+            $('#back_button').show()
+            $('#back_button_off').hide()
+        }
+    }
+
+
+    // Next question
+
+    function next_question(answer) {
+        if (qn === questionsOrder.length) {
+            return;
         }
 
-    }
-
-    function next_question(mult) {
-        econ += mult*questions[qn].effect.econ
-        govt += mult*questions[qn].effect.govt
-        econsys += mult*questions[qn].effect.econsys
-        econreg += mult*questions[qn].effect.econreg
-        govtsize += mult*questions[qn].effect.govtsize
-        govttype += mult*questions[qn].effect.govttype
-        diplapp += mult*questions[qn].effect.diplapp
-        diplrel += mult*questions[qn].effect.diplrel
-        sctychg += mult*questions[qn].effect.sctychg
-        sctytrad += mult*questions[qn].effect.sctytrad
-        techacc += mult*questions[qn].effect.techacc
-        techbio += mult*questions[qn].effect.techbio
-        lawtype += mult*questions[qn].effect.lawtype
-        lawrehab += mult*questions[qn].effect.lawrehab
-        cltrhrchy += mult*questions[qn].effect.cltrhrchy
-        cltrassi += mult*questions[qn].effect.cltrassi
-        proccomp += mult*questions[qn].effect.proccomp
-        proctrans += mult*questions[qn].effect.proctrans
-        polapol += mult*questions[qn].effect.polapol
-        polext += mult*questions[qn].effect.polext
+        answers[questionsOrder[qn]] = answer;
         qn++;
-        prev_answer = mult;
-        if (qn < questions.length) {
+
+        if (qn < questionsOrder.length) {
             init_question();
         } else {
             results();
         }
     }
+
+
+    // Previous question
+
     function prev_question() {
-        if (prev_answer == null) {
+        if (jQuery.isEmptyObject(answers)) {
+            $('#back_button').hide()
+            $('#back_button_off').show()
             return;
         }
         qn--;
-        econ -= prev_answer * questions[qn].effect.econ;
-        govt -= prev_answer * questions[qn].effect.govt;
-        econsys -= prev_answer * questions[qn].effect.econsys;
-        econreg -= prev_answer * questions[qn].effect.econreg;
-        govtsize -= prev_answer * questions[qn].effect.govtsize;
-        govttype -= prev_answer * questions[qn].effect.govttype;
-        diplapp -= prev_answer * questions[qn].effect.diplapp;
-        diplrel -= prev_answer * questions[qn].effect.diplrel;
-        sctychg -= prev_answer * questions[qn].effect.sctychg;
-        sctytrad -= prev_answer * questions[qn].effect.sctytrad;
-        techacc -= prev_answer * questions[qn].effect.techacc;
-        techbio -= prev_answer * questions[qn].effect.techbio;
-        lawtype -= prev_answer * questions[qn].effect.lawtype;
-        lawrehab -= prev_answer * questions[qn].effect.lawrehab;
-        cltrhrchy -= prev_answer * questions[qn].effect.cltrhrchy;
-        cltrassi -= prev_answer * questions[qn].effect.cltrassi;
-        proccomp -= prev_answer * questions[qn].effect.proccomp;
-        proctrans -= prev_answer * questions[qn].effect.proctrans;
-        polapol -= prev_answer * questions[qn].effect.polapol;
-        polext -= prev_answer * questions[qn].effect.polext;
-        prev_answer = null;
+
+        delete answers[questionsOrder[qn]];
+
         init_question();
+    }
+
+
+    // RESULTS
+
+    function results() {
+
+        window.sessionStorage.answers = JSON.stringify(answers);
+
+
+        // Calculate final results
+        pct = percentageCalculation();
+        window.sessionStorage.percentages = JSON.stringify(pct);
+
+        // prepare arguments
+        var args = '?';
+        for (const i in Object.keys(pct)) {
+            effectName = Object.keys(pct)[i]
+            args += `${effectName}=${pct[effectName]}`
+
+            var cycle = parseInt(i)
+            if (cycle+1 !== Object.keys(pct).length) {
+                args += '&'
+            }
+        }
+        //return;
+        location.href = `results.html` + args
 
     }
-    function calc_score(score,max) {
-        return (100*(max+score)/(2*max)).toFixed(1)
+
+
+    // Calculate percentage
+
+    function percentageCalculation() {
+        // calc max
+        var max = new Object(); // Max possible scores
+        var score = new Object(); // User scores
+        var pct = new Object(); // Percentages/Score
+
+        // prepare
+        for (const id in answers) {
+            for (const effectName in questionsObject[id].effects) {
+                max[effectName] = 0
+                score[effectName] = 0
+            }
+        }
+
+        // get max & scores
+        for (const id in answers) {
+            // dismiss "don't know"
+            if (answers[id] !== null) {
+                for (const effectName in questionsObject[id].effects) {
+                    max[effectName] += Math.abs(questionsObject[id].effects[effectName]);
+                    score[effectName] += answers[id]*questionsObject[id].effects[effectName];
+                }
+            }
+        }
+
+        // calc score
+
+        for (const i in Object.keys(max)) {
+            effectName = Object.keys(max)[i]
+
+            if (max[effectName] > 0) {
+                pct[effectName] = (Math.round((score[effectName]*10/max[effectName]) * 100) / 100).toFixed(2);
+            } else {
+                pct[effectName] = 0
+            }
+        }
+
+        return pct;
     }
-    function results() {
-        location.href = `results.html`
-            + `?x=${(20*(calc_score(econ,max_econ)/100)-10).toFixed(1)}`
-            + `&y=${(20*(calc_score(govt,max_govt)/100)-10).toFixed(1)}`
-            + `&ax=${(20*(calc_score(econsys,max_econsys)/100)-10).toFixed(1)}`
-            + `&ay=${(20*(calc_score(econreg,max_econreg)/100)-10).toFixed(1)}`
-            + `&bx=${(20*(calc_score(govttype,max_govttype)/100)-10).toFixed(1)}`
-            + `&by=${(20*(calc_score(govtsize,max_govtsize)/100)-10).toFixed(1)}`
-            + `&cy=${(20*(calc_score(diplrel,max_diplrel)/100)-10).toFixed(1)}`
-            + `&cx=${(20*(calc_score(diplapp,max_diplapp)/100)-10).toFixed(1)}`
-            + `&dx=${(20*(calc_score(sctytrad,max_sctytrad)/100)-10).toFixed(1)}`
-            + `&dy=${(20*(calc_score(sctychg,max_sctychg)/100)-10).toFixed(1)}`
-            + `&ex=${(20*(calc_score(techacc,max_techacc)/100)-10).toFixed(1)}`
-            + `&ey=${(20*(calc_score(techbio,max_techbio)/100)-10).toFixed(1)}`
-            + `&fx=${(20*(calc_score(lawtype,max_lawtype)/100)-10).toFixed(1)}`
-            + `&fy=${(20*(calc_score(lawrehab,max_lawrehab)/100)-10).toFixed(1)}`
-            + `&gx=${(20*(calc_score(cltrhrchy,max_cltrhrchy)/100)-10).toFixed(1)}`
-            + `&gy=${(20*(calc_score(cltrassi,max_cltrassi)/100)-10).toFixed(1)}`
-            + `&hx=${(20*(calc_score(proccomp,max_proccomp)/100)-10).toFixed(1)}`
-            + `&hy=${(20*(calc_score(proctrans,max_proctrans)/100)-10).toFixed(1)}`
-            + `&iy=${(20*(calc_score(polapol,max_polapol)/100)-10).toFixed(1)}`
-            + `&ix=${(20*(calc_score(polext,max_polext)/100)-10).toFixed(1)}`
-    }
+    
+
 </script>
 </body>
