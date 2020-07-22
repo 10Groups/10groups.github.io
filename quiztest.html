@@ -128,28 +128,29 @@
 
     // RESULTS
 
-        function results() {
-        location.href = `results.html`
-            + `?x=${(20*(calc_score(econ,max_econ)/100)-10).toFixed(1)}`
-            + `&y=${(20*(calc_score(govt,max_govt)/100)-10).toFixed(1)}`
-            + `&ax=${(20*(calc_score(econsys,max_econsys)/100)-10).toFixed(1)}`
-            + `&ay=${(20*(calc_score(econreg,max_econreg)/100)-10).toFixed(1)}`
-            + `&bx=${(20*(calc_score(govttype,max_govttype)/100)-10).toFixed(1)}`
-            + `&by=${(20*(calc_score(govtsize,max_govtsize)/100)-10).toFixed(1)}`
-            + `&cy=${(20*(calc_score(diplrel,max_diplrel)/100)-10).toFixed(1)}`
-            + `&cx=${(20*(calc_score(diplapp,max_diplapp)/100)-10).toFixed(1)}`
-            + `&dx=${(20*(calc_score(sctytrad,max_sctytrad)/100)-10).toFixed(1)}`
-            + `&dy=${(20*(calc_score(sctychg,max_sctychg)/100)-10).toFixed(1)}`
-            + `&ex=${(20*(calc_score(techacc,max_techacc)/100)-10).toFixed(1)}`
-            + `&ey=${(20*(calc_score(techbio,max_techbio)/100)-10).toFixed(1)}`
-            + `&fx=${(20*(calc_score(lawtype,max_lawtype)/100)-10).toFixed(1)}`
-            + `&fy=${(20*(calc_score(lawrehab,max_lawrehab)/100)-10).toFixed(1)}`
-            + `&gx=${(20*(calc_score(cltrhrchy,max_cltrhrchy)/100)-10).toFixed(1)}`
-            + `&gy=${(20*(calc_score(cltrassi,max_cltrassi)/100)-10).toFixed(1)}`
-            + `&hx=${(20*(calc_score(proccomp,max_proccomp)/100)-10).toFixed(1)}`
-            + `&hy=${(20*(calc_score(proctrans,max_proctrans)/100)-10).toFixed(1)}`
-            + `&iy=${(20*(calc_score(polapol,max_polapol)/100)-10).toFixed(1)}`
-            + `&ix=${(20*(calc_score(polext,max_polext)/100)-10).toFixed(1)}`
+    function results() {
+
+        window.sessionStorage.answers = JSON.stringify(answers);
+
+
+        // Calculate final results
+        pct = percentageCalculation();
+        window.sessionStorage.percentages = JSON.stringify(pct);
+
+        // prepare arguments
+        var args = '?';
+        for (const i in Object.keys(pct)) {
+            effectName = Object.keys(pct)[i]
+            args += `${effectName}=${pct[effectName]}`
+
+            var cycle = parseInt(i)
+            if (cycle+1 !== Object.keys(pct).length) {
+                args += '&'
+            }
+        }
+        //return;
+        location.href = `results.html` + args
+
     }
 
     // Calculate percentage
