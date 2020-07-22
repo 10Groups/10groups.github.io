@@ -58,6 +58,22 @@
     }
 
 
+    // Populate & shuffle questionsOrder
+
+    var questionsOrder = Object.keys(questionsObject); //Array of shuffled question IDs
+
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("shuffle") == "true") {
+        shuffleArray(questionsOrder);
+    }
+
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
     // Question initialization
 
     init_question();
@@ -135,9 +151,10 @@
             }
         }
         //return;
-        location.href = `results.html` + args
+        location.href = `feedback.html` + args
 
     }
+
 
     // Calculate percentage
 
