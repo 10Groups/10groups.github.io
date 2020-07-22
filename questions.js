@@ -1,16 +1,16 @@
 questions =  [
   
 //Economic Regulation - Planned
-{"id": 0, "question": "Marxism is an ideology that would never work in practice.", "effects": {"y": 1, "ay": 1}},
-{"id": 1, "question": "In the current system, it is necessary for the government to intervene in the economy to protect consumers.", "effects": {"y": -1, "ay": 1}},
-{"id": 2, "question": "Without state intervention, monopolies would violate human rights.", "effects": {"y": -1, "ay": -1}},
+{"id": 0, "question": "In the current system, it is necessary for the government to intervene in the economy to protect consumers.", "effects": {"y": -1, "ay": 1}},
+{"id": 1, "question": "Without state intervention, monopolies would violate human rights.", "effects": {"y": -1, "ay": -1}},
 //Economic Regulation - Laissez Faire
-{"id": 3, "question": "Most corporations should be state-owned.", "effects": {"y": -1, "ay": 1}},
-{"id": 4, "question": "The market regulates itself, since unjust monopolies are punished by bankrupcy.", "effects": {"y": 1, "ay": -1}},
-{"id": 5, "question": "A regulated economy is more unfair for the people, when compared to a laissez-faire econnmy.", "effects": {"y": 1, "ay": -1}},
+{"id": 2, "question": "Most corporations should be state-owned.", "effects": {"y": -1, "ay": 1}},
+{"id": 3, "question": "The market regulates itself, since unjust monopolies are punished by bankrupcy.", "effects": {"y": 1, "ay": -1}},
+{"id": 4, "question": "A regulated economy is more unfair for the people, when compared to a laissez-faire econnmy.", "effects": {"y": 1, "ay": -1}},
   
 //Economic System - Capitalism
-{"id": 6, "question": "Freedom of business is the best practical way a society can prosper.", "effects": {"x": 1, "ax": 1}},
+{"id": 5, "question": "Freedom of business is the best practical way a society can prosper.", "effects": {"x": 1, "ax": 1}},
+{"id": 6, "question": "Marxism is an ideology that would never work in practice.", "effects": {"y": 1, "ay": 1}},
 {"id": 7, "question": "Governmental social programs should be replaced with private charities and organizations.", "effects": {"x": 1, "ax": 1}},
 {"id": 8, "question": "I support the abolition of a minimum wage.", "effects": {"x": 1, "ax": 1}},
 {"id": 9, "question": "The market should provide healthcare, instead of the government.", "effects": {"x": 1, "ax": 1}},
