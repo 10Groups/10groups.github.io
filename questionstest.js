@@ -19,5 +19,5 @@ questions =  [
 {"id": 16, "question": "Freedom of business is the best practical way a society can prosper.", "effects": {"proccomp": 1}},
 {"id": 17, "question": "Freedom of business is the best practical way a society can prosper.", "effects": {"proctrans": 1}},
 {"id": 18, "question": "Freedom of business is the best practical way a society can prosper.", "effects": {"polapol": 1}},
-{"id": 19, "question": "Freedom of business is the best practical way a society can prosper.", "effects": {"polext": 1}},
+{"id": 19, "question": "Freedom of business is the best practical way a society can prosper.", "effects": {"polext": 1}}
 ];
