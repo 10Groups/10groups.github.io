@@ -1,6 +1,6 @@
 questions =  [
 
-{"id": 0, "question": "Freedom of business is the best practical way a society can prosper.", "effects": {"econ": 1}},
+{"id": 0, "question": "Marxism is too idealist, and is an ideology that would never work in practice.", "effects": {"econ": 1, "econsys": 1}},
 {"id": 1, "question": "Freedom of business is the best practical way a society can prosper.", "effects": {"govt": 1}},
 {"id": 2, "question": "Freedom of business is the best practical way a society can prosper.", "effects": {"econsys": 1}},
 {"id": 3, "question": "Freedom of business is the best practical way a society can prosper.", "effects": {"econreg": 1}},
