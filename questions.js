@@ -137,7 +137,7 @@ questions =  [
 {"id": 84, "question": "Politics is boring to me.", "effects": {"iy": -1}},
 {"id": 85, "question": "Nearly all politicians are evil and problematic, no matter what their political ideals are.", "effects": {"iy": -1}},
 {"id": 86, "question": "Politics should be avoided in daily life.", "effects": {"iy": -1}},
-//Political Engagement - Political
+//Political Engagement - Politicized
 {"id": 87, "question": "Politics is very important for society, and shouldn't be ignored.", "effects": {"iy": 1}}
   
 ];
