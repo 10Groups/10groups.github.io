@@ -87,9 +87,9 @@ ideologies = [
 //LibRight
     	{
         "name": "Libertarianism",
-	    	"link": "https://en.wikipedia.org/wiki/Anarcho-capitalism",
-		"desc": "Anarcho-capitalism is a political ideology that advocates the elimination of the states in favor of private property and free markets. They believe any action should be legal as long as no individual is a victim of agression.",
-		"next": "Hoppeanism, Pink Capitalism, Minarchism, Anarcho-Individualism",
+	    	"link": "https://en.wikipedia.org/wiki/Libertarianism",
+		"desc": "Libertarianism is an ideology that seeks to maximize political freedom and autonomy, emphasizing individualism, freedom of choice and voluntary association.",
+		"next": "Paleolibertarianism, Green Libertarianism, Minarchism, Classical Liberalism",
         "stats": {
 	  "econ": 8,
 	  "govt": -5,
@@ -111,6 +111,90 @@ ideologies = [
           "proctrans": 0,
           "polapol": 0,
           "polext": 3
+        }
+    },
+	{
+        "name": "Paleolibertarianism",
+	    	"link": "https://en.wikipedia.org/wiki/Paleolibertarianism",
+		"desc": "Paleolibertarianism is a political philosophy and variety of right-libertarianism that combines traditional conservative cultural values and social philosophy with a libertarian opposition to government intervention.",
+		"next": "Libertarianism, Green Libertarianism, Minarchism, Classical Liberalism",
+        "stats": {
+	  "econ": 8,
+	  "govt": -5,
+	  "econsys": 8,
+	  "econreg": -8,
+          "govtsize": -5,
+          "govttype": 5,
+          "diplapp": 0,
+          "diplrel": 0,
+          "sctychg": -5,
+          "sctytrad": 5,
+          "techacc": 0,
+          "techbio": 0,
+          "lawtype": 0,
+          "lawrehab": 0,
+          "cltrhrchy": 7,
+          "cltrassi": 0,
+          "proccomp": 0,
+          "proctrans": 0,
+          "polapol": 0,
+          "polext": 3
+        }
+    },
+	{
+        "name": "Anarcho-Individualism",
+	    	"link": "https://en.wikipedia.org/wiki/Anarcho-capitalism",
+		"desc": "Anarcho-capitalism is a political ideology that advocates the elimination of the states in favor of private property and free markets. They believe any action should be legal as long as no individual is a victim of agression.",
+		"next": "Hoppeanism, Pink Capitalism, Minarchism, Anarcho-Individualism",
+        "stats": {
+	  "econ": 5,
+	  "govt": -10,
+	  "econsys": 5,
+	  "econreg": -9,
+          "govtsize": -10,
+          "govttype": 0,
+          "diplapp": 0,
+          "diplrel": 0,
+          "sctychg": -8,
+          "sctytrad": 0,
+          "techacc": 0,
+          "techbio": 0,
+          "lawtype": 0,
+          "lawrehab": 0,
+          "cltrhrchy": 6,
+          "cltrassi": 0,
+          "proccomp": 0,
+          "proctrans": 0,
+          "polapol": 0,
+          "polext": 9
+        }
+    }
+	{
+        "name": "Hoppeanism",
+	    	"link": "https://en.wikipedia.org/wiki/Hans-Hermann_Hoppe",
+		"desc": "Hoppeanism is an ideology based on the political views of Hans Hermann Hoppe. Hoppeanism is a conservative and traditionalist variant of Anarcho-Capitalism.",
+		"next": "Anarcho-Capitalism, Pink Capitalism, Minarchism, Anarcho-Individualism",
+        "stats": {
+	  "econ": 9,
+	  "govt": -9,
+	  "econsys": 9,
+	  "econreg": -9,
+          "govtsize": -9,
+          "govttype": -2,
+          "diplapp": 0,
+          "diplrel": 0,
+          "sctychg": -2,
+          "sctytrad": 5,
+          "techacc": 0,
+          "techbio": 0,
+          "lawtype": 0,
+          "lawrehab": 0,
+          "cltrhrchy": 7,
+          "cltrassi": 0,
+          "proccomp": 0,
+          "proctrans": 0,
+          "polapol": 0,
+          "polext": 8
         }
     },
 	{
