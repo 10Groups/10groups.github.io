@@ -6,7 +6,7 @@ questions =  [
 //Economic Regulation - Laissez Faire
 {"id": 2, "question": "Most corporations should be state-owned.", "effects": {"y": -1, "ay": 1}},
 {"id": 3, "question": "The market regulates itself, since unjust monopolies are punished by bankrupcy.", "effects": {"y": -1, "ay": -1}},
-{"id": 4, "question": "A regulated economy is more unfair for the people, when compared to a laissez-faire econnmy.", "effects": {"y": -1, "ay": -1}},
+{"id": 4, "question": "A regulated economy is more unfair for the people, when compared to a laissez-faire economy.", "effects": {"y": -1, "ay": -1}},
   
 //Economic System - Capitalism
 {"id": 5, "question": "Freedom of business is the best practical way a society can prosper.", "effects": {"x": 1, "ax": 1}},
