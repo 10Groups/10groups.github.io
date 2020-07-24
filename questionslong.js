@@ -82,7 +82,7 @@ questions =  [
 {"id": 63, "question": "A global organization that is generally beneficial should hold a substantial amount of power.", "effects": {"cy": -1}},
 {"id": 64, "question": "I support Regional Unions, like the European Union.", "effects": {"cy": -1}},
 {"id": 65, "question": "It's important that we put aside our differences and cooperate as a single community.", "effects": {"cy": -1}},
-{"id": 66 "question": "Military spending is a waste of money.", "effects": {"cy": -1}},
+{"id": 66, "question": "Military spending is a waste of money.", "effects": {"cy": -1}},
 {"id": 67, "question": "I support Regional Unions, like the European Union.", "effects": {"cy": -1}},
   
 //Societal Tradition - Tradition
