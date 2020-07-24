@@ -19,13 +19,13 @@ questions =  [
 {"id": 12, "question": "Inheritance is a legitimate form of wealth.", "effects": {"x": 1, "ax": 1}},
 //Economic System - Socialism
 {"id": 13, "question": "From each according to his ability, to each according to his needs.", "effects": {"x": -1, "ax": -1}},
-{"id": 14, "question": "Oppression by corporations is more of a concern than oppression by governments.", "effects": {"x": -1, "ax": -1}},
+{"id": 14, "question": "Oppression by corporations is a huge concern facing modern society.", "effects": {"x": -1, "ax": -1}},
 {"id": 15, "question": "The means of production should belong to the workers.", "effects": {"x": -1, "ax": -1}},
 {"id": 15, "question": "Roads and transportation should be publicly owned.", "effects": {"x": -1, "ax": -1}},
 {"id": 16, "question": "Electricity should be publicly owned.", "effects": {"x": -1, "ax": -1}},
   
 //Governmental System - Autocracy
-{"id": 17, "question": "A strong and good autocracy is more beneficial than any democratic system.", "effects": {"y": 1, "bx": -1}},
+{"id": 17, "question": "An autocracy is more beneficial than any democratic system.", "effects": {"y": 1, "bx": -1}},
 {"id": 18, "question": "A beneficial democracy requires high levels of education.", "effects": {"y": 1, "bx": -1}},
 //Governmental System - Democracy
 {"id": 19, "question": "Liberal democracy is the least worst system for leadership.", "effects": {"y": -1, "bx": 1}},
@@ -73,7 +73,7 @@ questions =  [
 //Technological Acceleration - Decelerate
 {"id": 45, "question": "Technology is negatively affecting modern society.", "effects": {"ex": -1}},
 {"id": 46, "question": "The Industrial Revolution and its consequences have been a disaster for the human race.", "effects": {"ex": -1}},
-{"id": 47, "question": "Usage of genetic modification should be minimized.", "effects": {"ex": -1}},
+{"id": 47, "question": "Usage of genetic modification for animals and plants should be minimized.", "effects": {"ex": -1}},
 {"id": 48, "question": "Modernity and social progress has led to a decrease of happiness, and often lacks meaning.", "effects": {"ex": -1}},
   
 //Technological Transhumanism - Transhumanism
