@@ -29,7 +29,7 @@ questions =  [
 {"id": 21, "question": "Private organisations and corporations cannot be trusted and thus need regulating by the government.", "effects": {"x": -1, "ax": -1}},
   
 //Governmental System - Autocracy
-{"id": 22, "question": "A strong and good autocracy is more beneficial than any democratic system.", "effects": {"y": 1, "bx": -1}},
+{"id": 22, "question": "An autocracy is more beneficial than any democratic system.", "effects": {"y": 1, "bx": -1}},
 {"id": 23, "question": "A beneficial democracy requires high levels of education.", "effects": {"y": 1, "bx": -1}},
 {"id": 24, "question": "Electoral votes needs to be adjusted so that different states/regions get representation.", "effects": {"y": 1, "bx": -1}},
 {"id": 25, "question": "Democracy increases the risks of instability and corruption.", "effects": {"y": 1, "bx": -1}},
@@ -87,88 +87,109 @@ questions =  [
   
 //Societal Tradition - Tradition
 {"id": 68, "question": "It's important that we maintain our culture and tradition.", "effects": {"dx": 1}},
+{"id": 69, "question": "Tradition is vital for society.", "effects": {"dx": 1}},
+{"id": 70, "question": "I consider abortion as a form of murder.", "effects": {"dx": 1}},
+{"id": 71, "question": "Traditional medicines are often more effective than modern medicines.", "effects": {"dx": 1}},
+{"id": 72, "question": "A person cannot be moral without a religion or belief.", "effects": {"dx": 1}},
 //Societal Tradition - Progress
-{"id": 69, "question": "Religion is mostly fictional.", "effects": {"dx": -1}},
-{"id": 70, "question": "Tradition are of no value on their own.", "effects": {"dx": -1}},
-{"id": 71, "question": "I support the LGBT Community.", "effects": {"dx": -1}},
-{"id": 72, "question": "I support the Black Lives Matter organization.", "effects": {"dx": -1}},
-{"id": 73, "question": "Churches should be taxed the same way other institutions are taxed.", "effects": {"dx": -1}},
+{"id": 73, "question": "Religion is mostly fictional.", "effects": {"dx": -1}},
+{"id": 74, "question": "Tradition are of no value on their own.", "effects": {"dx": -1}},
+{"id": 75, "question": "I support the LGBT Community.", "effects": {"dx": -1}},
+{"id": 76, "question": "I support the Black Lives Matter organization.", "effects": {"dx": -1}},
+{"id": 77, "question": "Churches should be taxed the same way other institutions are taxed.", "effects": {"dx": -1}},
+{"id": 78, "question": "Evolution is a fact.", "effects": {"dx": -1}},
 
 //Societal Change - Conserve
-{"id": 74, "question": "Rapid change often leads to the worsening of people's lives.", "effects": {"dy": 1}},
-{"id": 75, "question": "Reforms should happen gradually and slowly.", "effects": {"dy": 1}},
+{"id": 79, "question": "Rapid change often leads to the worsening of people's lives.", "effects": {"dy": 1}},
+{"id": 80, "question": "Reforms should happen gradually and slowly.", "effects": {"dy": 1}},
+{"id": 81, "question": "All reforms should happen without violence.", "effects": {"dy": 1}},
+{"id": 82, "question": "It's sometimes moral to crush a revolution or protest by force.", "effects": {"dy": 1}},
+{"id": 83, "question": "Political leaders should change the system as little as possible during their term.", "effects": {"dy": 1}},
 //Societal Change - Reform
-{"id": 76, "question": "Thinking in the long term is more important than thinking in the short term.", "effects": {"dy": -1}},
-{"id": 77, "question": "The current political system in my nation is flawed.", "effects": {"dy": -1}},
+{"id": 84, "question": "Thinking in the long term is more important than thinking in the short term.", "effects": {"dy": -1}},
+{"id": 85, "question": "The current political system in my nation is flawed.", "effects": {"dy": -1}},
+{"id": 86, "question": "We should avoid delaying political reform and change.", "effects": {"dy": -1}},
+{"id": 87, "question": "If peaceful reform does not work, revolution and agressive methods should be considered.", "effects": {"dy": -1}},
 
 //Technological Acceleration - Decelerate
-{"id": 78, "question": "Technology is negatively affecting modern society.", "effects": {"ex": -1}},
-{"id": 79, "question": "The Industrial Revolution and its consequences have been a disaster for the human race.", "effects": {"ex": -1}},
-{"id": 80, "question": "Usage of genetic modification should be minimized.", "effects": {"ex": -1}},
-{"id": 81, "question": "Modernity and social progress has led to a decrease of happiness, and often lacks meaning.", "effects": {"ex": -1}},
-  
+{"id": 88, "question": "Technology is negatively affecting modern society.", "effects": {"ex": -1}},
+{"id": 89, "question": "The Industrial Revolution and its consequences have been a disaster for the human race.", "effects": {"ex": -1}},
+{"id": 90, "question": "Usage of genetic modification for animals and plants should be minimized.", "effects": {"ex": -1}},
+{"id": 91, "question": "Modernity and social progress has led to a decrease of happiness, and often lacks meaning.", "effects": {"ex": -1}},
+{"id": 92, "question": "Society was better many years ago than it is today.", "effects": {"ex": -1}},
+//Technological Acceleration - Accelerate
+{"id": 93, "question": "If artifical intellegence can rule better than humans, then they should rule.", "effects": {"ex": -1}},
+{"id": 94, "question": "Genetic modification of food can avoid effects from droughts and floods.", "effects": {"ex": -1}},
+{"id": 95, "question": "Automation is very beneficial for society.", "effects": {"ex": -1}},
+{"id": 96, "question": "Genetic modification of humans is beneficial.", "effects": {"ex": -1}},
+{"id": 97, "question": "Societal progress is heading in the right direction.", "effects": {"ex": -1}},
+{"id": 98, "question": "We should embrace modern technology rather than avoiding it.", "effects": {"ex": -1}},
+
 //Technological Transhumanism - Transhumanism
-{"id": 82, "question": "Getting past physical limitations through technology would be beneficial to mankind.", "effects": {"ey": 1}},
-{"id": 83, "question": "Technology that improves mental and physical capabilities shouldn't be used, in any political system.", "effects": {"ey": 1}},
+{"id": 99, "question": "Getting past physical limitations through technology would be beneficial to mankind.", "effects": {"ey": 1}},
+{"id": 100, "question": "Transhumanism will be inevitable in the near future, in most nations.", "effects": {"ey": 1}},
+{"id": 101, "question": "Technology that improves mental and physical capabilities shouldn't be used, in any political system.", "effects": {"ey": 1}},
 //Technological Transhumanism - Primitivism
-{"id": 84, "question": "Technology that improves mental and physical capabilities shouldn't be used, in any political system.", "effects": {"ey": -1}},
-{"id": 85, "question": "The risks of transhumanism overweighs the benefits.", "effects": {"ey": -1}},
+{"id": 102, "question": "Technology that improves mental and physical capabilities shouldn't be used, in any political system.", "effects": {"ey": -1}},
+{"id": 103, "question": "The risks of transhumanism overweighs the benefits.", "effects": {"ey": -1}},
+{"id": 104, "question": "Transhumanism is not required in any country within the next 20 years.", "effects": {"ey": -1}},
 
 //Law System - Civil Law
-{"id": 86, "question": "Law principles should be codified into a referable system.", "effects": {"fx": 1}},
-{"id": 87, "question": "Lawmakers and legal experts should hold more influence than judges.", "effects": {"fx": 1}},
+{"id": 105, "question": "Law principles should be codified into a referable system.", "effects": {"fx": 1}},
+{"id": 106, "question": "Lawmakers and legal experts should hold more influence than judges.", "effects": {"fx": 1}},
 //Law System - Common Law
-{"id": 88, "question": "Courts should reference to other judicial decisions.", "effects": {"fx": -1}},
-{"id": 89, "question": "Judges should hold more power than legislators.", "effects": {"fx": -1}},
-{"id": 90, "question": "If a decision cannot be made in courts, relevant cases in the past should be referenced.", "effects": {"fx": -1}},
+{"id": 107, "question": "Courts should reference to other judicial decisions.", "effects": {"fx": -1}},
+{"id": 108, "question": "Judges should hold more power than legislators.", "effects": {"fx": -1}},
+{"id": 109, "question": "If a decision cannot be made in courts, relevant cases in the past should be referenced.", "effects": {"fx": -1}},
+{"id": 110, "question": "Unusual cases cannot be decided with written law.", "effects": {"fx": -1}},
 
 //Law Focus - Punitive
-{"id": 91, "question": "A rehabilitative system is unjust.", "effects": {"fy": 1}},
-{"id": 92, "question": "Punishment should be valued, more than that of rehabilitation.", "effects": {"fy": 1}},
-{"id": 93, "question": "It's a waste of time trying to rehabilitate some criminals.", "effects": {"fy": 1}},
-{"id": 94, "question": "I support capital punishment.", "effects": {"fy": 1}},
+{"id": 111, "question": "A rehabilitative system is unjust.", "effects": {"fy": 1}},
+{"id": 112, "question": "Punishment should be valued, more than that of rehabilitation.", "effects": {"fy": 1}},
+{"id": 113, "question": "It's a waste of time trying to rehabilitate some criminals.", "effects": {"fy": 1}},
+{"id": 114, "question": "I support capital punishment.", "effects": {"fy": 1}},
 //Law Focus - Rehabilitive
-{"id": 95, "question": "Everybody deserves a second chance.", "effects": {"fy": -1}},
+{"id": 115, "question": "Everybody deserves a second chance.", "effects": {"fy": -1}},
 
 //Cultural Hierarchy - Equality
-{"id": 96, "question": "A system of equal outcomes should be established.", "effects": {"gx": -1}},
-{"id": 97, "question": "People should be treated equally regardless of their groups and characteristics.", "effects": {"gx": -1}},
+{"id": 116, "question": "A system of equal outcomes should be established.", "effects": {"gx": -1}},
+{"id": 117, "question": "People should be treated equally regardless of their groups and characteristics.", "effects": {"gx": -1}},
 //Cultural Hierarchy - Hierarchy
-{"id": 98, "question": "Even though equal opportunities can lead to equal outcomes, society should still focus on equal opportunities, and not equal outcomes.", "effects": {"gx": -1}},
-{"id": 99, "question": "Hierarchies will inevitably be formed in every society, at any time.", "effects": {"gx": -1}},
-{"id": 100, "question": "Any well-functioning society requries a hierarchy.", "effects": {"gx": -1}},
+{"id": 118, "question": "Even though equal opportunities can lead to equal outcomes, society should still focus on equal opportunities, and not equal outcomes.", "effects": {"gx": -1}},
+{"id": 119, "question": "Hierarchies will inevitably be formed in every society, at any time.", "effects": {"gx": -1}},
+{"id": 110, "question": "Any well-functioning society requries a hierarchy.", "effects": {"gx": -1}},
 
 //Cultural Assimilation - Monocultural
-{"id": 101, "question": "If we accept migrants into our borders, the migrants should be expected to assimilate into our culture.", "effects": {"gy": 1}},
-{"id": 102, "question": "Multiculturalism is unrealistic.", "effects": {"gy": 1}},
-{"id": 103, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": 1}},
+{"id": 111, "question": "If we accept migrants into our borders, the migrants should be expected to assimilate into our culture.", "effects": {"gy": 1}},
+{"id": 112, "question": "Multiculturalism is unrealistic.", "effects": {"gy": 1}},
+{"id": 113, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": 1}},
 //Cultural Assimilation - Multicultural
-{"id": 104, "question": "My nation should be more diverse.", "effects": {"gy": 1}},
-{"id": 105, "question": "Monoculturalism is disastrous for society.", "effects": {"gy": 1}},
-{"id": 106, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": 1}},
+{"id": 114, "question": "My nation should be more diverse.", "effects": {"gy": 1}},
+{"id": 115, "question": "Monoculturalism is disastrous for society.", "effects": {"gy": 1}},
+{"id": 116, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": 1}},
 
 //Procedural Compromize - Compromize 
-{"id": 107, "question": "Compromizes should be made in order to suit the needs of most people.", "effects": {"hx": -1}},
-{"id": 108, "question": "Compromizing can avoid unnecessary conflict.", "effects": {"hx": -1}},
-{"id": 109, "question": "Adopting radical ideas isn't possible unless compromizes are made.", "effects": {"hx": -1}},
+{"id": 117, "question": "Compromizes should be made in order to suit the needs of most people.", "effects": {"hx": -1}},
+{"id": 118, "question": "Compromizing can avoid unnecessary conflict.", "effects": {"hx": -1}},
+{"id": 119, "question": "Adopting radical ideas isn't possible unless compromizes are made.", "effects": {"hx": -1}},
 
 //Procedural Transition - Transitional
-{"id": 110, "question": "A transitional state should be made.", "effects": {"hy": 1}},
+{"id": 120, "question": "A transitional state should be made.", "effects": {"hy": 1}},
 //Procedural Transition - Direct
-{"id": 111, "question": "My ideology should be established as quick as possible.", "effects": {"hy": -1}},
-{"id": 112, "question": "My political ideals can be acheived within 10 years.", "effects": {"hy": -1}},
+{"id": 121, "question": "My ideology should be established as quick as possible.", "effects": {"hy": -1}},
+{"id": 122, "question": "My political ideals can be acheived within 10 years.", "effects": {"hy": -1}},
   
 //Political Extremism - Radical
-{"id": 113, "question": "My ideology is sometimes considered 'extreme'.", "effects": {"ix": 1}},
-{"id": 114, "question": "Violence and Revolutions are required in order to establish my ideology.", "effects": {"ix": 1}},
-{"id": 115, "question": "The current mainstream societal attitudes are problematic.", "effects": {"ix": 1}},
-{"id": 116, "question": "Neoliberalism is very different from my political views.", "effects": {"ix": 1}},
+{"id": 133, "question": "My ideology is sometimes considered 'extreme'.", "effects": {"ix": 1}},
+{"id": 134, "question": "Violence and Revolutions are required in order to establish my ideology.", "effects": {"ix": 1}},
+{"id": 135, "question": "The current mainstream societal attitudes are problematic.", "effects": {"ix": 1}},
+{"id": 136, "question": "Neoliberalism is very different from my political views.", "effects": {"ix": 1}},
 
 //Political Engagement - Apolitical
-{"id": 117, "question": "Politics is boring to me.", "effects": {"iy": -1}},
-{"id": 118, "question": "Nearly all politicians are evil and problematic, no matter what their political ideals are.", "effects": {"iy": -1}},
-{"id": 119, "question": "Politics should be avoided in daily life.", "effects": {"iy": -1}},
+{"id": 137, "question": "Politics is boring to me.", "effects": {"iy": -1}},
+{"id": 138, "question": "Nearly all politicians are evil and problematic, no matter what their political ideals are.", "effects": {"iy": -1}},
+{"id": 139, "question": "Politics should be avoided in daily life.", "effects": {"iy": -1}},
 //Political Engagement - Politicized
-{"id": 120, "question": "Politics is very important for society, and shouldn't be ignored.", "effects": {"iy": 1}}
+{"id": 140, "question": "Politics is very important for society, and shouldn't be ignored.", "effects": {"iy": 1}}
   
 ];
