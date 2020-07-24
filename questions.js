@@ -10,16 +10,16 @@ questions =  [
   
 //Economic System - Capitalism
 {"id": 5, "question": "Freedom of business is the best practical way a society can prosper.", "effects": {"x": 1, "ax": 1}},
-{"id": 6, "question": "Marxism is an ideology that would never work in practice.", "effects": {"y": 1, "ay": 1}},
+{"id": 6, "question": "Communism is an ideology that would never work in practice.", "effects": {"y": 1, "ay": 1}},
 {"id": 7, "question": "Governmental social programs should be replaced with private charities and organizations.", "effects": {"x": 1, "ax": 1}},
-{"id": 8, "question": "I support the abolition of a minimum wage.", "effects": {"x": 1, "ax": 1}},
-{"id": 9, "question": "The market should provide healthcare, instead of the government.", "effects": {"x": 1, "ax": 1}},
-{"id": 10, "question": "Taxing citizens using involuntary methods can be considered an act of theft or agression.", "effects": {"x": 1, "ax": 1}},
+{"id": 8, "question": "If wages and a currency exists, there should not be a minimum wage.", "effects": {"x": 1, "ax": 1}},
+{"id": 9, "question": "All healthcare services should be privatized.", "effects": {"x": 1, "ax": 1}},
+{"id": 10, "question": "Taxing any individual using involuntary methods can be considered an act of theft or agression.", "effects": {"x": 1, "ax": 1}},
 {"id": 11, "question": "The Justice System should be partially privatized, or even fully privatized.", "effects": {"x": 1, "ax": 1}},
 {"id": 12, "question": "Inheritance is a legitimate form of wealth.", "effects": {"x": 1, "ax": 1}},
 //Economic System - Socialism
 {"id": 13, "question": "From each according to his ability, to each according to his needs.", "effects": {"x": -1, "ax": -1}},
-{"id": 14, "question": "Oppression by corporations is a huge concern facing modern society.", "effects": {"x": -1, "ax": -1}},
+{"id": 14, "question": "Oppression by corporations is a huge concern.", "effects": {"x": -1, "ax": -1}},
 {"id": 15, "question": "The means of production should belong to the workers.", "effects": {"x": -1, "ax": -1}},
 {"id": 15, "question": "Roads and transportation should be publicly owned.", "effects": {"x": -1, "ax": -1}},
 {"id": 16, "question": "Electricity should be publicly owned.", "effects": {"x": -1, "ax": -1}},
@@ -48,7 +48,7 @@ questions =  [
 
 //Diplomatic Relations - Nationalism
 {"id": 30, "question": "I will only support international organizations that align with my political beliefs.", "effects": {"cy": 1}},
-{"id": 31, "question": "National sovereignty is very important..", "effects": {"cy": 1}},
+{"id": 31, "question": "National sovereignty is very important.", "effects": {"cy": 1}},
 //Diplomatic Relations - Globalism
 {"id": 32, "question": "A global nation where all countries are united will be beneficial to humanity.", "effects": {"cy": -1}},
 {"id": 33, "question": "A global organization that is generally beneficial should hold a substantial amount of power.", "effects": {"cy": -1}},
@@ -58,10 +58,10 @@ questions =  [
 {"id": 35, "question": "It's important that we maintain our culture and tradition.", "effects": {"dx": 1}},
 //Societal Tradition - Progress
 {"id": 36, "question": "Religion is mostly fictional.", "effects": {"dx": -1}},
-{"id": 37, "question": "Tradition are of no value on their own.", "effects": {"dx": -1}},
+{"id": 37, "question": "Traditions are of no value on their own.", "effects": {"dx": -1}},
 {"id": 38, "question": "I support the LGBT Community.", "effects": {"dx": -1}},
 {"id": 39, "question": "I support the Black Lives Matter organization.", "effects": {"dx": -1}},
-{"id": 40, "question": "Churches should be taxed the same way other institutions are taxed.", "effects": {"dx": -1}},
+{"id": 40, "question": "If taxation exists, churches should be taxed the same way other institutions are taxed.", "effects": {"dx": -1}},
 
 //Societal Change - Conserve
 {"id": 41, "question": "Rapid change often leads to the worsening of people's lives.", "effects": {"dy": 1}},
@@ -131,7 +131,7 @@ questions =  [
 {"id": 80, "question": "My ideology is sometimes considered 'extreme'.", "effects": {"ix": 1}},
 {"id": 81, "question": "Violence and Revolutions are required in order to establish my ideology.", "effects": {"ix": 1}},
 {"id": 82, "question": "The current mainstream societal attitudes are problematic.", "effects": {"ix": 1}},
-{"id": 83, "question": "Neoliberalism is very different from my political views.", "effects": {"ix": 1}},
+{"id": 83, "question": "My political views are very different from the current status quo.", "effects": {"ix": 1}},
 
 //Political Engagement - Apolitical
 {"id": 84, "question": "Politics is boring to me.", "effects": {"iy": -1}},
