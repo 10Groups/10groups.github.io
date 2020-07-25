@@ -157,27 +157,27 @@ questions =  [
 //Cultural Hierarchy - Hierarchy
 {"id": 118, "question": "Even though equal opportunities can lead to equal outcomes, society should still focus on equal opportunities, and not equal outcomes.", "effects": {"gx": -1}},
 {"id": 119, "question": "Hierarchies will inevitably be formed in every society, at any time.", "effects": {"gx": -1}},
-{"id": 110, "question": "Any well-functioning society requries a hierarchy.", "effects": {"gx": -1}},
+{"id": 120, "question": "Any well-functioning society requries a hierarchy.", "effects": {"gx": -1}},
 
 //Cultural Assimilation - Monocultural
-{"id": 111, "question": "If we accept migrants into our borders, the migrants should be expected to assimilate into our culture.", "effects": {"gy": 1}},
-{"id": 112, "question": "Multiculturalism is unrealistic.", "effects": {"gy": 1}},
-{"id": 113, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": 1}},
+{"id": 121, "question": "If we accept migrants into our borders, the migrants should be expected to assimilate into our culture.", "effects": {"gy": 1}},
+{"id": 122, "question": "Multiculturalism is unrealistic.", "effects": {"gy": 1}},
+{"id": 123, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": 1}},
 //Cultural Assimilation - Multicultural
-{"id": 114, "question": "My nation should be more diverse.", "effects": {"gy": 1}},
-{"id": 115, "question": "Monoculturalism is disastrous for society.", "effects": {"gy": 1}},
-{"id": 116, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": 1}},
+{"id": 124, "question": "My nation should be more diverse.", "effects": {"gy": 1}},
+{"id": 125, "question": "Monoculturalism is disastrous for society.", "effects": {"gy": 1}},
+{"id": 126, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": 1}},
 
 //Procedural Compromize - Compromize 
-{"id": 117, "question": "Compromizes should be made in order to suit the needs of most people.", "effects": {"hx": -1}},
-{"id": 118, "question": "Compromizing can avoid unnecessary conflict.", "effects": {"hx": -1}},
-{"id": 119, "question": "Adopting radical ideas isn't possible unless compromizes are made.", "effects": {"hx": -1}},
+{"id": 127, "question": "Compromizes should be made in order to suit the needs of most people.", "effects": {"hx": -1}},
+{"id": 128, "question": "Compromizing can avoid unnecessary conflict.", "effects": {"hx": -1}},
+{"id": 129, "question": "Adopting radical ideas isn't possible unless compromizes are made.", "effects": {"hx": -1}},
 
 //Procedural Transition - Transitional
-{"id": 120, "question": "A transitional state should be made.", "effects": {"hy": 1}},
+{"id": 130, "question": "A transitional state should be made.", "effects": {"hy": 1}},
 //Procedural Transition - Direct
-{"id": 121, "question": "My ideology should be established as quick as possible.", "effects": {"hy": -1}},
-{"id": 122, "question": "My political ideals can be acheived within 10 years.", "effects": {"hy": -1}},
+{"id": 131, "question": "My ideology should be established as quick as possible.", "effects": {"hy": -1}},
+{"id": 132, "question": "My political ideals can be acheived within 10 years.", "effects": {"hy": -1}},
   
 //Political Extremism - Radical
 {"id": 133, "question": "My ideology is sometimes considered 'extreme'.", "effects": {"ix": 1}},
