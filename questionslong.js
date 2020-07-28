@@ -31,7 +31,7 @@ questions =  [
 //Governmental System - Autocracy
 {"id": 22, "question": "An autocracy is more beneficial than any democratic system.", "effects": {"y": 1, "bx": -1}},
 {"id": 23, "question": "A beneficial democracy requires high levels of education.", "effects": {"y": 1, "bx": -1}},
-{"id": 24, "question": "Electoral votes needs to be adjusted so that different states/regions get representation.", "effects": {"y": 1, "bx": -1}},
+{"id": 24, "question": "If the electoral college exists at all, electoral votes needs to be adjusted so that different states/regions get representation.", "effects": {"y": 1, "bx": -1}},
 {"id": 25, "question": "Democracy increases the risks of instability and corruption.", "effects": {"y": 1, "bx": -1}},
 {"id": 26, "question": "Only allowing scientific experts to run for an election is preferable than that of a regular democracy.", "effects": {"y": 1, "bx": -1}},
 //Governmental System - Democracy
