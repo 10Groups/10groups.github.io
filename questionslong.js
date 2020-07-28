@@ -169,7 +169,7 @@ questions =  [
 {"id": 126, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": 1}},
 
 //Procedural Compromize - Compromize 
-{"id": 127, "question": "Compromizes should be made in order to suit the needs of most people.", "effects": {"hx": -1}},
+{"id": 127, "question": "Compromises should be made in order to suit the needs of most people.", "effects": {"hx": -1}},
 {"id": 128, "question": "Compromizing can avoid unnecessary conflict.", "effects": {"hx": -1}},
 {"id": 129, "question": "Adopting radical ideas isn't possible unless compromizes are made.", "effects": {"hx": -1}},
 
