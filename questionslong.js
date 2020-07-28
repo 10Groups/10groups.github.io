@@ -128,7 +128,7 @@ questions =  [
 //Technological Transhumanism - Transhumanism
 {"id": 99, "question": "Getting past physical limitations through technology would be beneficial to mankind.", "effects": {"ey": 1}},
 {"id": 100, "question": "Transhumanism will be inevitable in the near future, in most nations.", "effects": {"ey": 1}},
-{"id": 101, "question": "Technology that improves mental and physical capabilities shouldn't be used, in any political system.", "effects": {"ey": 1}},
+{"id": 101, "question": "People are overly worrying about physical human modifications nowadays.", "effects": {"ey": 1}},
 //Technological Transhumanism - Primitivism
 {"id": 102, "question": "Technology that improves mental and physical capabilities shouldn't be used, in any political system.", "effects": {"ey": -1}},
 {"id": 103, "question": "The risks of transhumanism overweighs the benefits.", "effects": {"ey": -1}},
