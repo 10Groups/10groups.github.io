@@ -7,7 +7,7 @@ questions =  [
 {"id": 2, "question": "Most corporations should be state-owned.", "effects": {"y": -1, "ay": 1}},
 {"id": 3, "question": "A free economy is the best tool for establishing wages and the price of labour.", "effects": {"y": -1, "ay": 1}},
 {"id": 4, "question": "The market regulates itself, unjust monopolies will not survive in a free market.", "effects": {"y": -1, "ay": -1}},
-{"id": 5, "question": "A regulated economy is more unfair for the people, when compared to a laissez-faire econnmy.", "effects": {"y": -1, "ay": -1}},
+{"id": 5, "question": "A regulated economy is more unfair for the people, when compared to a laissez-faire economy.", "effects": {"y": -1, "ay": -1}},
 {"id": 6, "question": "Taxation for the rich should be lowered, or even abolished.", "effects": {"y": -1, "ay": -1}},
   
 //Economic System - Capitalism
