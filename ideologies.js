@@ -86,6 +86,90 @@ ideologies = [
     },
 //LibRight
     	{
+        "name": "Classical Liberalism",
+	    	"link": "https://en.wikipedia.org/wiki/Classical_liberalism",
+		"desc": "Classical liberalism is a political ideology and a branch of liberalism which advocates civil liberties under the rule of law with an emphasis on economic freedom.",
+		"next": "Liberalism, Neoliberalism, Libertarianism",
+        "stats": {
+	  "econ": 5,
+	  "govt": -3,
+	  "econsys": 5,
+	  "econreg": -5,
+          "govtsize": -3,
+          "govttype": 7,
+          "diplapp": 0,
+          "diplrel": 0,
+          "sctychg": 0,
+          "sctytrad": 5,
+          "techacc": 0,
+          "techbio": 0,
+          "lawtype": 0,
+          "lawrehab": 0,
+          "cltrhrchy": 5,
+          "cltrassi": 0,
+          "proccomp": 0,
+          "proctrans": 0,
+          "polapol": 0,
+          "polext": -2
+        }
+    },
+	{
+        "name": "Liberalism",
+	    	"link": "https://en.wikipedia.org/wiki/Liberalism",
+		"desc": "Liberalism is a political and moral philosophy based on liberty, consent of the governed and equality before the law, and often supports generally support free markets, free trade, limited government, and Captalism. This is not to be confused with progressivism.",
+		"next": "Classical Liberalism, Neoliberalism, Fiscal Conservatism",
+        "stats": {
+	  "econ": 7,
+	  "govt": -1,
+	  "econsys": 7,
+	  "econreg": -7,
+          "govtsize": -1,
+          "govttype": 5,
+          "diplapp": 0,
+          "diplrel": 0,
+          "sctychg": -5,
+          "sctytrad": 0,
+          "techacc": 0,
+          "techbio": 0,
+          "lawtype": 0,
+          "lawrehab": 0,
+          "cltrhrchy": 5,
+          "cltrassi": 0,
+          "proccomp": 0,
+          "proctrans": 0,
+          "polapol": 0,
+          "polext": -5
+        }
+    },
+	{
+        "name": "Neoliberalism",
+	    	"link": "https://en.wikipedia.org/wiki/Neoliberalism",
+		"desc": "Neoliberalism advocates economic reform and free market capitalism, supporting policies like privatization, deregulation, and generally, though not always, support globalism and progressivism.",
+		"next": "Liberalism, Classical Liberalism, Fiscal Conservatism, Centrism",
+        "stats": {
+	  "econ": 5,
+	  "govt": 0,
+	  "econsys": 5,
+	  "econreg": -1,
+          "govtsize": 0,
+          "govttype": 3,
+          "diplapp": 0,
+          "diplrel": -5,
+          "sctychg": -7,
+          "sctytrad": -5,
+          "techacc": 0,
+          "techbio": 0,
+          "lawtype": 0,
+          "lawrehab": 0,
+          "cltrhrchy": 5,
+          "cltrassi": 0,
+          "proccomp": 0,
+          "proctrans": 0,
+          "polapol": 0,
+          "polext": -7
+        }
+    },
+	{
         "name": "Libertarianism",
 	    	"link": "https://en.wikipedia.org/wiki/Libertarianism",
 		"desc": "Libertarianism is an ideology that seeks to maximize political freedom and autonomy, emphasizing individualism, freedom of choice and voluntary association.",
@@ -110,7 +194,7 @@ ideologies = [
           "proccomp": 0,
           "proctrans": 0,
           "polapol": 0,
-          "polext": 3
+          "polext": 2
         }
     },
 	{
@@ -138,7 +222,7 @@ ideologies = [
           "proccomp": 0,
           "proctrans": 0,
           "polapol": 0,
-          "polext": 3
+          "polext": 2
         }
     },
 	{
@@ -170,34 +254,6 @@ ideologies = [
         }
     }
 	{
-        "name": "Hoppeanism",
-	    	"link": "https://en.wikipedia.org/wiki/Hans-Hermann_Hoppe",
-		"desc": "Hoppeanism is an ideology based on the political views of Hans Hermann Hoppe. Hoppeanism is a conservative and traditionalist variant of Anarcho-Capitalism.",
-		"next": "Anarcho-Capitalism, Pink Capitalism, Minarchism, Anarcho-Individualism",
-        "stats": {
-	  "econ": 9,
-	  "govt": -9,
-	  "econsys": 9,
-	  "econreg": -9,
-          "govtsize": -9,
-          "govttype": -2,
-          "diplapp": 0,
-          "diplrel": 0,
-          "sctychg": -2,
-          "sctytrad": 5,
-          "techacc": 0,
-          "techbio": 0,
-          "lawtype": 0,
-          "lawrehab": 0,
-          "cltrhrchy": 7,
-          "cltrassi": 0,
-          "proccomp": 0,
-          "proctrans": 0,
-          "polapol": 0,
-          "polext": 8
-        }
-    },
-	{
         "name": "Anarcho-Capitalism",
 	    	"link": "https://en.wikipedia.org/wiki/Anarcho-capitalism",
 		"desc": "Anarcho-capitalism is a political ideology that advocates the elimination of the states in favor of private property and free markets. They believe any action should be legal as long as no individual is a victim of agression.",
@@ -222,7 +278,7 @@ ideologies = [
           "proccomp": 0,
           "proctrans": 0,
           "polapol": 0,
-          "polext": 8
+          "polext": 7
         }
     }
 ];
