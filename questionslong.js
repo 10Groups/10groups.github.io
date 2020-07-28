@@ -74,7 +74,7 @@ questions =  [
 {"id": 56, "question": "My nation's interests should be considered more important than that of other nations.", "effects": {"cy": 1}},
 {"id": 57, "question": "National sovereignty is very important.", "effects": {"cy": 1}},
 {"id": 58, "question": "It's a good thing that Nationalism is on the rise.", "effects": {"cy": 1}},
-{"id": 59, "question": "If a certain group has a very strong group identity", "effects": {"cy": 1}},
+{"id": 59, "question": "If a certain group has a very strong group identity, an independence referendum should be held.", "effects": {"cy": 1}},
 {"id": 60, "question": "Each nation should govern itself with minimal or no foreign intervention.", "effects": {"cy": 1}},
 {"id": 61, "question": "My nation is great.", "effects": {"cy": 1}},
 //Diplomatic Relations - Globalism
