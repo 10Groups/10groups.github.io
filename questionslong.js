@@ -28,7 +28,7 @@ questions =  [
 {"id": 20, "question": "The means of production should belong to the workers.", "effects": {"x": -2, "ax": -2}},
 {"id": 21, "question": "Roads and transportation should be publicly owned.", "effects": {"x": -2, "ax": -2}},
 {"id": 22, "question": "Economic inequality is still a very serious problem.", "effects": {"x": -2, "ax": -2}},
-{"id": 23, "question": "Real socialism has never been tried.", "effects": {"x": -2, "ax": -2}},
+{"id": 23, "question": "Paying workers with food is preferable than paying with money.", "effects": {"x": -2, "ax": -2}},
   
 //Governmental System - Autocracy
 {"id": 24, "question": "An autocracy is more beneficial than any democratic system.", "effects": {"y": 2, "bx": -2}},
