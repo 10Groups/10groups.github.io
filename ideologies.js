@@ -143,7 +143,7 @@ ideologies = [
     },
 	{
         "name": "Anarcho-Collectivism",
-	    	"link": "https://en.wikipedia.org/wiki/Collectivist_anarchism
+	    	"link": "https://en.wikipedia.org/wiki/Collectivist_anarchism",
 		"desc": "Anarcho-Collectivism advocates the abolition of both the state and private ownership of the means of production as it envisions in its place the means of production being owned collectively whilst controlled and self-managed by the producers and workers themselves.",
 		"next": "Anarcho-Communism, Anarcho-Syndicalism, Anarchism, Libertarian Socialism",
         "stats": {
@@ -171,7 +171,7 @@ ideologies = [
     },
 	{
         "name": "Anarcho-Primitivism",
-	    	"link": "https://en.wikipedia.org/wiki/anarcho-primitivism
+	    	"link": "https://en.wikipedia.org/wiki/anarcho-primitivism",
 		"desc": "Anarcho-Primitivism is an anarchist critique of the origins and progress of civilization, and advocates for the de-industrialization of society, and the abolition of modern technology.",
 		"next": "Anarcho-Communism, Anarchism, Anarcho-Mutualism",
         "stats": {
