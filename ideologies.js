@@ -171,7 +171,7 @@ ideologies = [
     },
 	{
         "name": "Anarcho-Primitivism",
-	    	"link": "https://en.wikipedia.org/wiki/Collectivist_anarchism
+	    	"link": "https://en.wikipedia.org/wiki/anarcho-primitivism
 		"desc": "Anarcho-Primitivism is an anarchist critique of the origins and progress of civilization, and advocates for the de-industrialization of society, and the abolition of modern technology.",
 		"next": "Anarcho-Communism, Anarchism, Anarcho-Mutualism",
         "stats": {
@@ -298,6 +298,34 @@ ideologies = [
           "sctychg": -5,
           "sctytrad": 0,
           "techacc": 0,
+          "techbio": 0,
+          "lawtype": 0,
+          "lawrehab": 0,
+          "cltrhrchy": -1,
+          "cltrassi": 0,
+          "proccomp": 0,
+          "proctrans": 0,
+          "polapol": 0,
+          "polext": -2
+        }
+    },
+	{
+        "name": "Progressivism",
+	    	"link": "https://en.wikipedia.org/wiki/Progressivism",
+		"desc": "Progressivism is a political philosophy in support of social reform, and is based on the idea of progress and modernity.",
+		"next": "Libertarian Socialism, Social Democracy",
+        "stats": {
+	  "econ": -1,
+	  "govt": -1,
+	  "econsys": -1,
+	  "econreg": -1,
+          "govtsize": -1,
+          "govttype": 0,
+          "diplapp": 0,
+          "diplrel": 0,
+          "sctychg": -7,
+          "sctytrad": -7,
+          "techacc": -5,
           "techbio": 0,
           "lawtype": 0,
           "lawrehab": 0,
