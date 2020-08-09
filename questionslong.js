@@ -110,7 +110,7 @@ questions =  [
 {"id": 84, "question": "Thinking in the long term is more important than thinking in the short term.", "effects": {"dy": -2}},
 {"id": 85, "question": "The current political system in my nation is flawed.", "effects": {"dy": -2}},
 {"id": 86, "question": "We should avoid delaying political reform and change.", "effects": {"dy": -2}},
-{"id": 87, "question": "If peaceful reform does not work, revolution and agressive methods should be considered.", "effects": {"dy": -2}},
+{"id": 87, "question": "If the cause is justified in my political ideology and peaceful reform does not work, revolution and aggressive measures should be considered.", "effects": {"dy": -2}},
 
 //Technological Acceleration - Decelerate
 {"id": 88, "question": "Technology is negatively affecting modern society.", "effects": {"ex": -2}},
