@@ -165,9 +165,9 @@ questions =  [
 {"id": 222, "question": "Multiculturalism is unrealistic.", "effects": {"gy": 2}},
 {"id": 223, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": 2}},
 //Cultural Assimilation - Multicultural
-{"id": 224, "question": "My nation should be more diverse.", "effects": {"gy": 2}},
-{"id": 225, "question": "Monoculturalism is disastrous for society.", "effects": {"gy": 2}},
-{"id": 226, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": 2}},
+{"id": 224, "question": "My nation should be more diverse.", "effects": {"gy": -2}},
+{"id": 225, "question": "Monoculturalism is disastrous for society.", "effects": {"gy": -2}},
+{"id": 226, "question": "Race and ethnicity should be unimportant for everyone.", "effects": {"gy": -2}},
 
 //Procedural Compromize - Compromize 
 {"id": 227, "question": "Compromises should be made in order to suit the needs of most people.", "effects": {"hx": -2}},
