@@ -440,10 +440,10 @@
   	xinput = document.getElementById("xinput").value;
   	yinput = document.getElementById("yinput").value;
 	    
+	var canvas = document.getElementById("customcompass");	    
 	canvas.width = 1500;
         canvas.height = 1500;
 	    
-	var canvas = document.getElementById("customcompass");
 	var ctx = canvas.getContext("2d");
 	ctx.beginPath();
 	ctx.arc(115 + (400 * (xinput+10)/20), 450 - (400 * (yinput + 10)/20), 15, 0, 2 * Math.PI);
@@ -453,6 +453,7 @@
     }
 	  
     function resetCompass() {
+	var canvas = document.getElementById("customcompass");	    
 	const context = canvas.getContext('2d');
 	context.clearRect(0, 0, canvas.width, canvas.height);
 	var img = document.getElementById("blankcompass");
