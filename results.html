@@ -32,7 +32,10 @@
     <h3><span class="weight-300" id="ideodesc-label"></span></h3><br>
     <h3>Next Matches: <span class="weight-300" id="nextmatch-label"></span></h3> <hr> -->
 
-<h2 style="text-align:center;">Results - Compass</h2>
+<h2> <a onclick="showHide1()" style="text-align:center;">Results - Compass</a> </h2>
+
+<div id="myDIV1">
+
 <canvas id="canvas" width="2500" height="1500" style="border:1px solid #d3d3d3;"></canvas>
 <img id="compass" src="compassimage.png" alt="Image" style="display: none;" />
 <img id="chart" src="/heatmap/heatmap3.png" alt="Image" style="display: none;" />
@@ -40,9 +43,12 @@
 <br>
 <p style="text-align:center;">You can send the results of this compass by copying and pasting the URL, Screenshotting, or using the image above. Please zoom in if the canvas is too small or blurry.</p>    
     
+</div>
 <hr>
 
-<h2 style="text-align:center;">Results - Axes</h2>
+<h2> <a onclick="showHide2()" style="text-align:center;">Results - Axes</a> </h2>
+
+<div id="myDIV2">
 	
 <!-- Economy -->
 <div class="center"><div class="label-l"><label for="econ-a" style="font-size:16px">Capitalism</label></div>
@@ -125,15 +131,20 @@
 <progress id="pol-b" value="10" max="20"> </progress>
 <div class="label-r"><label for="pol-b">Apolitical</label></div> </div>
 	
+</div>
+
 <p style="text-align:center;">The above are the compass results generated and displayed as different spectrums. You can send the results of this compass by copying and pasting the URL or screenshotting this page.</p>    
 
 <hr>
 
-<h2 style="text-align:center;">Results - Heat Map</h2>	
+<h2> <a onclick="showHide3()" style="text-align:center;">Results - Heat Map</a> </h2>
+
+<div id="myDIV3">
 <canvas id="heatmap" width="1800" height="1500" style="border:1px solid #d3d3d3;"></canvas> 
 <br>
 <p style="text-align:center;">You can send the results of this compass by copying and pasting the URL, Screenshotting, or using the image above. The Heat Map is determined by the overlapping between different axes.</p>    	
-
+</div>
+	
 <!-- <hr> <h2 style="text-align:center;">Custom Compass (Work in Progress)</h2>
 
 <input type="text" id="x_input" value="X-Axis Score (Number)"> <br>
@@ -459,5 +470,31 @@
 	ctx.drawImage(img,0,0);
 
     }
+	  
+//Show Hide
+	   function showHide1() {
+  		var x = document.getElementById("myDIV1");
+  		if (x.style.display === "none") {
+  		x.style.display = "block";
+ 		 } else {
+ 		   x.style.display = "none";
+ 	}
+		   
+	   function showHide2() {
+  		var x = document.getElementById("myDIV2");
+  		if (x.style.display === "none") {
+  		x.style.display = "block";
+ 		 } else {
+ 		   x.style.display = "none";
+ 	}
+		   
+ 	  function showHide3() {
+  		var x = document.getElementById("myDIV3");
+  		if (x.style.display === "none") {
+  		x.style.display = "block";
+ 		 } else {
+ 		   x.style.display = "none";
+ 	}
+		
 	
     </script>
