@@ -333,7 +333,7 @@
 	var ctx = canvas.getContext("2d");
   	var img = document.getElementById("blankcompass");
 	ctx.drawImage(img,0,0);
-	}
+	};
 	    
 //Spectrum View
 	document.getElementById("econ-a").value = (10 + (ax_axis));
@@ -450,9 +450,8 @@
 	    
 	ctx.beginPath();
 	ctx.arc(450 + (500 * (xinput+10)/20), 9000 - (500 * (yinput + 10)/20), 30, 0, 2 * Math.PI);
-	ctx.fillStyle = "red"
+	ctx.fillStyle = "red";
 	ctx.fill();
-	ctx.stroke();
     }
 	  
     function resetCompass() {
