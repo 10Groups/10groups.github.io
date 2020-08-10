@@ -138,10 +138,10 @@
 
 <h2 style="text-align:center;">Custom Compass (Work in Progress)</h2>
 
-<input type="text" id="xinput" value="X-Axis Name"> <br>
-<input type="text" id="yinput" value="Y-Axis Name">
+<input type="text" id="xinput" value="X-Axis Score"> <br>
+<input type="text" id="yinput" value="Y-Axis Score">
 
-<p>Insert the name of the axes, which is found in the url (x, y, ax, ay etc.), into the 2 text boxes. The result would be a compass based on the statistics from your chosen axes.</p>
+<p>Insert the score of your prefereed axes, which can be found in the url. The result would be a compass based on the statistics from your chosen axes.</p>
 
 <button onclick="customCompass()">Create Compass</button>
 <button onclick="resetCompass()">Reset Compass</button>
@@ -449,7 +449,7 @@
 	ctx.drawImage(img,0,0);
 	    
 	ctx.beginPath();
-	ctx.arc(115 + (400 * (xinput+10)/20), 450 - (400 * (yinput + 10)/20), 15, 0, 2 * Math.PI);
+	ctx.arc(115 + (400 * (x_axis+10)/20), 450 - (400 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
 	ctx.fillStyle = "red"
 	ctx.fill();
 	ctx.stroke();
@@ -458,9 +458,9 @@
     function resetCompass() {
 	var canvas = document.getElementById("customcompass");	    
 	const context = canvas.getContext('2d');
-	context.clearRect(0, 0, canvas.width, canvas.height);
 	var img = document.getElementById("blankcompass");
 	ctx.drawImage(img,0,0);
+
     }
 	
     </script>
