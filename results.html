@@ -445,6 +445,9 @@
         canvas.height = 1500;
 	    
 	var ctx = canvas.getContext("2d");
+	var img = document.getElementById("chart");
+	ctx.drawImage(img,0,0);
+	    
 	ctx.beginPath();
 	ctx.arc(115 + (400 * (xinput+10)/20), 450 - (400 * (yinput + 10)/20), 15, 0, 2 * Math.PI);
 	ctx.fillStyle = "red"
