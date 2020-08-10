@@ -138,8 +138,8 @@
 
 <h2 style="text-align:center;">Custom Compass</h2>
 
-<input type="text" id="x-input" value="X-Axis Name"> <br>
-<input type="text" id="y-input" value="Y-Axis Name">
+<input type="text" id="xinput" value="X-Axis Name"> <br>
+<input type="text" id="yinput" value="Y-Axis Name">
 
 <p>Insert the name of the axes, which is found in the url (x, y, ax, ay etc.), into the 2 text boxes. The result would be a compass based on the statistics from your chosen axes.</p>
 
@@ -437,13 +437,13 @@
 	    
 //Custom Compass
     function custom() {
-  	var x_input = document.getElementById("x-input").value;
-  	var y_input = document.getElementById("y-input").value;
+  	xinput = document.getElementById("xinput").value;
+  	yinput = document.getElementById("yinput").value;
 	    
 	var canvas = document.getElementById("customcompass");
 	var ctx = canvas.getContext("2d");
 	ctx.beginPath();
-	ctx.arc(200 + (100 * (x_input +10)/20), 1150 - (100 * (y_input + 10)/20), 25, 0, 2 * Math.PI);
+	ctx.arc(200 + (100 * (xinput +10)/20), 1150 - (100 * (yinput + 10)/20), 25, 0, 2 * Math.PI);
 	ctx.fillStyle = "red"
 	ctx.fill();
 	ctx.stroke();
