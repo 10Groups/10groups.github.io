@@ -138,8 +138,8 @@
 
 <h2 style="text-align:center;">Custom Compass (Work in Progress)</h2>
 
-<input type="text" id="xinput" value="X-Axis Score"> <br>
-<input type="text" id="yinput" value="Y-Axis Score">
+<input type="text" id="x_input" value="X-Axis Score"> <br>
+<input type="text" id="y_input" value="Y-Axis Score">
 
 <p>Insert the score of your prefereed axes, which can be found in the url. The result would be a compass based on the statistics from your chosen axes.</p>
 
@@ -437,8 +437,8 @@
 	    
 //Custom Compass
     function customCompass() {
-  	xinput = document.getElementById("xinput").value;
-  	yinput = document.getElementById("yinput").value;
+  	xinput = document.getElementById("x_input").value;
+  	yinput = document.getElementById("y_input").value;
 	    
 	var canvas = document.getElementById("customcompass");	    
 	canvas.width = 1500;
