@@ -143,8 +143,8 @@
 
 <p>Insert the name of the axes, which is found in the url (x, y, ax, ay etc.), into the 2 text boxes. The result would be a compass based on the statistics from your chosen axes.</p>
 
-<button onclick="custom()">Create Compass</button>
-<button onclick="reset()">Reset Compass</button>
+<button onclick="customCompass()">Create Compass</button>
+<button onclick="resetCompass()">Reset Compass</button>
 	
 <canvas id="customcompass" width="1500" height="1500" style="border:1px solid #d3d3d3;"></canvas>
 <br>
@@ -436,20 +436,20 @@
 
 	    
 //Custom Compass
-    function custom() {
+    function customCompass() {
   	xinput = document.getElementById("xinput").value;
   	yinput = document.getElementById("yinput").value;
 	    
 	var canvas = document.getElementById("customcompass");
 	var ctx = canvas.getContext("2d");
 	ctx.beginPath();
-	ctx.arc(200 + (100 * (xinput +10)/20), 1150 - (100 * (yinput + 10)/20), 25, 0, 2 * Math.PI);
+	ctx.arc(115 + (400 * (xinput+10)/20), 450 - (400 * (yinput + 10)/20), 15, 0, 2 * Math.PI);
 	ctx.fillStyle = "red"
 	ctx.fill();
 	ctx.stroke();
     }
 	  
-    function reset() {
+    function resetCompass() {
 	const context = canvas.getContext('2d');
 	context.clearRect(0, 0, canvas.width, canvas.height);
     }
