@@ -440,6 +440,9 @@
   	xinput = document.getElementById("xinput").value;
   	yinput = document.getElementById("yinput").value;
 	    
+	canvas.width = 1500;
+        canvas.height = 1500;
+	    
 	var canvas = document.getElementById("customcompass");
 	var ctx = canvas.getContext("2d");
 	ctx.beginPath();
@@ -452,6 +455,8 @@
     function resetCompass() {
 	const context = canvas.getContext('2d');
 	context.clearRect(0, 0, canvas.width, canvas.height);
+	var img = document.getElementById("blankcompass");
+	ctx.drawImage(img,0,0);
     }
 	
     </script>
