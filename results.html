@@ -36,6 +36,7 @@
 <canvas id="canvas" width="2500" height="1500" style="border:1px solid #d3d3d3;"></canvas>
 <img id="compass" src="compassimage.png" alt="Image" style="display: none;" />
 <img id="chart" src="/heatmap/heatmap3.png" alt="Image" style="display: none;" />
+<img id="blankcompass" src="blankcompass.png" alt="Image" style="display: none;" />
 <br>
 <p style="text-align:center;">You can send the results of this compass by copying and pasting the URL, Screenshotting, or using the image above. Please zoom in if the canvas is too small or blurry.</p>    
     
@@ -132,8 +133,23 @@
 <canvas id="heatmap" width="1800" height="1500" style="border:1px solid #d3d3d3;"></canvas> 
 <br>
 <p style="text-align:center;">You can send the results of this compass by copying and pasting the URL, Screenshotting, or using the image above. The Heat Map is determined by the overlapping between different axes.</p>    
+<hr>
+	
 
+<h2 style="text-align:center;">Custom Compass</h2>
+
+<input type="text" id="x-input" value="X-Axis Name"> <br>
+<input type="text" id="y-input" value="Y-Axis Name">
+
+<p>Insert the name of the axes, which is found in the url (x, y, ax, ay etc.), into the 2 text boxes. The result would be a compass based on the statistics from your chosen axes.</p>
+
+<button onclick="custom()">Create Compass</button>
+<button onclick="reset()">Reset Compass</button>
+	
+<canvas id="customcompass" width="1500" height="1500" style="border:1px solid #d3d3d3;"></canvas>
 <br>
+	
+	
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br> 	    
 <!--canvas-->
     <script>	    
@@ -411,5 +427,29 @@
   	window.open(ideolink);
 	}
 
+	    
+//Custom Compass
+    function custom() {
+  	var x_input = document.getElementById("x-input").value;
+  	var y_input = document.getElementById("y-input").value;
+	    
+	var canvas = document.getElementById("customcompass");
+	var ctx = canvas.getContext("2d");
+  	var img = document.getElementById("blankcompass");
+	ctx.drawImage(img,0,0);
+	    
+	var canvas = document.getElementById("customcompass");
+	var ctx = canvas.getContext("2d");
+	ctx.beginPath();
+	ctx.arc(200 + (1000 * (x_input +10)/20), 1150 - (1000 * (y_input + 10)/20), 25, 0, 2 * Math.PI);
+	ctx.fillStyle = "red"
+	ctx.fill();
+	ctx.stroke();
+    }
+	  
+    function reset() {
+	const context = canvas.getContext('2d');
+	context.clearRect(0, 0, canvas.width, canvas.height);
+    }
 	
     </script>
