@@ -326,6 +326,13 @@
 	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
 	ctx.fill();
 	
+		
+		
+	//Custom
+	var canvas = document.getElementById("customcompass");
+	var ctx = canvas.getContext("2d");
+  	var img = document.getElementById("blankcompass");
+	ctx.drawImage(img,0,0);
 	}
 	    
 //Spectrum View
@@ -435,13 +442,8 @@
 	    
 	var canvas = document.getElementById("customcompass");
 	var ctx = canvas.getContext("2d");
-  	var img = document.getElementById("blankcompass");
-	ctx.drawImage(img,0,0);
-	    
-	var canvas = document.getElementById("customcompass");
-	var ctx = canvas.getContext("2d");
 	ctx.beginPath();
-	ctx.arc(200 + (1000 * (x_input +10)/20), 1150 - (1000 * (y_input + 10)/20), 25, 0, 2 * Math.PI);
+	ctx.arc(200 + (100 * (x_input +10)/20), 1150 - (100 * (y_input + 10)/20), 25, 0, 2 * Math.PI);
 	ctx.fillStyle = "red"
 	ctx.fill();
 	ctx.stroke();
