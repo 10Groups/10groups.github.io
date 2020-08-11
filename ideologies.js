@@ -534,6 +534,91 @@ ideologies = [
           "polext": 2
         }
 },
+//AuthRight
+	{
+        "name": "Absolute Monarchism",
+	    	"link": "https://en.wikipedia.org/wiki/Absolute_monarchy",
+		"desc": "Absolute Monarchism is a type of government in which the monarch holds supreme autocratic authority, principally not being restricted by written laws, legislature, or customs.",
+		"next": "Authoritarian Capitalism, Elective Monarchism, Constitutional Monarchism",
+        "stats": {
+	  "econ": 7,
+	  "govt": 9,
+	  "econsys": 7,
+	  "econreg": 3,
+          "govtsize": 9,
+          "govttype": -9,
+          "diplapp": 0,
+          "diplrel": 0,
+          "sctychg": 0,
+          "sctytrad": 0,
+          "techacc": 0,
+          "techbio": 0,
+          "lawtype": 0,
+          "lawrehab": 0,
+          "cltrhrchy": 0,
+          "cltrassi": 0,
+          "proccomp": 0,
+          "proctrans": 0,
+          "polapol": 0,
+          "polext": 2
+        }
+    },
+	{
+        "name": "Elective Monarchism",
+	    	"link": "https://en.wikipedia.org/wiki/Elective_monarchy",
+		"desc": "Elective Monarchism is a monarchy ruled by an elected monarch, in contrast to a hereditary monarchy in which the office is automatically passed down as a family inheritance.",
+		"next": "Constitutional Monarchism, Absolute Monarchism, Paleoconservatism",
+        "stats": {
+	  "econ": 5,
+	  "govt": 7,
+	  "econsys": 5,
+	  "econreg": 3,
+          "govtsize": 7,
+          "govttype": 3,
+          "diplapp": 0,
+          "diplrel": 0,
+          "sctychg": 0,
+          "sctytrad": 0,
+          "techacc": 0,
+          "techbio": 0,
+          "lawtype": 0,
+          "lawrehab": 0,
+          "cltrhrchy": 0,
+          "cltrassi": 0,
+          "proccomp": 0,
+          "proctrans": 0,
+          "polapol": 0,
+          "polext": 2
+        }
+    },
+	{
+        "name": "Constitutional Monarchism",
+	    	"link": "https://en.wikipedia.org/wiki/Constitutional_monarchy",
+		"desc": "Constitutional Monarchism is a form of monarchy in which the sovereign exercises authority in accordance with a written or unwritten constitution.",
+		"next": "Conservatism, Elective Monarchism, Paleoconservatism",
+        "stats": {
+	  "econ": 5,
+	  "govt": 5,
+	  "econsys": 5,
+	  "econreg": 3,
+          "govtsize": 5,
+          "govttype": 5,
+          "diplapp": 0,
+          "diplrel": 0,
+          "sctychg": 0,
+          "sctytrad": 0,
+          "techacc": 0,
+          "techbio": 0,
+          "lawtype": 0,
+          "lawrehab": 0,
+          "cltrhrchy": 0,
+          "cltrassi": 0,
+          "proccomp": 0,
+          "proctrans": 0,
+          "polapol": 0,
+          "polext": 2
+        }
+    },
 //LibLeft
 	{
         "name": "Anarcho-Communism",
