@@ -128,69 +128,89 @@ questions =  [
 
 //Technological Transhumanism - Transhumanism
 {"id": 99, "question": "Getting past physical limitations through technology would be beneficial to mankind.", "effects": {"ey": 2}},
-{"id": 200, "question": "Transhumanism will be inevitable in the near future, in most nations.", "effects": {"ey": 2}},
-{"id": 201, "question": "People are overly worrying about physical human modifications nowadays.", "effects": {"ey": 2}},
+{"id": 100, "question": "Transhumanism will be inevitable in the near future, in most nations.", "effects": {"ey": 2}},
+{"id": 101, "question": "People are overly worrying about physical human modifications nowadays.", "effects": {"ey": 2}},
 //Technological Transhumanism - Primitivism
-{"id": 202, "question": "Technology that improves mental and physical capabilities shouldn't be used, in any political system.", "effects": {"ey": -2}},
-{"id": 203, "question": "The risks of transhumanism overweighs the benefits.", "effects": {"ey": -2}},
-{"id": 204, "question": "Transhumanism is not required in any country within the next 20 years.", "effects": {"ey": -2}},
+{"id": 102, "question": "Technology that improves mental and physical capabilities shouldn't be used, in any political system.", "effects": {"ey": -2}},
+{"id": 103, "question": "The risks of transhumanism overweighs the benefits.", "effects": {"ey": -2}},
+{"id": 104, "question": "Transhumanism is not required in any country within the next 20 years.", "effects": {"ey": -2}},
 
 //Law System - Civil Law
-{"id": 205, "question": "Law principles should be codified into a referable system.", "effects": {"fx": 2}},
-{"id": 206, "question": "If a law system exists, lawmakers and legal experts should hold more influence than judges.", "effects": {"fx": 2}},
+{"id": 105, "question": "Law principles should be codified into a referable system.", "effects": {"fx": 2}},
+{"id": 106, "question": "If a law system exists, lawmakers and legal experts should hold more influence than judges.", "effects": {"fx": 2}},
 //Law System - Common Law
-{"id": 207, "question": "Courts should reference to other judicial decisions.", "effects": {"fx": -2}},
-{"id": 208, "question": "If judges and legislators exist, judges should hold more power than legislators.", "effects": {"fx": -2}},
-{"id": 209, "question": "If a decision cannot be made in courts, relevant cases in the past should be referenced.", "effects": {"fx": -2}},
-{"id": 210, "question": "Unusual cases cannot be decided with written law.", "effects": {"fx": -2}},
+{"id": 107, "question": "Courts should reference to other judicial decisions.", "effects": {"fx": -2}},
+{"id": 108, "question": "If judges and legislators exist, judges should hold more power than legislators.", "effects": {"fx": -2}},
+{"id": 109, "question": "If a decision cannot be made in courts, relevant cases in the past should be referenced.", "effects": {"fx": -2}},
+{"id": 110, "question": "Unusual cases cannot be decided with written law.", "effects": {"fx": -2}},
 
 //Law Focus - Punitive
-{"id": 211, "question": "A rehabilitative system is unjust.", "effects": {"fy": 2}},
-{"id": 212, "question": "Punishment should be valued, more than that of rehabilitation.", "effects": {"fy": 2}},
-{"id": 213, "question": "It's a waste of time trying to rehabilitate some criminals.", "effects": {"fy": 2}},
-{"id": 214, "question": "I support capital punishment.", "effects": {"fy": 2}},
+{"id": 111, "question": "A rehabilitative system is unjust.", "effects": {"fy": 2}},
+{"id": 112, "question": "Punishment should be valued, more than that of rehabilitation.", "effects": {"fy": 2}},
+{"id": 113, "question": "It's a waste of time trying to rehabilitate some criminals.", "effects": {"fy": 2}},
+{"id": 114, "question": "I support capital punishment.", "effects": {"fy": 2}},
 //Law Focus - Rehabilitive
-{"id": 215, "question": "Everybody deserves a second chance.", "effects": {"fy": -2}},
+{"id": 115, "question": "Everybody deserves a second chance.", "effects": {"fy": -2}},
 
 //Cultural Hierarchy - Equality
-{"id": 216, "question": "A system of equal outcomes should be established.", "effects": {"gx": -2}},
-{"id": 217, "question": "People should be treated equally regardless of their groups and characteristics.", "effects": {"gx": -2}},
+{"id": 116, "question": "A system of equal outcomes should be established.", "effects": {"gx": -2}},
+{"id": 117, "question": "People should be treated equally regardless of their groups and characteristics.", "effects": {"gx": -2}},
 //Cultural Hierarchy - Hierarchy
-{"id": 218, "question": "Even though equal opportunities can lead to equal outcomes, society should still focus on equal opportunities, and not equal outcomes.", "effects": {"gx": -2}},
-{"id": 219, "question": "Hierarchies will inevitably be formed in every society, at any time.", "effects": {"gx": -2}},
-{"id": 220, "question": "Any well-functioning society requries a hierarchy.", "effects": {"gx": -2}},
+{"id": 118, "question": "Even though equal opportunities can lead to equal outcomes, society should still focus on equal opportunities, and not equal outcomes.", "effects": {"gx": -2}},
+{"id": 119, "question": "Hierarchies will inevitably be formed in every society, at any time.", "effects": {"gx": -2}},
+{"id": 120, "question": "Any well-functioning society requries a hierarchy.", "effects": {"gx": -2}},
 
 //Cultural Assimilation - Monocultural
-{"id": 221, "question": "If we accept migrants into our borders, the migrants should be expected to assimilate into our culture.", "effects": {"gy": 2}},
-{"id": 222, "question": "Multiculturalism is unrealistic.", "effects": {"gy": 2}},
-{"id": 223, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": 2}},
+{"id": 121, "question": "If we accept migrants into our borders, the migrants should be expected to assimilate into our culture.", "effects": {"gy": 2}},
+{"id": 122, "question": "Multiculturalism is unrealistic.", "effects": {"gy": 2}},
+{"id": 123, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": 2}},
 //Cultural Assimilation - Multicultural
-{"id": 224, "question": "My nation should be more diverse.", "effects": {"gy": -2}},
-{"id": 225, "question": "Monoculturalism is disastrous for society.", "effects": {"gy": -2}},
-{"id": 226, "question": "Race and ethnicity should be unimportant for everyone.", "effects": {"gy": -2}},
+{"id": 124, "question": "My nation should be more diverse.", "effects": {"gy": -2}},
+{"id": 125, "question": "Monoculturalism is disastrous for society.", "effects": {"gy": -2}},
+{"id": 126, "question": "Race and ethnicity should be unimportant for everyone.", "effects": {"gy": -2}},
 
 //Procedural Compromize - Compromize 
-{"id": 227, "question": "Compromises should be made in order to suit the needs of most people.", "effects": {"hx": -2}},
-{"id": 228, "question": "Compromizing can avoid unnecessary conflict.", "effects": {"hx": -2}},
-{"id": 229, "question": "Adopting radical ideas isn't possible unless compromizes are made.", "effects": {"hx": -2}},
+{"id": 127, "question": "Compromises should be made in order to suit the needs of most people.", "effects": {"hx": -2}},
+{"id": 128, "question": "Compromizing can avoid unnecessary conflict.", "effects": {"hx": -2}},
+{"id": 129, "question": "Adopting radical ideas isn't possible unless compromizes are made.", "effects": {"hx": -2}},
 
 //Procedural Transition - Transitional
-{"id": 230, "question": "A transitional state should be made.", "effects": {"hy": 2}},
+{"id": 130, "question": "A transitional state should be made.", "effects": {"hy": 2}},
 //Procedural Transition - Direct
-{"id": 231, "question": "My ideology should be established as quick as possible.", "effects": {"hy": -2}},
-{"id": 232, "question": "My political ideals can be acheived within 10 years.", "effects": {"hy": -2}},
+{"id": 131, "question": "My ideology should be established as quick as possible.", "effects": {"hy": -2}},
+{"id": 132, "question": "My political ideals can be acheived within 10 years.", "effects": {"hy": -2}},
   
 //Political Extremism - Radical
-{"id": 233, "question": "My ideology is sometimes considered 'extreme'.", "effects": {"ix": 2}},
-{"id": 234, "question": "Violence and Revolutions are required in order to establish my ideology.", "effects": {"ix": 2}},
-{"id": 235, "question": "The current mainstream societal attitudes are problematic.", "effects": {"ix": 2}},
-{"id": 236, "question": "My political views are very different from the current status quo.", "effects": {"ix": 2}},
+{"id": 133, "question": "My ideology is sometimes considered 'extreme'.", "effects": {"ix": 2}},
+{"id": 134, "question": "Violence and Revolutions are required in order to establish my ideology.", "effects": {"ix": 2}},
+{"id": 135, "question": "The current mainstream societal attitudes are problematic.", "effects": {"ix": 2}},
+{"id": 136, "question": "My political views are very different from the current status quo.", "effects": {"ix": 2}},
 
 //Political Engagement - Apolitical
-{"id": 237, "question": "Politics is boring to me.", "effects": {"iy": -2}},
-{"id": 238, "question": "Nearly all politicians are evil and problematic, no matter what their political ideals are.", "effects": {"iy": -2}},
-{"id": 239, "question": "Politics should be avoided in daily life.", "effects": {"iy": -2}},
+{"id": 137, "question": "Politics is boring to me.", "effects": {"iy": -2}},
+{"id": 138, "question": "Nearly all politicians are evil and problematic, no matter what their political ideals are.", "effects": {"iy": -2}},
+{"id": 139, "question": "Politics should be avoided in daily life.", "effects": {"iy": -2}},
 //Political Engagement - Politicized
-{"id": 240, "question": "Politics is very important for society, and shouldn't be ignored.", "effects": {"iy": 2}}
+{"id": 140, "question": "Politics is very important for society, and shouldn't be ignored.", "effects": {"iy": 2}},
+  
+//Collectivization
+{"id": 141, "question": "Most things can only be accomplished through a group.", "effects": {"ja": -2}},
+{"id": 142, "question": "If the current career system is being used, a person's personal and work life should stay seperate.", "effects": {"ja": 2}},
+{"id": 143, "question": "Being self-sufficient (as a person) is a positive trait.", "effects": {"ja": 2}},
+  
+//Revolution
+{"id": 144, "question": "Changing the status quo using violent methods is mostly unhelpful.", "effects": {"jb": 2}},
+{"id": 145, "question": "Pacifism is generally unrealistic when protesting a government.", "effects": {"jb": -2}},
+  
+//Idealism
+{"id": 146, "question": "Idealists are mostly unrealistic.", "effects": {"jc": 2}}
+{"id": 147, "question": "We should not ignore ideologies that seem radical, but has a chance of success.", "effects": {"jc": -2}},
+{"id": 148, "question": "We should be more optimistic towards a variety of different ideas.", "effects": {"jc": -2}},
+
+//Consequence
+{"id": 149, "question": "An eye for eye and a tooth for tooth.", "effects": {"jd": 2}}
+{"id": 150, "question": "We should judge an action based on its consequences.", "effects": {"jd": 2}}
+{"id": 151, "question": "An action should be seen as right or wrong through a set of rules and principles.", "effects": {"jd": -2}},
+{"id": 152, "question": "Intention is more important than consequence when judging an action.", "effects": {"jd": -2}},
   
 ];
