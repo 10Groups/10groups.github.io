@@ -50,7 +50,7 @@
 <img id="chart" src="/heatmap/heatmap3.png" alt="Image" style="display: none;" />
 <img id="blankcompass" src="blankcompass.png" alt="Image" style="display: none;" />
 <br>
-<p style="text-align:center;">You can send the results of this compass by copying and pasting the URL, Screenshotting, or using the image above. Please zoom in if the canvas is too small or blurry.</p>    
+<p style="text-align:center;">You can send the results of this compass by copying and pasting the URL, Screenshotting, or using the image above. Please zoom in if the canvas is too small or blurry. The last group is work in progress.</p>    
     
 <hr>
 
@@ -279,6 +279,15 @@
 		var ctx = canvas.getContext("2d");
 	        ctx.beginPath();
 	        ctx.arc(735 + (400 * (ix_axis+10)/20), 1450 - (400 * (iy_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+		
+	//Moral Circles	
+        var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+	        ctx.beginPath();
+	        ctx.arc(1672 + (400 * (ja_axis+10)/20), 1300, 15, 0, 2 * Math.PI);
 	        ctx.fillStyle = "red"
 	        ctx.fill();
 	        ctx.stroke();
