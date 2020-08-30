@@ -138,6 +138,26 @@ questions =  [
 {"id": 85, "question": "Nearly all politicians are evil and problematic, no matter what their political ideals are.", "effects": {"iy": -2}},
 {"id": 86, "question": "Politics should be avoided in daily life.", "effects": {"iy": -2}},
 //Political Engagement - Politicized
-{"id": 87, "question": "Politics is very important for society, and shouldn't be ignored.", "effects": {"iy": 2}}
+{"id": 87, "question": "Politics is very important for society, and shouldn't be ignored.", "effects": {"iy": 2}},
   
+//Collectivization
+{"id": 88, "question": "Most things can only be accomplished through a group.", "effects": {"ja": -2}},
+{"id": 89, "question": "If the current career system is being used, a person's personal and work life should stay seperate.", "effects": {"ja": 2}},
+{"id": 90, "question": "Being self-sufficient (as a person) is a positive trait.", "effects": {"ja": 2}},
+
+//Revolution
+{"id": 91, "question": "Changing the status quo using violent methods is mostly unhelpful.", "effects": {"jb": 2}},
+{"id": 92, "question": "Pacifism is generally unrealistic when protesting a government.", "effects": {"jb": -2}},
+  
+//Idealism
+{"id": 93, "question": "Idealists are mostly unrealistic.", "effects": {"jc": 2}}
+{"id": 94, "question": "We should not ignore ideologies that seem radical, but has a chance of success.", "effects": {"jc": -2}},
+{"id": 95, "question": "We should be more optimistic towards a variety of different ideas.", "effects": {"jc": -2}},
+
+//Consequence
+{"id": 93, "question": "An eye for eye and a tooth for tooth.", "effects": {"jd": 2}}
+{"id": 94, "question": "We should judge an action based on its consequences.", "effects": {"jd": 2}}
+{"id": 95, "question": "An action should be seen as right or wrong through a set of rules and principles.", "effects": {"jd": -2}},
+{"id": 96, "question": "Intention is more important than consequence when judging an action.", "effects": {"jd": -2}},
+
 ];
