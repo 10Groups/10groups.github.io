@@ -203,7 +203,7 @@ questions =  [
 {"id": 145, "question": "Pacifism is generally unrealistic when protesting a government.", "effects": {"jb": -2}},
   
 //Idealism
-{"id": 146, "question": "Idealists are mostly unrealistic.", "effects": {"jc": 2}}
+{"id": 146, "question": "Idealists are mostly unrealistic.", "effects": {"jc": 2}},
 {"id": 147, "question": "We should not ignore ideologies that seem radical, but has a chance of success.", "effects": {"jc": -2}},
 {"id": 148, "question": "We should be more optimistic towards a variety of different ideas.", "effects": {"jc": -2}},
 
