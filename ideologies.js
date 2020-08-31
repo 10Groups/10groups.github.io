@@ -1,10 +1,10 @@
 ideologies = [
 //Centrist
     	{
-        "name": "Centrism",
+        "name": "Centrism / Others",
 	    	"link": "https://en.wikipedia.org/wiki/Centrism",
-		"desc": "Centrism is a political position that supports a balance between left-leaning and right-leaning policies. It opposes a significant shift in society.",
-		"next": "Radical Centrism, Apoliticism, Neoliberalism, Center-Left Politics, Center-Right Politics",
+		"desc": "Centrism is a political position that supports a balance between left-leaning and right-leaning policies. This option could also show up if there isn't an ideology for your results. Please fill in the form if this is the case.",
+		"next": "Radical Centrism, Apoliticism, Others",
         "stats": {
 	  "econ": 0,
 	  "govt": 0,
