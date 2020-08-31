@@ -537,7 +537,7 @@ ideologies = [
 //AuthRight
 	{
         "name": "Authoritarian Capitalism",
-	    	"link": "https://en.wikipedia.org/wiki/Absolute_monarchy",
+	    	"link": "https://en.wikipedia.org/wiki/Authoritarian_capitalism",
 		"desc": "Authoritarian Capitalism is an economic system in which a capitalist market economy exists alongside an authoritarian government. Authoritarian capitalism combines private property and the functioning of market forces with repression of dissent, restrictions on freedom of speech and either a lack of elections or an electoral system with a single dominant political party.",
 		"next": "State Capitalism, Elective Monarchism, Absolute Monarchism",
         "stats": {
