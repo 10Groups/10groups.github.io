@@ -155,9 +155,9 @@ questions =  [
 {"id": 95, "question": "We should be more optimistic towards a variety of different ideas.", "effects": {"jc": -2}},
 
 //Consequence
-{"id": 93, "question": "An eye for eye and a tooth for tooth.", "effects": {"jd": 2}},
-{"id": 94, "question": "We should judge an action based on its consequences.", "effects": {"jd": 2}},
-{"id": 95, "question": "An action should be seen as right or wrong through a set of rules and principles.", "effects": {"jd": -2}},
-{"id": 96, "question": "Intention is more important than consequence when judging an action.", "effects": {"jd": -2}},
+{"id": 96, "question": "An eye for eye and a tooth for tooth.", "effects": {"jd": 2}},
+{"id": 97, "question": "We should judge an action based on its consequences.", "effects": {"jd": 2}},
+{"id": 98, "question": "An action should be seen as right or wrong through a set of rules and principles.", "effects": {"jd": -2}},
+{"id": 99, "question": "Intention is more important than consequence when judging an action.", "effects": {"jd": -2}},
 
 ];
