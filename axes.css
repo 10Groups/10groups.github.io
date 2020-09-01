@@ -187,3 +187,24 @@
 #pol-a::-webkit-progress-bar, #pol-b::-webkit-progress-bar, #pol-c::-webkit-progress-bar, #pol-d::-webkit-progress-bar, #pol-e::-webkit-progress-bar {
     background: #A9A9A9;    
 }
+
+/* Moral Axes */
+#mor-a, #mor-b , #mor-c, #mor-d, #mor-e {
+  border: 3px solid #000000;
+  width: 70%;
+  height: 30px;
+  background: #222222;
+  color: #a9a9a9;
+}      
+#mor-a::-webkit-progress-value, #mor-b::-webkit-progress-value, #mor-c::-webkit-progress-value, #mor-d::-webkit-progress-value, #mor-e::-webkit-progress-value {
+    background: #222222;   
+}  
+#mor-a::-moz-progress-bar, #mor-b::-moz-progress-bar, #mor-c::-moz-progress-bar, #mor-d::-moz-progress-bar, #mor-e::-moz-progress-bar {
+    background: #a9a9a9;   
+}  
+#mor-a::-webkit-progress-value, #mor-b::-webkit-progress-value, #mor-c::-webkit-progress-value, #mor-d::-webkit-progress-value, #mor-e::-webkit-progress-value {
+    background: #222222;  
+}  
+#mor-a::-webkit-progress-bar, #mor-b::-webkit-progress-bar, #mor-c::-webkit-progress-bar, #mor-d::-webkit-progress-bar, #mor-e::-webkit-progress-bar {
+    background: #a9a9a9;    
+}
