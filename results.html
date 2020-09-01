@@ -137,6 +137,23 @@
 <progress id="pol-b" value="10" max="20"> </progress>
 <div class="label-r"><label for="pol-b">Apolitical</label></div> </div>
 	
+<!-- Morality -->
+<div class="center"><div class="label-l"><label for="mor-a">Collectivism</label></div>
+<progress id="mor-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="mor-a">Individualism</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="mor-b">Revolution</label></div>
+<progress id="mor-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="mor-b">Peaceful</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="mor-c">Idealism</label></div>
+<progress id="mor-c" value="10" max="20"> </progress>
+<div class="label-r"><label for="mor-c">Realism</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="mor-d" style="font-size:14px">Consequental</label></div>
+<progress id="mor-d" value="10" max="20"> </progress>
+<div class="label-r"><label for="mor-d" style="font-size:14px">Deontological</label></div> </div>
+	
 <p style="text-align:center;">The above are the compass results generated and displayed as different spectrums. You can send the results of this compass by copying and pasting the URL or screenshotting this page.</p>    
 
 <hr>
@@ -384,8 +401,10 @@
 	document.getElementById("cltr-b").value = (10 - (gy_axis));
 	document.getElementById("proc-a").value = (10 + (hx_axis));
 	document.getElementById("proc-b").value = (10 - (hy_axis));
-	document.getElementById("pol-a").value = (10 + (ix_axis));
-	document.getElementById("pol-b").value = (10 + (iy_axis));
+	document.getElementById("mor-a").value = (10 - (ix_axis));
+	document.getElementById("mor-b").value = (10 - (iy_axis));
+	document.getElementById("mor-c").value = (10 - (ix_axis));
+	document.getElementById("mor-d").value = (10 - (iy_axis));
 	
 //Ideology Matching
 	
