@@ -146,14 +146,7 @@
 <br>
 <p style="text-align:center;">You can send the results of this compass by copying and pasting the URL, Screenshotting, or using the image above. The Heat Map is determined by the overlapping between different axes.</p>    	
 
-<!-- <hr> <h2 style="text-align:center;">Custom Compass (Work in Progress)</h2>
-<input type="text" id="x_input" value="X-Axis Score (Number)"> <br>
-<input type="text" id="y_input" value="Y-Axis Score (Number)">
-<p>Insert the score of your prefereed axes, which can be found in the url. The result would be a compass based on the statistics from your chosen axes.</p>
-<button onclick="customCompass()">Create Compass</button>
-<button onclick="resetCompass()">Reset Compass</button>
 	
-<canvas id="customcompass" width="1500" height="1500" style="border:1px solid #d3d3d3;"></canvas> -->
 <br>
 	
 	
@@ -419,14 +412,14 @@
         dyvalue = getQueryVariable("dy")
         exvalue = getQueryVariable("ex")
         eyvalue = getQueryVariable("ey")
-        fxvalue = getQueryVariable("fx")
+       /* fxvalue = getQueryVariable("fx")
         fyvalue = getQueryVariable("fy")
         gxvalue = getQueryVariable("gx")
         gyvalue = getQueryVariable("gy")
         hxvalue = getQueryVariable("hx")
         hyvalue = getQueryVariable("hy")
         ixvalue = getQueryVariable("ix")
-        iyvalue = getQueryVariable("iy")
+        iyvalue = getQueryVariable("iy") */
 	    
     ideology = ""
     ideolink = ""
@@ -448,14 +441,14 @@
         dist += Math.pow( Math.abs(ideologies[i].stats.sctytrad - dyvalue), 2)
         dist += Math.pow( Math.abs(ideologies[i].stats.techacc - exvalue), 2)
         dist += Math.pow( Math.abs(ideologies[i].stats.techbio - eyvalue), 2)
-        dist += Math.pow( Math.abs(ideologies[i].stats.lawtype - fxvalue), 2)
+        /* dist += Math.pow( Math.abs(ideologies[i].stats.lawtype - fxvalue), 2)
         dist += Math.pow( Math.abs(ideologies[i].stats.lawrehab - fyvalue), 2)
         dist += Math.pow( Math.abs(ideologies[i].stats.cltrhrchy - gxvalue), 2)
         dist += Math.pow( Math.abs(ideologies[i].stats.cltrassi - gyvalue), 2)
         dist += Math.pow( Math.abs(ideologies[i].stats.proccomp - hxvalue), 2)
         dist += Math.pow( Math.abs(ideologies[i].stats.proctrans - hyvalue), 2)
         dist += Math.pow( Math.abs(ideologies[i].stats.polapol - ixvalue), 2)
-        dist += Math.pow( Math.abs(ideologies[i].stats.polext - iyvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.polext - iyvalue), 2) */
 	    
         if (dist < ideodist) {
             ideology = ideologies[i].name
@@ -472,33 +465,5 @@
     function ideologyLink() {
   	window.open(ideolink);
 	}
-
-	    
-//Custom Compass
-    function customCompass() {
-  	var xinput = document.getElementById("x_input").value;
-  	var yinput = document.getElementById("y_input").value;
-	    
-	var canvas = document.getElementById("customcompass");	    
-	canvas.width = 1500;
-        canvas.height = 1500;
-	    
-	var ctx = canvas.getContext("2d");
-	var img = document.getElementById("blankcompass");
-	ctx.drawImage(img,0,0);
-	    
-	ctx.beginPath();
-	ctx.arc(450 + (500 * (xinput+10)/20), 9000 - (500 * (yinput + 10)/20), 30, 0, 2 * Math.PI);
-	ctx.fillStyle = "red";
-	ctx.fill();
-    }
-	  
-    function resetCompass() {
-	var canvas = document.getElementById("customcompass");	    
-	const context = canvas.getContext('2d');
-	var img = document.getElementById("blankcompass");
-	ctx.drawImage(img,0,0);
-
-    }
 	
     </script>
