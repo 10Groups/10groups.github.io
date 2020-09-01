@@ -334,9 +334,9 @@
 	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
 	ctx.fill();
 	
-	//Heat Map - Economic and Technological
+	//Heat Map - Economic and Law
 	ctx.beginPath();
-	ctx.arc(900 + (27.5 * ((ey_axis) + (ex_axis))) , 750 - (55 * (ax_axis)) , 150 , 0, 2 * Math.PI);
+	ctx.arc(900 + (27.5 * (ex_axis) ) , 750 - (55 * (fy_axis)) , 150 , 0, 2 * Math.PI);
 	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
 	ctx.fill();
 		
@@ -346,9 +346,9 @@
 	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
 	ctx.fill();
 	
-	//Heat Map - Law and Societal
+	//Heat Map - Law and State
 	ctx.beginPath();
-	ctx.arc(900 + (55 * (dy_axis)) , 750 - (27.5 * (fy_axis)) , 150 , 0, 2 * Math.PI);
+	ctx.arc(900 + (55 * (by_axis)) , 750 - (27.5 * (fy_axis)) , 150 , 0, 2 * Math.PI);
 	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
 	ctx.fill();
 	
