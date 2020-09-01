@@ -334,10 +334,10 @@
 	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
 	ctx.fill();
 	
-	//Heat Map - Nationalist and State
+	//Heat Map - Economic and Technological
 	ctx.beginPath();
-	ctx.arc(900 + (55 * (dx_axis)) , 750 - (55 * (cy_axis)) , 150 , 0, 2 * Math.PI);
-	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
+	ctx.arc(900 + (27.5 * ((ey_axis) + (ex_axis))) , 750 - (55 * (ax_axis)) , 150 , 0, 2 * Math.PI);
+	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
 	ctx.fill();
 		
 	//Heat Map - Nationalist and Societal
@@ -348,13 +348,13 @@
 	
 	//Heat Map - Law and Societal
 	ctx.beginPath();
-	ctx.arc(900 + (55 * (dy_axis)) , 750 - (27.5 * ((ey_axis) + (ex_axis))) , 150 , 0, 2 * Math.PI);
+	ctx.arc(900 + (55 * (dy_axis)) , 750 - (27.5 * (fy_axis)) , 150 , 0, 2 * Math.PI);
 	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
 	ctx.fill();
 	
-	//Heat Map - Cultural
+	//Heat Map - Cultural and State
 	ctx.beginPath();
-	ctx.arc(900 + (55 * (gx_axis)) , 750 - (55 * (gy_axis)) , 160 , 0, 2 * Math.PI);
+	ctx.arc(900 + (55 * (gx_axis)) , 750 - (55 * (ay_axis)) , 160 , 0, 2 * Math.PI);
 	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
 	ctx.fill();
 	
