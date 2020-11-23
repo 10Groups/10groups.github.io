@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+<link href='style.css' rel='stylesheet' type='text/css'>
+<link href='axes.css' rel='stylesheet' type='text/css'>
+<title>10Groups</title>
+<link rel="icon" type="x-icon" href="icon.png">
+<link rel="shortcut icon" type="x-icon" href="icon.png">
+<meta charset="utf-8">
+
+<!-- Global site tag (gtag.js) - Google Analytics; No Personal Information Collected -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173028192-1"></script>
+<script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'UA-173028192-1');
+</script>
+	
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1941965,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+	
+<script type="application/javascript" src="ideologies.js"></script>
+</head>
+
+<body>
+<h1>10Groups</h1>
+<hr>
+	
+<p style="text-align:center;">In this page, you will find 4 Different types of results: Ideological Matching, Compasses, Heat Map, and Axes. If you have any suggestions, please fill in <a href="https://forms.gle/gZgaSJ93rrMNa3k4A">this form</a>. Note that the placement of the axes do not necessarily correspond to the normal compass.</p>    
+<p style="text-align:center;"><a href="results.html">New Version</a>
+
+<hr>
+	
+  <h2>Closest Match: <span class="weight-300" id="ideology-label" onclick="ideologyLink()" style="color: #2222DD;text-decoration: underline"></span></h2>
+    <h3><span class="weight-300" id="ideodesc-label"></span></h3><br>
+    <h3>Next Matches: <span class="weight-300" id="nextmatch-label"></span></h3> <hr> 
+
+<h2 style="text-align:center;">Results - Compass</h2>
+<canvas id="canvas" width="2500" height="1500" style="border:1px solid #d3d3d3;"></canvas>
+<img id="compass" src="compassimage.png" alt="Image" style="display: none;" />
+<img id="chart" src="/heatmap/heatmap2.png" alt="Image" style="display: none;" />
+<img id="blankcompass" src="blankcompass.png" alt="Image" style="display: none;" />
+<br>
+<p style="text-align:center;">You can send the results of this compass by copying and pasting the URL, Screenshotting, or using the image above. Please zoom in if the canvas is too small or blurry. The last group is work in progress.</p>    
+    
+<hr>
+
+<h2 style="text-align:center;">Results - Axes</h2>
+	
+<!-- Economy -->
+<div class="center"><div class="label-l"><label for="econ-a" style="font-size:16px">Capitalism</label></div>
+<progress id="econ-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="econ-a">Socialism</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="econ-b" style="font-size:16px">Free</label></div>
+<progress id="econ-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="econ-b">Planned</label></div> </div>
+	
+<!-- Government -->
+<div class="center"><div class="label-l"><label for="govt-b">Libertarian</label></div>
+<progress id="govt-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="govt-b">Authoritarian</label></div> </div>
+     
+<div class="center"><div class="label-l"><label for="govt-a" style="font-size:16px">Autocracy</label></div>
+<progress id="govt-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="govt-a" style="font-size:16px">Democracy</label></div> </div>
+	
+<!-- Diplomacy -->
+<div class="center"><div class="label-l"><label for="dipl-a">Globalism</label></div>
+<progress id="dipl-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="dipl-a">Nationalism</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="dipl-b">Particular</label></div>
+<progress id="dipl-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="dipl-b">Universal</label></div> </div>
+	
+<!-- Society -->
+<div class="center"><div class="label-l"><label for="scty-a">Tradition</label></div>
+<progress id="scty-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="scty-a">Progress</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="scty-b">Conserve</label></div>
+<progress id="scty-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="scty-b">Reform</label></div> </div>
+	
+<!-- Technology -->
+<div class="center"><div class="label-l"><label for="tech-a">Decelerate</label></div>
+<progress id="tech-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="tech-a">Accelerate</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="tech-b">Primitivism</label></div>
+<progress id="tech-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="tech-b">Transhumanism</label></div> </div>
+	
+<!-- Law -->
+<div class="center"><div class="label-l"><label for="law-a">Civil Law</label></div>
+<progress id="law-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="law-a">Common Law</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="law-b" style="font-size:16px">Punitive</label></div>
+<progress id="law-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="law-b" style="font-size:16px">Rehabilitive</label></div> </div>
+	
+<!-- Culture -->
+<div class="center"><div class="label-l"><label for="cltr-a" style="font-size:16px">Hierarchy</label></div>
+<progress id="cltr-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="cltr-a" style="font-size:16px">Equality</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="cltr-b" style="font-size:14px">Multicultural</label></div>
+<progress id="cltr-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="cltr-b" style="font-size:16px">Monocultural</label></div> </div>
+	
+<!-- Procedure -->
+<div class="center"><div class="label-l"><label for="proc-a">Persist</label></div>
+<progress id="proc-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="proc-a" style="font-size:16px">Compromize</label></div> </div>	
+	
+<div class="center"><div class="label-l"><label for="proc-b">Direct</label></div>
+<progress id="proc-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="proc-b" style="font-size:16px">Transitional</label></div> </div>	
+	
+<!-- Politics -->
+<div class="center"><div class="label-l"><label for="pol-a">Radical</label></div>
+<progress id="pol-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="pol-a">Moderate</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="pol-b">Politicized</label></div>
+<progress id="pol-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="pol-b">Apolitical</label></div> </div>
+	
+<!-- Morality -->
+<div class="center"><div class="label-l"><label for="mor-a">Collectivism</label></div>
+<progress id="mor-a" value="10" max="20"> </progress>
+<div class="label-r"><label for="mor-a">Individualism</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="mor-b">Revolution</label></div>
+<progress id="mor-b" value="10" max="20"> </progress>
+<div class="label-r"><label for="mor-b">Peaceful</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="mor-c">Idealism</label></div>
+<progress id="mor-c" value="10" max="20"> </progress>
+<div class="label-r"><label for="mor-c">Realism</label></div> </div>
+	
+<div class="center"><div class="label-l"><label for="mor-d" style="font-size:14px">Consequental</label></div>
+<progress id="mor-d" value="10" max="20"> </progress>
+<div class="label-r"><label for="mor-d" style="font-size:14px">Deontological</label></div> </div>
+	
+<p style="text-align:center;">The above are the compass results generated and displayed as different spectrums. You can send the results of this compass by copying and pasting the URL or screenshotting this page.</p>    
+
+<hr>
+
+<h2 style="text-align:center;">Results - Heat Map</h2>	
+<canvas id="heatmap" width="1800" height="1500" style="border:1px solid #d3d3d3;"></canvas> 
+<br>
+<p style="text-align:center;">You can send the results of this compass by copying and pasting the URL, Screenshotting, or using the image above. The Heat Map is determined by the overlapping between different axes.</p>    	
+
+	
+<br>
+	
+	
+<button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br> 	    
+<!--canvas-->
+    <script>	    
+	    
+	const urlParams = new URLSearchParams(window.location.search);
+        x_axis  = parseFloat(urlParams.get("x"))
+        y_axis   = parseFloat(urlParams.get("y"))
+        ax_axis   = parseFloat(urlParams.get("ax"))
+        ay_axis   = parseFloat(urlParams.get("ay"))
+        bx_axis   = parseFloat(urlParams.get("bx"))
+        by_axis   = parseFloat(urlParams.get("by"))
+	cx_axis   = parseFloat(urlParams.get("cx"))
+        cy_axis   = parseFloat(urlParams.get("cy"))
+	dx_axis   = parseFloat(urlParams.get("dx"))
+        dy_axis   = parseFloat(urlParams.get("dy"))
+	ex_axis   = parseFloat(urlParams.get("ex"))
+        ey_axis   = parseFloat(urlParams.get("ey"))
+	fx_axis   = parseFloat(urlParams.get("fx"))
+        fy_axis   = parseFloat(urlParams.get("fy"))
+	gx_axis   = parseFloat(urlParams.get("gx"))
+        gy_axis   = parseFloat(urlParams.get("gy"))
+	hx_axis   = parseFloat(urlParams.get("hx"))
+        hy_axis   = parseFloat(urlParams.get("hy"))
+	ix_axis   = parseFloat(urlParams.get("ix"))
+        iy_axis   = parseFloat(urlParams.get("iy"))
+        ja_axis   = parseFloat(urlParams.get("ja"))
+        jb_axis   = parseFloat(urlParams.get("jb"))
+        jc_axis   = parseFloat(urlParams.get("jc"))
+        jd_axis   = parseFloat(urlParams.get("jd"))
+	    
+        window.onload = function() {	
+	var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        var img = document.getElementById("compass");
+        ctx.drawImage(img, 0, 0);
+		
+	//Circle (General)		
+        var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+	        ctx.beginPath();
+	        ctx.arc(115 + (400 * (x_axis+10)/20), 450 - (400 * (y_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+		
+	//Economic Circle	
+        var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+	        ctx.beginPath();
+	        ctx.arc(735 + (400 * (ax_axis+10)/20), 450 - (400 * (ay_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+		
+	//Government Circle	
+	var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+	        ctx.beginPath();
+	        ctx.arc(1360 + (400 * (bx_axis+10)/20), 450 - (400 * (by_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+		
+	//Nationalist Circle	
+	var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+	        ctx.beginPath();
+	        ctx.arc(1985 + (400 * (cx_axis+10)/20), 450 - (400 * (cy_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+		
+	//Societal Circle		
+        var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+	        ctx.beginPath();
+	        ctx.arc(115 + (400 * (dx_axis+10)/20), 945 - (400 * (dy_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+		
+	//Technological Circle	
+        var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+	        ctx.beginPath();
+	        ctx.arc(735 + (400 * (ex_axis+10)/20), 945 - (400 * (ey_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+		
+	//Law Circle	
+	var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+	        ctx.beginPath();
+	        ctx.arc(1360 + (400 * (fx_axis+10)/20), 945 - (400 * (fy_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+		
+	//Cultural Circle	
+	var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+	        ctx.beginPath();
+	        ctx.arc(1985 + (400 * (gx_axis+10)/20), 945 - (400 * (gy_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+		
+	//Procedural Circle		
+        var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+	        ctx.beginPath();
+	        ctx.arc(115 + (400 * (hx_axis+10)/20), 1450 - (400 * (hy_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+		
+	//Political Circle	
+        var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+	        ctx.beginPath();
+	        ctx.arc(735 + (400 * (ix_axis+10)/20), 1450 - (400 * (iy_axis + 10)/20), 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+		
+	//Moral Circles	
+        var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+	        ctx.beginPath();
+	        ctx.arc(1672 + (400 * (ja_axis+10)/20), 1058, 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+		
+		ctx.beginPath();
+	        ctx.arc(1672 + (400 * (jb_axis+10)/20), 1151, 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+		
+		ctx.beginPath();
+	        ctx.arc(1672 + (400 * (jc_axis+10)/20), 1246, 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+		
+		
+		ctx.beginPath();
+	        ctx.arc(1672 + (400 * (jd_axis+10)/20), 1340, 15, 0, 2 * Math.PI);
+	        ctx.fillStyle = "red"
+	        ctx.fill();
+	        ctx.stroke();
+
+	//Heat Map
+ 	var c = document.getElementById("heatmap");
+	var ctx = c.getContext("2d");
+  	var img = document.getElementById("chart");
+	ctx.drawImage(img,0,0);
+	
+	//Heat Map - General
+	ctx.beginPath();
+	ctx.arc(900 + (55 * (x_axis)) , 750 - (55 * (y_axis)) , 150 , 0, 2 * Math.PI);
+	ctx.fillStyle = "rgba(240, 52, 52, 0.5)"
+	ctx.fill();
+		
+	//Heat Map - Economic and Governmental
+	ctx.beginPath();
+	ctx.arc(900 + (55 * (ax_axis)) , 750 - (55 * (by_axis)) , 150 , 0, 2 * Math.PI);
+	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
+	ctx.fill();
+	
+	//Heat Map - Economic
+	ctx.beginPath();
+	ctx.arc(900 + (55 * (ax_axis)) , 750 - (55 * (ay_axis)) , 150 , 0, 2 * Math.PI);
+	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
+	ctx.fill();
+	
+	//Heat Map - Authoritarian and Technological
+	ctx.beginPath();
+	ctx.arc(900 + (27.5 * ((ey_axis) + (ex_axis))) , 750 - (27.5 * ((by_axis) + (bx_axis))) , 150 , 0, 2 * Math.PI);
+	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
+	ctx.fill();
+	
+	//Heat Map - Economic and Law
+	ctx.beginPath();
+	ctx.arc(900 + (27.5 * (ex_axis) ) , 750 - (55 * (fy_axis)) , 150 , 0, 2 * Math.PI);
+	ctx.fillStyle = "rgba(240, 52, 52, 0.3)"
+	ctx.fill();
+		
+	//Heat Map - Nationalist and Societal
+	ctx.beginPath();
+	ctx.arc(900 + (20 * ((cy_axis) + (cx_axis))) , 750 - (55 * (cx_axis)) , 150 , 0, 2 * Math.PI);
+	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
+	ctx.fill();
+	
+	//Heat Map - Law and State
+	ctx.beginPath();
+	ctx.arc(900 + (55 * (by_axis)) , 750 - (27.5 * (fy_axis)) , 150 , 0, 2 * Math.PI);
+	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
+	ctx.fill();
+	
+	//Heat Map - Cultural and State
+	ctx.beginPath();
+	ctx.arc(900 + (55 * (gx_axis)) , 750 - (55 * (ay_axis)) , 160 , 0, 2 * Math.PI);
+	ctx.fillStyle = "rgba(240, 52, 52, 0.2)"
+	ctx.fill();
+	
+		
+		
+	//Custom
+	var canvas = document.getElementById("customcompass");
+	var ctx = canvas.getContext("2d");
+  	var img = document.getElementById("blankcompass");
+	ctx.drawImage(img,0,0);
+	};
+	    
+//Spectrum View
+	document.getElementById("econ-a").value = (10 + (ax_axis));
+	document.getElementById("econ-b").value = (10 - (ay_axis));
+	document.getElementById("govt-a").value = (10 - (bx_axis));
+	document.getElementById("govt-b").value = (10 - (by_axis));
+	document.getElementById("dipl-a").value = (10 - (cy_axis));
+	document.getElementById("dipl-b").value = (10 + (cx_axis));
+	document.getElementById("scty-a").value = (10 + (dx_axis));
+	document.getElementById("scty-b").value = (10 + (dy_axis));
+	document.getElementById("tech-a").value = (10 + (ex_axis));
+	document.getElementById("tech-b").value = (10 - (ey_axis));
+	document.getElementById("law-a").value = (10 + (fx_axis));
+	document.getElementById("law-b").value = (10 + (fy_axis));
+	document.getElementById("cltr-a").value = (10 + (gx_axis));
+	document.getElementById("cltr-b").value = (10 - (gy_axis));
+	document.getElementById("proc-a").value = (10 + (hx_axis));
+	document.getElementById("proc-b").value = (10 - (hy_axis));
+	document.getElementById("mor-a").value = (10 - (ix_axis));
+	document.getElementById("mor-b").value = (10 - (iy_axis));
+	document.getElementById("mor-c").value = (10 - (ix_axis));
+	document.getElementById("mor-d").value = (10 - (iy_axis));
+	
+//Ideology Matching
+	
+    function getQueryVariable(variable)
+    {
+           var query = window.location.search.substring(1)
+           var vars = query.split("&")
+           for (var i=0;i<vars.length;i++) {
+                   var pair = vars[i].split("=")
+                   if(pair[0] == variable) {return pair[1]}
+           }
+           return(NaN);
+    }
+	
+	xvalue = getQueryVariable("x")
+        yvalue = getQueryVariable("y")
+        axvalue = getQueryVariable("ax")
+        ayvalue = getQueryVariable("ay")
+        bxvalue = getQueryVariable("bx")
+        byvalue = getQueryVariable("by")
+        cxvalue = getQueryVariable("cx")
+        cyvalue = getQueryVariable("cy")
+        dxvalue = getQueryVariable("dx")
+        dyvalue = getQueryVariable("dy")
+        exvalue = getQueryVariable("ex")
+        eyvalue = getQueryVariable("ey")
+       /* fxvalue = getQueryVariable("fx")
+        fyvalue = getQueryVariable("fy")
+        gxvalue = getQueryVariable("gx")
+        gyvalue = getQueryVariable("gy")
+        hxvalue = getQueryVariable("hx")
+        hyvalue = getQueryVariable("hy")
+        ixvalue = getQueryVariable("ix")
+        iyvalue = getQueryVariable("iy") */
+	    
+    ideology = ""
+    ideolink = ""
+    ideodesc = ""
+    nextmatch = ""
+    ideodist = Infinity
+	    
+    for (var i = 0; i < ideologies.length; i++) {
+    	dist = 0
+	dist += Math.pow( Math.abs(ideologies[i].stats.econ - xvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.govt - yvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.econsys - axvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.econreg - ayvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.govtsize - bxvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.govttype - byvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.diplapp - cxvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.diplrel - cyvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.sctychg - dxvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.sctytrad - dyvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.techacc - exvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.techbio - eyvalue), 2)
+        /* dist += Math.pow( Math.abs(ideologies[i].stats.lawtype - fxvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.lawrehab - fyvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.cltrhrchy - gxvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.cltrassi - gyvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.proccomp - hxvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.proctrans - hyvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.polapol - ixvalue), 2)
+        dist += Math.pow( Math.abs(ideologies[i].stats.polext - iyvalue), 2) */
+	    
+        if (dist < ideodist) {
+            ideology = ideologies[i].name
+            ideolink = ideologies[i].link
+            ideodesc = ideologies[i].desc
+            nextmatch = ideologies[i].next
+            ideodist = dist
+        }
+    }
+    document.getElementById("ideology-label").innerHTML = ideology
+    document.getElementById("ideodesc-label").innerHTML = ideodesc
+    document.getElementById("nextmatch-label").innerHTML = nextmatch	
+	    
+    function ideologyLink() {
+  	window.open(ideolink);
+	}
+	
+    </script>
