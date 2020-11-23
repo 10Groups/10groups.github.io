@@ -51,7 +51,9 @@
 <img id="blankcompass" src="blankcompass.png" alt="Image" style="display: none;" />
 <br>
 <p style="text-align:center;">You can send the results of this compass by copying and pasting the URL, Screenshotting, or using the image above. Please zoom in if the canvas is too small or blurry. The last group is work in progress.</p>    
-    
+<hr>
+<p style="text-align:center;"><a onclick="linka()">Original Version</a>, <a onclick="linkb()">Simplest Version</a>
+	
 <hr>
 
 <h2 style="text-align:center;">Results - Axes</h2>
@@ -485,4 +487,11 @@
   	window.open(ideolink);
 	}
 	
+        function linka() {
+	location.href = `resultsa.html?`+ window.location.search.substring(1)
+	}
+	
+    function linkb() {
+	location.href = `resultsb.html?`+ window.location.search.substring(1)
+	}
     </script>
