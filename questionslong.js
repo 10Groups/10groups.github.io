@@ -113,11 +113,11 @@ questions =  [
 {"id": 87, "question": "If the cause is justified in my political ideology and peaceful reform does not work, revolution and aggressive measures should be considered.", "effects": {"dy": -2}},
 
 //Technological Acceleration - Decelerate
-{"id": 88, "question": "Technology is negatively affecting modern society.", "effects": {"ex": -2}},
-{"id": 89, "question": "The Industrial Revolution and its consequences have been a disaster for the human race.", "effects": {"ex": -2}},
-{"id": 90, "question": "Usage of genetic modification for animals and plants should be minimized.", "effects": {"ex": -2}},
-{"id": 91, "question": "Modernity and social progress has led to a decrease of happiness, and often lacks meaning.", "effects": {"ex": -2}},
-{"id": 92, "question": "Society was better many years ago than it is today.", "effects": {"ex": -2}},
+{"id": 88, "question": "Technology is negatively affecting modern society.", "effects": {"ex": 2}},
+{"id": 89, "question": "The Industrial Revolution and its consequences have been a disaster for the human race.", "effects": {"ex": 2}},
+{"id": 90, "question": "Usage of genetic modification for animals and plants should be minimized.", "effects": {"ex": 2}},
+{"id": 91, "question": "Modernity and social progress has led to a decrease of happiness, and often lacks meaning.", "effects": {"ex": 2}},
+{"id": 92, "question": "Society was better many years ago than it is today.", "effects": {"ex": 2}},
 //Technological Acceleration - Accelerate
 {"id": 93, "question": "If artifical intellegence can rule better than humans, then they should rule.", "effects": {"ex": -2}},
 {"id": 94, "question": "Genetic modification of food can avoid effects from droughts and floods.", "effects": {"ex": -2}},
