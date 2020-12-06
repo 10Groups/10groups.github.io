@@ -110,11 +110,11 @@ questions =  [
 //Cultural Assimilation - Monocultural
 {"id": 68, "question": "If we accept migrants into our borders, the migrants should be expected to assimilate into our culture.", "effects": {"gy": 2}},
 {"id": 69, "question": "Multiculturalism is unrealistic.", "effects": {"gy": 2}},
-{"id": 70, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": 2}},
+{"id": 70, "question": "Some cultures are inherently superior to other cultures.", "effects": {"gy": 2}},
 //Cultutal Assimilation - Multicultural
 {"id": 71, "question": "My nation should be more diverse.", "effects": {"gy": 2}},
 {"id": 72, "question": "Monoculturalism is disastrous for society.", "effects": {"gy": 2}},
-{"id": 73, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": 2}},
+{"id": 73, "question": "Some cultures are inherently superior to other cultures.", "effects": {"gy": 2}},
   
 //Procedural Compromize - Compromize 
 {"id": 74, "question": "Compromizes should be made in order to suit the needs of most people.", "effects": {"hx": -2}},
@@ -125,7 +125,7 @@ questions =  [
 {"id": 77, "question": "A transitional state should be made.", "effects": {"hy": 2}},
 //Procedural Transition - Direct
 {"id": 78, "question": "My ideology should be established as quick as possible.", "effects": {"hy": -2}},
-{"id": 79, "question": "My political ideals can be acheived within 10 years.", "effects": {"hy": -2}},
+{"id": 79, "question": "My political ideals can be achieved within 10 years.", "effects": {"hy": -2}},
   
 //Political Extremism - Radical
 {"id": 80, "question": "My ideology is sometimes considered 'extreme'.", "effects": {"ix": 2}},
@@ -151,7 +151,7 @@ questions =  [
   
 //Idealism
 {"id": 93, "question": "Idealists are mostly unrealistic.", "effects": {"jc": 2}},
-{"id": 94, "question": "We should not ignore ideologies that seem radical, but has a chance of success.", "effects": {"jc": -2}},
+{"id": 94, "question": "We should not ignore ideologies that seem radical, but have a chance of success.", "effects": {"jc": -2}},
 {"id": 95, "question": "We should be more optimistic towards a variety of different ideas.", "effects": {"jc": -2}},
 
 //Consequence
