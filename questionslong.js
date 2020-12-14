@@ -48,7 +48,7 @@ questions =  [
 {"id": 35, "question": "If a person has nothing to hide, that person has nothing to fear.", "effects": {"y": 2, "by": 2}},
 {"id": 36, "question": "Martial law is appropiate if a nation is undergoing a crisis.", "effects": {"y": 2, "by": 2}},
 //Governmental Size - Libertarian
-{"id": 37, "question": "Any action that does not impose agression on any person should not be considered a criminal offence.", "effects": {"y": -2, "by": -2}},
+{"id": 37, "question": "Any action that does not impose aggression on any person should not be considered a criminal offence.", "effects": {"y": -2, "by": -2}},
 {"id": 38, "question": "All authority should be questioned.", "effects": {"y": -2, "by": -2}},
 {"id": 39, "question": "The existence of the state is a violation of our liberty and rights.", "effects": {"y": -2, "by": -2}},
 {"id": 40, "question": "Any drug should be legal as long as other people don't have to take the consequences.", "effects": {"y": -2, "by": -2}},
