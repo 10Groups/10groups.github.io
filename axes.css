@@ -223,16 +223,16 @@
     background: #e9d0db;
 }
 #mor-a::-moz-progress-bar {
-    color: #a2c2c7;
+    background: #a2c2c7;
 }
 #mor-b::-moz-progress-bar {
-    color: #f8cb9c;
+    background: #f8cb9c;
 }
 #mor-c::-moz-progress-bar {
-    color: #b4a7d5;
+    background: #b4a7d5;
 }
 #mor-d::-moz-progress-bar {
-    color: #cac4b2;
+    background: #cac4b2;
 }
 #mor-a::-moz-progress-value {
     background: #dc7e6b; 
@@ -247,15 +247,15 @@
     background: #e9d0db;
 }
 #mor-a::-webkit-progress-bar {
-    color: #a2c2c7;
+    background: #a2c2c7;
 }
 #mor-b::-webkit-progress-bar {
-    color: #f8cb9c;
+    background: #f8cb9c;
 }
 #mor-c::-webkit-progress-bar {
-    color: #b4a7d5;
+    background: #b4a7d5;
 }
 #mor-d::-webkit-progress-bar {
-    color: #cac4b2;
+    background: #cac4b2;
 }
 
