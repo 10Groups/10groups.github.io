@@ -2,17 +2,17 @@ questions =  [
   
 //Economic Regulation - Planned
 {"id": 0, "question": "In the current system, it is necessary for the government to intervene in the economy to protect consumers.", "effects": {"y": -5, "ay": 5}},
-{"id": 1, "question": "Without state intervention, monopolies would violate human rights.", "effects": {"y": -5, "ay": -5}},
-{"id": 2, "question": "Private organisations and corporations cannot be trusted and thus need regulating by the government.", "effects": {"x": -5, "ax": -5}},
+{"id": 1, "question": "Without state intervention, monopolies would violate human rights.", "effects": {"y": -5, "ay": 5}},
+{"id": 2, "question": "Private organisations and corporations cannot be trusted and thus need regulating by the government.", "effects": {"y": 5, "ay": 5}},
 //Economic Regulation - Laissez Faire
-{"id": 3, "question": "Most corporations should be state-owned.", "effects": {"y": -5, "ay": 5}},
-{"id": 4, "question": "A free economy is the best tool for establishing wages and the price of labour.", "effects": {"y": -5, "ay": 5}},
-{"id": 5, "question": "The market regulates itself, unjust monopolies will not survive in a free market.", "effects": {"y": -5, "ay": -5}},
-{"id": 6, "question": "A regulated economy is more unfair for the people, when compared to a laissez-faire economy.", "effects": {"y": -5, "ay": -5}},
-{"id": 7, "question": "Taxation for the rich should be lowered, or even abolished.", "effects": {"y": -5, "ay": -5}},
+{"id": 3, "question": "Most corporations should be state-owned.", "effects": {"x": -5, "ay": 5}},
+{"id": 4, "question": "A free economy is the best tool for establishing wages and the price of labour.", "effects": {"x": 5, "ay": -5}},
+{"id": 5, "question": "The market regulates itself, unjust monopolies will not survive in a free market.", "effects": {"x": 5, "ay": -5}},
+{"id": 6, "question": "A regulated economy is more unfair for the people, when compared to a laissez-faire economy.", "effects": {"x": 5, "ay": -5}},
+{"id": 7, "question": "Taxation for the rich should be lowered, or even abolished.", "effects": {"x": 5, "ax": 5}},
   
 //Economic System - Capitalism
-{"id": 8, "question": "Communism is an ideology that would never work in practice.", "effects": {"y": 5, "ay": 5}},
+{"id": 8, "question": "Communism is an ideology that would never work in practice.", "effects": {"x": 5, "ax": 5}},
 {"id": 9, "question": "Freedom of business is the best practical way a society can prosper.", "effects": {"x": 5, "ax": 5}},
 {"id": 10, "question": "Governmental social programs should be replaced with private charities and organizations.", "effects": {"x": 5, "ax": 5}},
 {"id": 11, "question": "If wages exist at all, the minimum wage should be lowered or stagnated, or even abolished.", "effects": {"x": 5, "ax": 5}},
@@ -33,7 +33,7 @@ questions =  [
 //Governmental System - Autocracy
 {"id": 24, "question": "An autocracy is more beneficial than any democratic system.", "effects": {"y": 5, "bx": -5}},
 {"id": 25, "question": "A beneficial democracy requires high levels of education.", "effects": {"y": 5, "bx": -5}},
-{"id": 26, "question": "If the electoral college exists at all, electoral votes needs to be adjusted so that different states/regions get representation.", "effects": {"y": 5, "bx": -5}},
+{"id": 26, "question": "If the electoral college exists at all, electoral votes needs to be adjusted so that different states/regions get representation.", "effects": {"x": 5, "bx": -5}},
 {"id": 27, "question": "Democracy increases the risks of instability and corruption.", "effects": {"y": 5, "bx": -5}},
 {"id": 28, "question": "Only allowing scientific experts to run for an election is preferable than that of a regular democracy.", "effects": {"y": 5, "bx": -5}},
 //Governmental System - Democracy
@@ -71,7 +71,7 @@ questions =  [
 {"id": 54, "question": "Conflict should be avoided as much as possible.", "effects": {"cx": 5}},
 
 //Diplomatic Relations - Nationalism
-{"id": 55, "question": "If I were to support international organizations at all, I will only support international organizations that align with my political beliefs.", "effects": {"cy": 5}},
+{"id": 55, "question": "If I were to support international organizations at all, I will only support international organizations that benefit my country.", "effects": {"cy": 5}},
 {"id": 56, "question": "My nation's interests should be considered more important than that of other nations.", "effects": {"cy": 5}},
 {"id": 57, "question": "National sovereignty is very important.", "effects": {"cy": 5}},
 {"id": 58, "question": "It's a good thing that Nationalism is on the rise.", "effects": {"cy": 5}},
@@ -113,11 +113,11 @@ questions =  [
 {"id": 87, "question": "If the cause is justified in my political ideology and peaceful reform does not work, revolution and aggressive measures should be considered.", "effects": {"dy": -5}},
 
 //Technological Acceleration - Decelerate
-{"id": 88, "question": "Technology is negatively affecting modern society.", "effects": {"ex": -5}},
-{"id": 89, "question": "The Industrial Revolution and its consequences have been a disaster for the human race.", "effects": {"ex": -5}},
-{"id": 90, "question": "Usage of genetic modification for animals and plants should be minimized.", "effects": {"ex": -5}},
-{"id": 91, "question": "Modernity and social progress has led to a decrease of happiness, and often lacks meaning.", "effects": {"ex": -5}},
-{"id": 92, "question": "Society was better many years ago than it is today.", "effects": {"ex": -5}},
+{"id": 88, "question": "Technology is negatively affecting modern society.", "effects": {"ex": 5}},
+{"id": 89, "question": "The Industrial Revolution and its consequences have been a disaster for the human race.", "effects": {"ex": 5}},
+{"id": 90, "question": "Usage of genetic modification for animals and plants should be minimized.", "effects": {"ex": 5}},
+{"id": 91, "question": "Modernity and social progress has led to a decrease of happiness, and often lacks meaning.", "effects": {"ex": 5}},
+{"id": 92, "question": "Society was better many years ago than it is today.", "effects": {"ex": 5}},
 //Technological Acceleration - Accelerate
 {"id": 93, "question": "If artifical intellegence can rule better than humans, then they should rule.", "effects": {"ex": -5}},
 {"id": 94, "question": "Genetic modification of food can avoid effects from droughts and floods.", "effects": {"ex": -5}},
@@ -156,9 +156,9 @@ questions =  [
 {"id": 116, "question": "A system of equal outcomes should be established.", "effects": {"gx": -5}},
 {"id": 117, "question": "People should be treated equally regardless of their groups and characteristics.", "effects": {"gx": -5}},
 //Cultural Hierarchy - Hierarchy
-{"id": 118, "question": "Even though equal opportunities can lead to equal outcomes, society should still focus on equal opportunities, and not equal outcomes.", "effects": {"gx": -5}},
-{"id": 119, "question": "Hierarchies will inevitably be formed in every society, at any time.", "effects": {"gx": -5}},
-{"id": 120, "question": "Any well-functioning society requries a hierarchy.", "effects": {"gx": -5}},
+{"id": 118, "question": "Even though equal opportunities can lead to equal outcomes, society should still focus on equal opportunities, and not equal outcomes.", "effects": {"gx": 5}},
+{"id": 119, "question": "Hierarchies will inevitably be formed in every society, at any time.", "effects": {"gx": 5}},
+{"id": 120, "question": "Any well-functioning society requries a hierarchy.", "effects": {"gx": 5}},
 
 //Cultural Assimilation - Monocultural
 {"id": 121, "question": "If we accept migrants into our borders, the migrants should be expected to assimilate into our culture.", "effects": {"gy": 5}},
@@ -169,10 +169,10 @@ questions =  [
 {"id": 125, "question": "Monoculturalism is disastrous for society.", "effects": {"gy": -5}},
 {"id": 126, "question": "Race and ethnicity should be unimportant for everyone.", "effects": {"gy": -5}},
 
-//Procedural Compromize - Compromize 
+//Procedural Compromize - Compromise 
 {"id": 127, "question": "Compromises should be made in order to suit the needs of most people.", "effects": {"hx": -5}},
-{"id": 128, "question": "Compromizing can avoid unnecessary conflict.", "effects": {"hx": -5}},
-{"id": 129, "question": "Adopting radical ideas isn't possible unless compromizes are made.", "effects": {"hx": -5}},
+{"id": 128, "question": "Compromising can avoid unnecessary conflict.", "effects": {"hx": -5}},
+{"id": 129, "question": "Adopting radical ideas isn't possible unless compromises are made.", "effects": {"hx": -5}},
 
 //Procedural Transition - Transitional
 {"id": 130, "question": "A transitional state should be made.", "effects": {"hy": 5}},
@@ -208,9 +208,9 @@ questions =  [
 {"id": 148, "question": "We should be more optimistic towards a variety of different ideas.", "effects": {"jc": -5}},
 
 //Consequence
-{"id": 149, "question": "An eye for eye and a tooth for tooth.", "effects": {"jd": 5}},
-{"id": 150, "question": "We should judge an action based on its consequences.", "effects": {"jd": 5}},
-{"id": 151, "question": "An action should be seen as right or wrong through a set of rules and principles.", "effects": {"jd": -5}},
-{"id": 155, "question": "Intention is more important than consequence when judging an action.", "effects": {"jd": -5}},
+{"id": 149, "question": "Attempted murder is just as bad as successful murder.", "effects": {"jd": 5}},
+{"id": 150, "question": "We should judge an action based on its consequences.", "effects": {"jd": -5}},
+{"id": 151, "question": "An action should be seen as right or wrong through a set of rules and principles.", "effects": {"jd": 5}},
+{"id": 155, "question": "Intention is more important than consequence when judging an action.", "effects": {"jd": 5}},
   
 ];
