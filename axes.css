@@ -1,10 +1,10 @@
 /* Economic Axes */
 #econ-a, #econ-b , #econ-c, #econ-d, #econ-e {
-  border: 3px solid #000000;
-  width: 70%;
-  height: 30px;
-  background: #FFFACD;
-  color: #CD5C5C;
+    border: 3px solid #000000;
+    width: 70%;
+    height: 30px;
+    background: #FFFACD;
+    color: #CD5C5C;
 }      
 #econ-a::-webkit-progress-value, #econ-b::-webkit-progress-value, #econ-c::-webkit-progress-value, #econ-d::-webkit-progress-value, #econ-e::-webkit-progress-value {
     background: #FFFACD;   
@@ -22,11 +22,11 @@
 
 /* Governmental Axes */
 #govt-a, #govt-b , #govt-c, #govt-d, #govt-e {
-  border: 3px solid #000000;
-  width: 70%;
-  height: 30px;
-  background: #FFE4B5;
-  color: #6ebbfa;
+    border: 3px solid #000000;
+    width: 70%;
+    height: 30px;
+    background: #FFE4B5;
+    color: #6ebbfa;
 }      
 #govt-a::-webkit-progress-value, #govt-b::-webkit-progress-value, #govt-c::-webkit-progress-value, #govt-d::-webkit-progress-value, #govt-e::-webkit-progress-value {
     background: #FFE4B5;   
@@ -43,11 +43,11 @@
 
 /* Diplomatic Axes */
 #dipl-a, #dipl-b , #dipl-c, #dipl-d, #dipl-e {
-  border: 3px solid #000000;
-  width: 70%;
-  height: 30px;
-  background: #AFEEEE;
-  color: #B0C4DE;
+    border: 3px solid #000000;
+    width: 70%;
+    height: 30px;
+    background: #AFEEEE;
+    color: #B0C4DE;
 }      
 #dipl-a::-webkit-progress-value, #dipl-b::-webkit-progress-value, #dipl-c::-webkit-progress-value, #dipl-d::-webkit-progress-value, #dipl-e::-webkit-progress-value {
     background: #AFEEEE;   
@@ -64,11 +64,11 @@
 
 /* Societal Axes */
 #scty-a, #scty-b , #scty-c, #scty-d, #scty-e {
-  border: 3px solid #000000;
-  width: 70%;
-  height: 30px;
-  background: #6B8E23;
-  color: #D8BFD8;
+    border: 3px solid #000000;
+    width: 70%;
+    height: 30px;
+    background: #6B8E23;
+    color: #D8BFD8;
 }      
 #scty-a::-webkit-progress-value, #scty-b::-webkit-progress-value, #scty-c::-webkit-progress-value, #scty-d::-webkit-progress-value, #scty-e::-webkit-progress-value {
     background: #6B8E23;   
@@ -85,11 +85,11 @@
 
 /* Technological Axes */
 #tech-a, #tech-b , #tech-c, #tech-d, #tech-e {
-  border: 3px solid #000000;
-  width: 70%;
-  height: 30px;
-  background: #808000;
-  color: #ADD8E6;
+    border: 3px solid #000000;
+    width: 70%;
+    height: 30px;
+    background: #808000;
+    color: #ADD8E6;
 }      
 #tech-a::-webkit-progress-value, #tech-b::-webkit-progress-value, #tech-c::-webkit-progress-value, #tech-d::-webkit-progress-value, #tech-e::-webkit-progress-value {
     background: #808000;   
@@ -106,11 +106,11 @@
 
 /* Law Axes */
 #law-a, #law-b , #law-c, #law-d, #law-e {
-  border: 3px solid #000000;
-  width: 70%;
-  height: 30px;
-  background: #A3E4D7;
-  color: #F5EEF8;
+    border: 3px solid #000000;
+    width: 70%;
+    height: 30px;
+    background: #A3E4D7;
+    color: #F5EEF8;
 }      
 #law-a::-webkit-progress-value, #law-b::-webkit-progress-value, #law-c::-webkit-progress-value, #law-d::-webkit-progress-value, #law-e::-webkit-progress-value {
     background: #A3E4D7;   
@@ -127,11 +127,11 @@
 
 /* Cultural Axes */
 #cltr-a, #cltr-b , #cltr-c, #cltr-d, #cltr-e {
-  border: 3px solid #000000;
-  width: 70%;
-  height: 30px;
-  background: #5499C7;
-  color: #F5B7B1;
+    border: 3px solid #000000;
+    width: 70%;
+    height: 30px;
+    background: #5499C7;
+    color: #F5B7B1;
 }      
 #cltr-a::-webkit-progress-value, #cltr-b::-webkit-progress-value, #cltr-c::-webkit-progress-value, #cltr-d::-webkit-progress-value, #cltr-e::-webkit-progress-value {
     background: #5499C7;   
@@ -148,11 +148,11 @@
 
 /* Procedural Axes */
 #proc-a, #proc-b , #proc-c, #proc-d, #proc-e {
-  border: 3px solid #000000;
-  width: 70%;
-  height: 30px;
-  background: #DEB887;
-  color: #DDA0DD;
+    border: 3px solid #000000;
+    width: 70%;
+    height: 30px;
+    background: #DEB887;
+    color: #DDA0DD;
 }      
 #proc-a::-webkit-progress-value, #proc-b::-webkit-progress-value, #proc-c::-webkit-progress-value, #proc-d::-webkit-progress-value, #proc-e::-webkit-progress-value {
     background: #DEB887;   
@@ -169,11 +169,11 @@
 
 /* Political Axes */
 #pol-a, #pol-b , #pol-c, #pol-d, #pol-e {
-  border: 3px solid #000000;
-  width: 70%;
-  height: 30px;
-  background: #222222;
-  color: #a9a9a9;
+    border: 3px solid #000000;
+    width: 70%;
+    height: 30px;
+    background: #222222;
+    color: #a9a9a9;
 }      
 #pol-a::-webkit-progress-value, #pol-b::-webkit-progress-value, #pol-c::-webkit-progress-value, #pol-d::-webkit-progress-value, #pol-e::-webkit-progress-value {
     background: #222222;   
@@ -189,22 +189,73 @@
 }
 
 /* Moral Axes */
-#mor-a, #mor-b , #mor-c, #mor-d, #mor-e {
-  border: 3px solid #000000;
-  width: 70%;
-  height: 30px;
-  background: #222222;
-  color: #a9a9a9;
-}      
-#mor-a::-webkit-progress-value, #mor-b::-webkit-progress-value, #mor-c::-webkit-progress-value, #mor-d::-webkit-progress-value, #mor-e::-webkit-progress-value {
-    background: #222222;   
-}  
-#mor-a::-moz-progress-bar, #mor-b::-moz-progress-bar, #mor-c::-moz-progress-bar, #mor-d::-moz-progress-bar, #mor-e::-moz-progress-bar {
-    background: #a9a9a9;   
-}  
-#mor-a::-moz-progress-value, #mor-b::-moz-progress-value, #mor-c::-moz-progress-value, #mor-d::-moz-progress-value, #mor-e::-moz-progress-value {
-    background: #222222;  
-}  
-#mor-a::-webkit-progress-bar, #mor-b::-webkit-progress-bar, #mor-c::-webkit-progress-bar, #mor-d::-webkit-progress-bar, #mor-e::-webkit-progress-bar {
-    background: #a9a9a9;    
+#mor-a, #mor-b , #mor-c, #mor-d {
+    border: 3px solid #000000;
+    width: 70%;
+    height: 30px;
 }
+#mor-a{
+    background: #dc7e6b;
+    color: #a2c2c7;
+}
+#mor-b{
+    background: #b7d6a7;
+    color: #f8cb9c;
+}
+#mor-c{
+    background: #fde39a;
+    color: #b4a7d5;
+}
+#mor-d{
+    background: #e9d0db;
+    color: #cac4b2;
+}
+#mor-a::-webkit-progress-value {
+    background: #dc7e6b; 
+}
+#mor-b::-webkit-progress-value {
+    background: #b7d6a7;
+}
+#mor-c::-webkit-progress-value {
+    background: #fde39a;
+}
+#mor-d::-webkit-progress-value {
+    background: #e9d0db;
+}
+#mor-a::-moz-progress-bar {
+    color: #a2c2c7;
+}
+#mor-b::-moz-progress-bar {
+    color: #f8cb9c;
+}
+#mor-c::-moz-progress-bar {
+    color: #b4a7d5;
+}
+#mor-d::-moz-progress-bar {
+    color: #cac4b2;
+}
+#mor-a::-moz-progress-value {
+    background: #dc7e6b; 
+}
+#mor-b::-moz-progress-value {
+    background: #b7d6a7;
+}
+#mor-c::-moz-progress-value {
+    background: #fde39a;
+}
+#mor-d::-moz-progress-value {
+    background: #e9d0db;
+}
+#mor-a::-webkit-progress-bar {
+    color: #a2c2c7;
+}
+#mor-b::-webkit-progress-bar {
+    color: #f8cb9c;
+}
+#mor-c::-webkit-progress-bar {
+    color: #b4a7d5;
+}
+#mor-d::-webkit-progress-bar {
+    color: #cac4b2;
+}
+
