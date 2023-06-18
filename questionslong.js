@@ -33,7 +33,7 @@ questions =  [
 //Governmental System - Autocracy
 {"id": 24, "question": "An autocracy is more beneficial than any democratic system.", "effects": {"y": 5, "bx": -5}},
 {"id": 25, "question": "A beneficial democracy requires high levels of education.", "effects": {"y": 5, "bx": -5}},
-{"id": 26, "question": "If the electoral college exists at all, electoral votes needs to be adjusted so that different states/regions get representation.", "effects": {"x": 5, "bx": -5}},
+{"id": 26, "question": "If the electoral college exists at all, electoral votes needs to be adjusted so that smaller states/regions get representation.", "effects": {"x": 5, "bx": -5}},
 {"id": 27, "question": "Democracy increases the risks of instability and corruption.", "effects": {"y": 5, "bx": -5}},
 {"id": 28, "question": "Only allowing scientific experts to run for an election is preferable than that of a regular democracy.", "effects": {"y": 5, "bx": -5}},
 //Governmental System - Democracy
@@ -96,14 +96,14 @@ questions =  [
 {"id": 73, "question": "Religion is mostly fictional.", "effects": {"dx": -5}},
 {"id": 74, "question": "Traditions are of no value on their own.", "effects": {"dx": -5}},
 {"id": 75, "question": "I support the LGBT Community.", "effects": {"dx": -5}},
-{"id": 76, "question": "I support the Black Lives Matter organization.", "effects": {"dx": -5}},
+{"id": 76, "question": "I support the Black Lives Matter movement.", "effects": {"dx": -5}},
 {"id": 77, "question": "If taxation exists, churches should be taxed the same way other institutions are taxed.", "effects": {"dx": -5}},
 {"id": 78, "question": "Evolution is a fact.", "effects": {"dx": -5}},
 
 //Societal Change - Conserve
 {"id": 79, "question": "Rapid change often leads to the worsening of people's lives.", "effects": {"dy": 5}},
 {"id": 80, "question": "Reforms should happen gradually and slowly.", "effects": {"dy": 5}},
-{"id": 81, "question": "All reforms should happen without violence.", "effects": {"dy": 5}},
+{"id": 81, "question": "All reforms should happen through established systems.", "effects": {"dy": 5}},
 {"id": 82, "question": "It's sometimes moral to crush a revolution or protest by force.", "effects": {"dy": 5}},
 {"id": 83, "question": "Political leaders should change the system as little as possible during their term.", "effects": {"dy": 5}},
 //Societal Change - Reform
@@ -195,7 +195,7 @@ questions =  [
   
 //Collectivization
 {"id": 141, "question": "Most things can only be accomplished through a group.", "effects": {"ja": -5}},
-{"id": 142, "question": "If the current career system is being used, a person's personal and work life should stay seperate.", "effects": {"ja": 5}},
+{"id": 142, "question": "Family is more important than personal aspirations.", "effects": {"ja": -5}},
 {"id": 143, "question": "Being self-sufficient (as a person) is a positive trait.", "effects": {"ja": 5}},
   
 //Revolution
@@ -204,7 +204,7 @@ questions =  [
   
 //Idealism
 {"id": 146, "question": "Idealists are mostly unrealistic.", "effects": {"jc": 5}},
-{"id": 147, "question": "We should not ignore ideologies that seem radical, but has a chance of success.", "effects": {"jc": -5}},
+{"id": 147, "question": "We should not ignore ideologies that seem radical, but have a chance of success.", "effects": {"jc": -5}},
 {"id": 148, "question": "We should be more optimistic towards a variety of different ideas.", "effects": {"jc": -5}},
 
 //Consequence

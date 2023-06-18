@@ -60,7 +60,7 @@ questions =  [
 {"id": 36, "question": "Religion is mostly fictional.", "effects": {"dx": -5}},
 {"id": 37, "question": "Traditions are of no value on their own.", "effects": {"dx": -5}},
 {"id": 38, "question": "I support the LGBT Community.", "effects": {"dx": -5}},
-{"id": 39, "question": "I support the Black Lives Matter organization.", "effects": {"dx": -5}},
+{"id": 39, "question": "I support the Black Lives Matter movement.", "effects": {"dx": -5}},
 {"id": 40, "question": "If taxation exists, churches should be taxed the same way other institutions are taxed.", "effects": {"dx": -5}},
 
 //Societal Change - Conserve
@@ -141,7 +141,7 @@ questions =  [
   
 //Collectivization
 {"id": 88, "question": "Most things can only be accomplished through a group.", "effects": {"ja": -5}},
-{"id": 89, "question": "If the current career system is being used, a person's personal and work life should stay seperate.", "effects": {"ja": 5}},
+{"id": 89, "question": "Family is more important than personal aspirations.", "effects": {"ja": -5}},
 {"id": 90, "question": "Being self-sufficient (as a person) is a positive trait.", "effects": {"ja": 5}},
 
 //Revolution
@@ -150,7 +150,7 @@ questions =  [
   
 //Idealism
 {"id": 93, "question": "Idealists are mostly unrealistic.", "effects": {"jc": 5}},
-{"id": 94, "question": "We should not ignore ideologies that seem radical, but has a chance of success.", "effects": {"jc": -5}},
+{"id": 94, "question": "We should not ignore ideologies that seem radical, but have a chance of success.", "effects": {"jc": -5}},
 {"id": 95, "question": "We should be more optimistic towards a variety of different ideas.", "effects": {"jc": -5}},
 
 //Consequence
