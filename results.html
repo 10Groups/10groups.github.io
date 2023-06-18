@@ -125,20 +125,20 @@
 <!-- Procedure -->
 <div class="center"><div class="label-l"><label for="proc-a">Persist</label></div>
 <progress id="proc-a" value="10" max="20"> </progress>
-<div class="label-r"><label for="proc-a" style="font-size:16px">Compromize</label></div> </div>	
+<div class="label-r"><label for="proc-a" style="font-size:16px">Compromise</label></div> </div>	
 	
 <div class="center"><div class="label-l"><label for="proc-b">Direct</label></div>
 <progress id="proc-b" value="10" max="20"> </progress>
 <div class="label-r"><label for="proc-b" style="font-size:16px">Transitional</label></div> </div>	
 	
 <!-- Politics -->
-<div class="center"><div class="label-l"><label for="pol-a">Radical</label></div>
+<div class="center"><div class="label-l"><label for="pol-a">Moderate</label></div>
 <progress id="pol-a" value="10" max="20"> </progress>
-<div class="label-r"><label for="pol-a">Moderate</label></div> </div>
+<div class="label-r"><label for="pol-a">Radical</label></div> </div>
 	
-<div class="center"><div class="label-l"><label for="pol-b">Politicized</label></div>
+<div class="center"><div class="label-l"><label for="pol-b">Apolitical</label></div>
 <progress id="pol-b" value="10" max="20"> </progress>
-<div class="label-r"><label for="pol-b">Apolitical</label></div> </div>
+<div class="label-r"><label for="pol-b">Politicized</label></div> </div>
 	
 <!-- Morality -->
 <div class="center"><div class="label-l"><label for="mor-a">Collectivism</label></div>
@@ -148,15 +148,15 @@
 <div class="center"><div class="label-l"><label for="mor-b">Revolution</label></div>
 <progress id="mor-b" value="10" max="20"> </progress>
 <div class="label-r"><label for="mor-b">Peaceful</label></div> </div>
-	
+    
 <div class="center"><div class="label-l"><label for="mor-c">Idealism</label></div>
 <progress id="mor-c" value="10" max="20"> </progress>
 <div class="label-r"><label for="mor-c">Realism</label></div> </div>
-	
-<div class="center"><div class="label-l"><label for="mor-d" style="font-size:14px">Consequental</label></div>
+    
+<div class="center"><div class="label-l"><label for="mor-d">Consequential</label></div>
 <progress id="mor-d" value="10" max="20"> </progress>
-<div class="label-r"><label for="mor-d" style="font-size:14px">Deontological</label></div> </div>
-	
+<div class="label-r"><label for="mor-d">Deontological</label></div> </div>
+    
 <p style="text-align:center;">The above are the compass results generated and displayed as different spectrums. You can send the results of this compass by copying and pasting the URL or screenshotting this page.</p>    
 
 <hr>
@@ -312,14 +312,14 @@
 	        ctx.stroke();
 		
 		ctx.beginPath();
-	        ctx.arc(1672 + (400 * (jc_axis+10)/20), 1246, 15, 0, 2 * Math.PI);
+	        ctx.arc(1672 + (400 * (jc_axis+10)/20), 1247, 15, 0, 2 * Math.PI);
 	        ctx.fillStyle = "red"
 	        ctx.fill();
 	        ctx.stroke();
 		
 		
 		ctx.beginPath();
-	        ctx.arc(1672 + (400 * (jd_axis+10)/20), 1340, 15, 0, 2 * Math.PI);
+	        ctx.arc(1672 + (400 * (jd_axis+10)/20), 1347, 15, 0, 2 * Math.PI);
 	        ctx.fillStyle = "red"
 	        ctx.fill();
 	        ctx.stroke();
@@ -404,10 +404,12 @@
 	document.getElementById("cltr-b").value = (10 - (gy_axis / 1.05));
 	document.getElementById("proc-a").value = (10 + (hx_axis / 1.05));
 	document.getElementById("proc-b").value = (10 - (hy_axis / 1.05));
-	document.getElementById("mor-a").value = (10 - (ix_axis / 1.05));
-	document.getElementById("mor-b").value = (10 - (iy_axis / 1.05));
-	document.getElementById("mor-c").value = (10 - (ix_axis / 1.05));
-	document.getElementById("mor-d").value = (10 - (iy_axis / 1.05));
+	document.getElementById("pol-a").value = (10 - (ix_axis / 1.05));
+	document.getElementById("pol-b").value = (10 - (iy_axis / 1.05));
+	document.getElementById("mor-a").value = (10 - (ja_axis / 1.05));
+	document.getElementById("mor-b").value = (10 - (jb_axis / 1.05));
+	document.getElementById("mor-c").value = (10 - (jc_axis / 1.05));
+	document.getElementById("mor-d").value = (10 - (jd_axis / 1.05));
 	
 //Ideology Matching
 	
