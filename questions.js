@@ -1,16 +1,16 @@
 questions =  [
   
 //Economic Regulation - Planned
-{"id": 0, "question": "In the current system, it is necessary for the government to intervene in the economy to protect consumers.", "effects": {"y": -5, "ay": 5}},
-{"id": 1, "question": "Without state intervention, monopolies would violate human rights.", "effects": {"y": -5, "ay": -5}},
+{"id": 0, "question": "In the current system, it is necessary for the government to intervene in the economy to protect consumers.", "effects": {"y": 5, "ay": 5}},
+{"id": 1, "question": "Without state intervention, monopolies would violate human rights.", "effects": {"y": 5, "ay": 5}},
 //Economic Regulation - Laissez Faire
-{"id": 2, "question": "Most corporations should be state-owned.", "effects": {"y": -5, "ay": 5}},
+{"id": 2, "question": "Most corporations should be state-owned.", "effects": {"y": 5, "ay": 5}},
 {"id": 3, "question": "The market regulates itself, since unjust monopolies are punished by bankrupcy.", "effects": {"y": -5, "ay": -5}},
 {"id": 4, "question": "A regulated economy is more unfair for the people, when compared to a laissez-faire economy.", "effects": {"y": -5, "ay": -5}},
   
 //Economic System - Capitalism
 {"id": 5, "question": "Freedom of business is the best practical way a society can prosper.", "effects": {"x": 5, "ax": 5}},
-{"id": 6, "question": "Communism is an ideology that would never work in practice.", "effects": {"y": 5, "ay": 5}},
+{"id": 6, "question": "Communism is an ideology that would never work in practice.", "effects": {"x": 5, "ax": 5}},
 {"id": 7, "question": "Governmental social programs should be replaced with private charities and organizations.", "effects": {"x": 5, "ax": 5}},
 {"id": 8, "question": "If wages and a currency exists, there should not be a minimum wage.", "effects": {"x": 5, "ax": 5}},
 {"id": 9, "question": "All healthcare services should be privatized.", "effects": {"x": 5, "ax": 5}},
@@ -47,7 +47,7 @@ questions =  [
 {"id": 29, "question": "Different countries and cultures have different preferences for the type of government.", "effects": {"cx": 5}},
 
 //Diplomatic Relations - Nationalism
-{"id": 30, "question": "I will only support international organizations that align with my political beliefs.", "effects": {"cy": 5}},
+{"id": 30, "question": "I will only support international organizations that benefit my country.", "effects": {"cy": 5}},
 {"id": 31, "question": "National sovereignty is very important.", "effects": {"cy": 5}},
 //Diplomatic Relations - Globalism
 {"id": 32, "question": "A global nation where all countries are united will be beneficial to humanity.", "effects": {"cy": -5}},
@@ -71,14 +71,13 @@ questions =  [
 {"id": 44, "question": "The current political system in my nation is flawed.", "effects": {"dy": -5}},
 
 //Technological Acceleration - Decelerate
-{"id": 45, "question": "Technology is negatively affecting modern society.", "effects": {"ex": -5}},
-{"id": 46, "question": "The Industrial Revolution and its consequences have been a disaster for the human race.", "effects": {"ex": -5}},
-{"id": 47, "question": "Usage of genetic modification for animals and plants should be minimized.", "effects": {"ex": -5}},
-{"id": 48, "question": "Modernity and social progress has led to a decrease of happiness, and often lacks meaning.", "effects": {"ex": -5}},
+{"id": 45, "question": "Technology is negatively affecting modern society.", "effects": {"ex": 5}},
+{"id": 46, "question": "The Industrial Revolution and its consequences have been a disaster for the human race.", "effects": {"ex": 5}},
+{"id": 47, "question": "Usage of genetic modification for animals and plants should be minimized.", "effects": {"ex": 5}},
+{"id": 48, "question": "Modernity and social progress has led to a decrease of happiness, and often lacks meaning.", "effects": {"ex": 5}},
   
 //Technological Transhumanism - Transhumanism
 {"id": 49, "question": "Getting past physical limitations through technology would be beneficial to mankind.", "effects": {"ey": 5}},
-{"id": 50, "question": "Technology that improves mental and physical capabilities shouldn't be used, in any political system.", "effects": {"ey": 5}},
 //Technological Transhumanism - Primitivism
 {"id": 51, "question": "Technology that improves mental and physical capabilities shouldn't be used, in any political system.", "effects": {"ey": -5}},
 {"id": 52, "question": "The risks of transhumanism overweighs the benefits.", "effects": {"ey": -5}},
@@ -102,24 +101,24 @@ questions =  [
 //Cultural Hierarchy - Equality
 {"id": 63, "question": "A system of equal outcomes should be established.", "effects": {"gx": -5}},
 {"id": 64, "question": "People should be treated equally regardless of their groups and characteristics.", "effects": {"gx": -5}},
-//Cultural Hierarchy - Hierarchy
 {"id": 65, "question": "Even though equal opportunities can lead to equal outcomes, society should still focus on equal opportunities, and not equal outcomes.", "effects": {"gx": -5}},
-{"id": 66, "question": "Hierarchies will inevitably be formed in every society, at any time.", "effects": {"gx": -5}},
-{"id": 67, "question": "Any well-functioning society requries a hierarchy.", "effects": {"gx": -5}},
+//Cultural Hierarchy - Hierarchy
+{"id": 66, "question": "Hierarchies will inevitably be formed in every society, at any time.", "effects": {"gx": 5}},
+{"id": 67, "question": "Any well-functioning society requries a hierarchy.", "effects": {"gx": 5}},
 
 //Cultural Assimilation - Monocultural
 {"id": 68, "question": "If we accept migrants into our borders, the migrants should be expected to assimilate into our culture.", "effects": {"gy": 5}},
 {"id": 69, "question": "Multiculturalism is unrealistic.", "effects": {"gy": 5}},
 {"id": 70, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": 5}},
 //Cultutal Assimilation - Multicultural
-{"id": 71, "question": "My nation should be more diverse.", "effects": {"gy": 5}},
-{"id": 72, "question": "Monoculturalism is disastrous for society.", "effects": {"gy": 5}},
-{"id": 73, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": 5}},
+{"id": 71, "question": "My nation should be more diverse.", "effects": {"gy": -5}},
+{"id": 72, "question": "Monoculturalism is disastrous for society.", "effects": {"gy": -5}},
+{"id": 73, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": -5}},
   
-//Procedural Compromize - Compromize 
-{"id": 74, "question": "Compromizes should be made in order to suit the needs of most people.", "effects": {"hx": -5}},
-{"id": 75, "question": "Compromizing can avoid unnecessary conflict.", "effects": {"hx": -5}},
-{"id": 76, "question": "Adopting radical ideas isn't possible unless compromizes are made.", "effects": {"hx": -5}},
+//Procedural Compromize - Compromise 
+{"id": 74, "question": "Compromises should be made in order to suit the needs of most people.", "effects": {"hx": -5}},
+{"id": 75, "question": "Compromising can avoid unnecessary conflict.", "effects": {"hx": -5}},
+{"id": 76, "question": "Adopting radical ideas isn't possible unless compromises are made.", "effects": {"hx": -5}},
 
 //Procedural Transition - Transitional
 {"id": 77, "question": "A transitional state should be made.", "effects": {"hy": 5}},
@@ -155,9 +154,9 @@ questions =  [
 {"id": 95, "question": "We should be more optimistic towards a variety of different ideas.", "effects": {"jc": -5}},
 
 //Consequence
-{"id": 96, "question": "An eye for eye and a tooth for tooth.", "effects": {"jd": 5}},
-{"id": 97, "question": "We should judge an action based on its consequences.", "effects": {"jd": 5}},
-{"id": 98, "question": "An action should be seen as right or wrong through a set of rules and principles.", "effects": {"jd": -5}},
-{"id": 99, "question": "Intention is more important than consequence when judging an action.", "effects": {"jd": -5}},
+{"id": 96, "question": "Attempted murder is just as bad as successful murder.", "effects": {"jd": 5}},
+{"id": 97, "question": "We should judge an action based on its consequences.", "effects": {"jd": -5}},
+{"id": 98, "question": "An action should be seen as right or wrong through a set of rules and principles.", "effects": {"jd": 5}},
+{"id": 99, "question": "Intention is more important than consequence when judging an action.", "effects": {"jd": 5}},
 
 ];
