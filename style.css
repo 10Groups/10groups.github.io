@@ -2,6 +2,7 @@ html {
     background-color: #bbbbbb;
     padding: 0px;
 }
+
 body {
     width: 80%;
     min-height: calc(100vh - 4em);
@@ -13,6 +14,7 @@ body {
     border-right-style: solid;
     border-width: 20px;
 }
+
 p {
     color: #444444;
     font-family: 'Roboto', sans-serif;
@@ -20,6 +22,7 @@ p {
     line-height: 1;
     margin: 4pt;
 }
+
 li {
     color: #444444;
     font-family: 'Roboto', sans-serif;
@@ -27,10 +30,12 @@ li {
     line-height: 1;
     margin: 4pt;
 }
+
 p.value-description {
     text-indent: -16pt;
     margin-left: 20pt;
 }
+
 label {
     color: #444444;
     font-family: 'Roboto', sans-serif;
@@ -40,16 +45,20 @@ label {
     margin: 4pt;
     width: 15%;
 }
+
 a {
     color: #2222DD;
 }
-a:hover{
+
+a:hover {
     color: #22DDDD;
 }
+
 p.value-description {
     text-indent: -16pt;
     margin-left: 20pt;
 }
+
 p.question {
     margin: 16pt auto;
     color: #333333;
@@ -68,6 +77,7 @@ p.question {
     text-align: center;
 
 }
+
 h1 {
     color: #222222;
     font-family: 'Montserrat', sans-serif;
@@ -77,6 +87,7 @@ h1 {
     margin-top: 0pt;
     margin-bottom: 0pt;
 }
+
 h2 {
     color: #333333;
     font-family: 'Montserrat', sans-serif;
@@ -85,6 +96,7 @@ h2 {
     margin-top: 12pt;
     margin-bottom: 0pt;
 }
+
 h3 {
     color: #333333;
     font-family: 'Montserrat', sans-serif;
@@ -93,32 +105,38 @@ h3 {
     margin-top: 12pt;
     margin-bottom: 0pt;
 }
+
 li {
     font-size: 16pt;
     text-indent: 16pt;
 }
+
 a {
     font-family: inherit;
 }
+
 img.center {
     display: block;
     margin: 1em auto;
     width: 50%;
     min-width: 500pt;
 }
+
 img {
     display: block;
     margin: 1em auto;
     width: 50%;
     min-width: 500pt;
 }
+
 .center {
     margin: auto;
     width: 80%;
     min-width: 500pt;
     padding: 10px;
     text-align: center;
-} 
+}
+
 .label-l {
     width: 12%;
     text-align: right;
@@ -126,6 +144,7 @@ img {
     display: inline-block;
     font-size: 14pt;
 }
+
 .label-r {
     width: 12%;
     text-align: left;
@@ -133,6 +152,7 @@ img {
     display: inline-block;
     font-size: 14pt;
 }
+
 .button {
     background-color: #2196f3;
     font-family: 'Montserrat', sans-serif;
@@ -149,6 +169,7 @@ img {
     margin: -2px auto;
     cursor: pointer;
 }
+
 .buttongray {
     background-color: #A9A9A9;
     font-family: 'Montserrat', sans-serif;
@@ -164,7 +185,9 @@ img {
     margin: -2px auto;
     cursor: pointer;
 }
-.small_button, .small_button_off {
+
+.small_button,
+.small_button_off {
     background-color: #333;
     font-family: 'Montserrat', sans-serif;
     border: none;
@@ -180,6 +203,7 @@ img {
     margin: -2px auto;
     cursor: pointer;
 }
+
 .small_button_off {
     background-color: #ddd;
     color: #888;
@@ -187,6 +211,7 @@ img {
     cursor: not-allowed;
     margin: -4px auto;
 }
+
 div.text-wrapper {
     font-family: 'Montserrat', sans-serif;
     font-size: 36pt;
@@ -194,9 +219,11 @@ div.text-wrapper {
     color: #222222;
     display: inline-block;
 }
+
 span.weight-300 {
     font-weight: 300;
 }
+
 #canvas {
     border-color: #444444;
     border-style: solid;
@@ -209,6 +236,7 @@ span.weight-300 {
     min-width: 500px;
     max-width: 80%;
 }
+
 #heatmap {
     border-color: #444444;
     border-style: solid;
@@ -221,6 +249,7 @@ span.weight-300 {
     min-width: 500px;
     max-width: 50%;
 }
+
 #customcompass {
     border-color: #444444;
     border-style: solid;

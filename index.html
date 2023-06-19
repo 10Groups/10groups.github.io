@@ -5,104 +5,185 @@
     <link rel="icon" type="x-icon" href="icon.png">
     <link rel="shortcut icon" type="x-icon" href="icon.png">
     <meta charset="utf-8">
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics; No Personal Information Collected -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173028192-1"></script>
     <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-         gtag('config', 'UA-173028192-1');
+        gtag('config', 'UA-173028192-1');
     </script>
-    
+
     <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:1941965,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 1941965, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
-        
-    </head>
-    <body>
-    <a href="https://github.com/10Groups/10groups.github.io" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+</head>
+
+<body>
+    <a href="https://github.com/10Groups/10groups.github.io" class="github-corner"
+        aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250"
+            style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg></a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+
+        @keyframes octocat-wave {
+
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
     <h1>10Groups</h1>
     <hr>
-     <button class="button" onclick="location.href='instructions.html';" style="font-size:36pt;">Click here to start!</button>
-     <img src="compassimage.png" class="center"></canvas>
+    <button class="button" onclick="location.href='instructions.html';" style="font-size:36pt;">Click here to
+        start!</button>
+    <img src="compassimage.png" class="center"></canvas>
     <hr>
 
     <h2>What is 10Groups?</h2>
-        <p>10Groups is a political compass test that examines one's political beliefs on a varity of coordinate charts. The test is based on different parts from <a href="https://sapplyvalues.github.io/">SapplyValues</a> and <a href="https://8values.github.io/">8values</a>. You will be presented by a statement, and then you will answer with your opinion on the statement, from <b>Strongly Agree</b> to <b>Strongly Disagree</b>, with each answer slightly affecting your scores. At the end of the quiz, your answers will be displayed on a political compass.<br /><br />
+    <p>10Groups is a political compass test that examines one's political beliefs on a varity of coordinate charts. The
+        test is based on different parts from <a href="https://sapplyvalues.github.io/">SapplyValues</a> and <a
+            href="https://8values.github.io/">8values</a>. You will be presented by a statement, and then you will
+        answer with your opinion on the statement, from <b>Strongly Agree</b> to <b>Strongly Disagree</b>, with each
+        answer slightly affecting your scores. At the end of the quiz, your answers will be displayed on a political
+        compass.<br /><br />
         There are <b><u>83</u></b> questions in the test.</p>
     <h2>What are the meanings of the compasses?</h2>
-        <p>There are 10 different categories. They are:</p>
+    <p>There are 10 different categories. They are:</p>
 
-        <p class="value-description"><b style="color:#ada787;">Regular</b><br/>
-        This category evaluates one's personal beliefs with a general estimation, with a Left-Right axis and a Authoritarian-Libertarian axis.</p>
+    <p class="value-description"><b style="color:#ada787;">Regular</b><br />
+        This category evaluates one's personal beliefs with a general estimation, with a Left-Right axis and a
+        Authoritarian-Libertarian axis.</p>
 
-        <p class="value-description"><b style="color:#7daba1;">Economic</b><br/>
-        This category evaluates one's economic beliefs with a Socialist-Capitalist axis and a Planned - Laissez Faire axis. The X axis evaluates a person's preferred economic system, while the Y axis evaluates how much the government intervenes.</p>
-      
-        <p class="value-description"><b style="color:#4791b3;">Governmental</b><br/>
-        This category evaluates one's beliefs on the state with a Authoritarian-Libertarian axis and a Autocracy-Democracy axis. The X axis evaluates how big the state should be, while the Y axis evaluates how the leader is chosen.</p>
+    <p class="value-description"><b style="color:#7daba1;">Economic</b><br />
+        This category evaluates one's economic beliefs with a Socialist-Capitalist axis and a Planned - Laissez Faire
+        axis. The X axis evaluates a person's preferred economic system, while the Y axis evaluates how much the
+        government intervenes.</p>
 
-        <p class="value-description"><b style="color:#b38a47;">Diplomatic</b><br/>
-        This category evaluates one's diplomatic beliefs with a Universal-Particular axis and a Nationalist-Globalist axis. The X axis evaluates how much a nation should intervene diplomatically, while the Y axis evaluates how important a nation's interests are. </p>
-       
-        <p class="value-description"><b style="color:#18964b;">Societal</b><br/>
-        This category evaluates one's beliefs about society with a Progress-Tradition axis and a Conserve-Reform axis. The X axis evaluates how much tradition and cultural heritage should be preserved, while the Y axis evaluates how much society should change. </p>
-        
-        <p class="value-description"><b style="color:#8e49ad;">Technological</b><br/>
-        This category evaluates one's diplomatic beliefs with a Acceleration-Deceleration axis and a Transhumanism-Primitivism axis. The X axis evaluates whether to speed up or slow down technological progression, while the Y axis evaluates whether a person supports transhumanism. </p>
-       
-        <p class="value-description"><b style="color:#18b0b5;">Law</b><br/>
-        This category evaluates one's beliefs on law with a Common Law - Civil Law axis and a Punishment-Rehabilitation axis. The X axis evaluates whether a person agrees more on Common Law or Civil Law, while the Y axis evaluates what the focus of law should be: Punishment or Rehabilitation. </p>
-      
-        <p class="value-description"><b style="color:#d18c8c;">Cultural</b><br/>
-        This category evaluates one's diplomatic beliefs with an Equality-Hierarchy axis and a Monocultural-Multicultural axis. The X axis evaluates how much hierarchy should exist, while the Y axis evaluates the amount of diversity. </p>
+    <p class="value-description"><b style="color:#4791b3;">Governmental</b><br />
+        This category evaluates one's beliefs on the state with a Authoritarian-Libertarian axis and a
+        Autocracy-Democracy axis. The X axis evaluates how big the state should be, while the Y axis evaluates how the
+        leader is chosen.</p>
 
-        <p class="value-description"><b style="color:#6852cc;">Procedural</b><br/>
-        This category evaluates one's beliefs on how an ideology should be achieved, with a Compromise-Persist axis and a Transitional-Direct axis. The X axis evaluates how often compromises should be made, while the Y axis evaluates the duration and directness of an ideological switch. </p>
-      
-        <p class="value-description"><b style="color:#707070;">Political</b><br/>
-        This category evaluates one's beliefs on how extreme an ideology is, with a Moderate-Radical axis and a Politicized-Apolitical axis. The X axis evaluates how radical a person's ideals are, while the Y axis evaluates how politically active a person is. </p>
-      
+    <p class="value-description"><b style="color:#b38a47;">Diplomatic</b><br />
+        This category evaluates one's diplomatic beliefs with a Universal-Particular axis and a Nationalist-Globalist
+        axis. The X axis evaluates how much a nation should intervene diplomatically, while the Y axis evaluates how
+        important a nation's interests are. </p>
+
+    <p class="value-description"><b style="color:#18964b;">Societal</b><br />
+        This category evaluates one's beliefs about society with a Progress-Tradition axis and a Conserve-Reform axis.
+        The X axis evaluates how much tradition and cultural heritage should be preserved, while the Y axis evaluates
+        how much society should change. </p>
+
+    <p class="value-description"><b style="color:#8e49ad;">Technological</b><br />
+        This category evaluates one's diplomatic beliefs with a Acceleration-Deceleration axis and a
+        Transhumanism-Primitivism axis. The X axis evaluates whether to speed up or slow down technological progression,
+        while the Y axis evaluates whether a person supports transhumanism. </p>
+
+    <p class="value-description"><b style="color:#18b0b5;">Law</b><br />
+        This category evaluates one's beliefs on law with a Common Law - Civil Law axis and a Punishment-Rehabilitation
+        axis. The X axis evaluates whether a person agrees more on Common Law or Civil Law, while the Y axis evaluates
+        what the focus of law should be: Punishment or Rehabilitation. </p>
+
+    <p class="value-description"><b style="color:#d18c8c;">Cultural</b><br />
+        This category evaluates one's diplomatic beliefs with an Equality-Hierarchy axis and a
+        Monocultural-Multicultural axis. The X axis evaluates how much hierarchy should exist, while the Y axis
+        evaluates the amount of diversity. </p>
+
+    <p class="value-description"><b style="color:#6852cc;">Procedural</b><br />
+        This category evaluates one's beliefs on how an ideology should be achieved, with a Compromise-Persist axis and
+        a Transitional-Direct axis. The X axis evaluates how often compromises should be made, while the Y axis
+        evaluates the duration and directness of an ideological switch. </p>
+
+    <p class="value-description"><b style="color:#707070;">Political</b><br />
+        This category evaluates one's beliefs on how extreme an ideology is, with a Moderate-Radical axis and a
+        Politicized-Apolitical axis. The X axis evaluates how radical a person's ideals are, while the Y axis evaluates
+        how politically active a person is. </p>
 
 
-<h2>I don't like my scores!</h2>
-    <p>¯\_(ツ)_/¯<br/>
-    If you have any suggestions or constructive criticism, feel free to send it to <a href="mailto:10compasses@gmail.com">my email</a> or open an issue on the GitHub page here: <a href="https://github.com/10Groups/10groups.github.io">GitHub Page</a>. You can also fill in <a href="https://forms.gle/wy7cd9sStMy6B1md7">this form</a>.</p>
 
-<h2>I want to add something to this test!</h2>
-    <p>If you want to add some translations, features, questions, or others, you can create a pull request <a href="https://github.com/10Groups/10groups.github.io">here</a>. If you're not familiar with coding, you can send an email to <a href="mailto:10compasses@gmail.com">10compasses@gmail.com</a>.
+    <h2>I don't like my scores!</h2>
+    <p>¯\_(ツ)_/¯<br />
+        If you have any suggestions or constructive criticism, feel free to send it to <a
+            href="mailto:10compasses@gmail.com">my email</a> or open an issue on the GitHub page here: <a
+            href="https://github.com/10Groups/10groups.github.io">GitHub Page</a>. You can also fill in <a
+            href="https://forms.gle/wy7cd9sStMy6B1md7">this form</a>.</p>
 
-<h2>This test is biased!</h2>
-    <p>I am working on making the questions more specific, but it would be ideal if people with different political viewss improve the wording. You can make a pull request at <a href="https://github.com/10Groups/10groups.github.io">the Github page</a>. If you're not familiar with coding, you can send an email to <a href="mailto:10compasses@gmail.com">10compasses@gmail.com</a>.
+    <h2>I want to add something to this test!</h2>
+    <p>If you want to add some translations, features, questions, or others, you can create a pull request <a
+            href="https://github.com/10Groups/10groups.github.io">here</a>. If you're not familiar with coding, you can
+        send an email to <a href="mailto:10compasses@gmail.com">10compasses@gmail.com</a>.
 
-        
-<h2>Legal notice</h2>
-    <p>The 8values and SapplyValues project licenses grant the rights to "modify, merge, publish, distribute" the software as long as "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software." The included notice can be found <a href="LICENSE.txt">here</a>. This project is released under the same license.</p>
+    <h2>This test is biased!</h2>
+    <p>I am working on making the questions more specific, but it would be ideal if people with different political
+        viewss improve the wording. You can make a pull request at <a
+            href="https://github.com/10Groups/10groups.github.io">the Github page</a>. If you're not familiar with
+        coding, you can send an email to <a href="mailto:10compasses@gmail.com">10compasses@gmail.com</a>.
 
-<h2>Credits</h2>
-        <ul>
+
+    <h2>Legal notice</h2>
+    <p>The 8values and SapplyValues project licenses grant the rights to "modify, merge, publish, distribute" the
+        software as long as "The above copyright notice and this permission notice shall be included in all copies or
+        substantial portions of the Software." The included notice can be found <a href="LICENSE.txt">here</a>. This
+        project is released under the same license.</p>
+
+    <h2>Credits</h2>
+    <ul>
         <li>8values: 10groups is partly based on this test.</li>
         <li>SapplyValues: 10groups is partly based on this test as well.</li>
         <li>Wikipedia: Where most information about the ideologies are referenced from.</li>
-        </ul>
+    </ul>
 
-<h2>Check out my other tests:</h2>
-        <ul>
+    <h2>Check out my other tests:</h2>
+    <ul>
         <li><a href="https://rightvaluestest.github.io/">RightValues</a></li>
         <li><a href="https://8dreams.github.io/">8Dreams</a></li>
         <li><a href="https://soiltexturetest.github.io/">SoilTextureTest</a></li>
-        </ul>  
-<br>
-    <button class="button" onclick="location.href='https://forms.gle/wy7cd9sStMy6B1md7';" style="font-size:20pt;">Fill in the suggestions form!</button>
+    </ul>
+    <br>
+    <button class="button" onclick="location.href='https://forms.gle/wy7cd9sStMy6B1md7';" style="font-size:20pt;">Fill
+        in the suggestions form!</button>
 
     <script type="application/javascript" src="questions.js"></script>
     <script type="text/javascript">
@@ -113,9 +194,9 @@
             }
         }
         document.getElementById("numOfQuestions").innerHTML = questionCount;
-        window.onload = function() {
+        window.onload = function () {
             var background = new Image();
-            background.onload = function() {
+            background.onload = function () {
                 var c = document.createElement("canvas");
                 c.width = 1850;
                 c.height = 1300;
@@ -123,7 +204,7 @@
                 ctx.fillStyle = "#EEEEEE"
                 ctx.fillRect(0, 0, 1850, 1300);
                 ctx.drawImage(background, 0, 0);
-    
+
                 document.getElementById("banner").src = c.toDataURL();
             }
             background.src = "./compass.png";
